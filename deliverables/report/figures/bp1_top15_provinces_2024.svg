@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="835" viewBox="0 0 1060 835">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="32" y="42" font-size="25" font-family="Arial" font-weight="bold" fill="#17352b">15 tỉnh có sản lượng lúa cao nhất, 2024</text>
+<text x="32" y="67" font-size="14" font-family="Arial" fill="#54645d">Nghìn tấn</text>
+<text x="273" y="121" text-anchor="end" font-size="15" font-family="Arial" fill="#17352b">Kiên Giang</text>
+<rect x="285" y="105" width="675.0" height="25" rx="4" fill="#137a52"/>
+<text x="969.0" y="123" font-size="14" font-family="Arial" fill="#17352b">4,715</text>
+<text x="273" y="165" text-anchor="end" font-size="15" font-family="Arial" fill="#17352b">An Giang</text>
+<rect x="285" y="149" width="582.5" height="25" rx="4" fill="#137a52"/>
+<text x="876.5" y="167" font-size="14" font-family="Arial" fill="#17352b">4,069</text>
+<text x="273" y="209" text-anchor="end" font-size="15" font-family="Arial" fill="#17352b">Đồng Tháp</text>
+<rect x="285" y="193" width="476.9" height="25" rx="4" fill="#137a52"/>
+<text x="770.9" y="211" font-size="14" font-family="Arial" fill="#17352b">3,331</text>
+<text x="273" y="253" text-anchor="end" font-size="15" font-family="Arial" fill="#17352b">Long An</text>
+<rect x="285" y="237" width="461.2" height="25" rx="4" fill="#137a52"/>
+<text x="755.2" y="255" font-size="14" font-family="Arial" fill="#17352b">3,221</text>
+<text x="273" y="297" text-anchor="end" font-size="15" font-family="Arial" fill="#17352b">Sóc Trăng</text>
+<rect x="285" y="281" width="312.9" height="25" rx="4" fill="#137a52"/>
+<text x="606.9" y="299" font-size="14" font-family="Arial" fill="#17352b">2,185</text>
+<text x="273" y="341" text-anchor="end" font-size="15" font-family="Arial" fill="#17352b">Thanh Hóa</text>
+<rect x="285" y="325" width="198.3" height="25" rx="4" fill="#137a52"/>
+<text x="492.3" y="343" font-size="14" font-family="Arial" fill="#17352b">1,385</text>
+<text x="273" y="385" text-anchor="end" font-size="15" font-family="Arial" fill="#17352b">Cần Thơ</text>
+<rect x="285" y="369" width="191.7" height="25" rx="4" fill="#137a52"/>
+<text x="485.7" y="387" font-size="14" font-family="Arial" fill="#17352b">1,339</text>
+<text x="273" y="429" text-anchor="end" font-size="15" font-family="Arial" fill="#17352b">Bạc Liêu</text>
+<rect x="285" y="413" width="181.4" height="25" rx="4" fill="#137a52"/>
+<text x="475.4" y="431" font-size="14" font-family="Arial" fill="#17352b">1,267</text>
+<text x="273" y="473" text-anchor="end" font-size="15" font-family="Arial" fill="#17352b">Hậu Giang</text>
+<rect x="285" y="457" width="168.0" height="25" rx="4" fill="#137a52"/>
+<text x="462.0" y="475" font-size="14" font-family="Arial" fill="#17352b">1,173</text>
+<text x="273" y="517" text-anchor="end" font-size="15" font-family="Arial" fill="#17352b">Trà Vinh</text>
+<rect x="285" y="501" width="165.3" height="25" rx="4" fill="#137a52"/>
+<text x="459.3" y="519" font-size="14" font-family="Arial" fill="#17352b">1,154</text>
+<text x="273" y="561" text-anchor="end" font-size="15" font-family="Arial" fill="#17352b">Nghệ An</text>
+<rect x="285" y="545" width="145.3" height="25" rx="4" fill="#137a52"/>
+<text x="439.3" y="563" font-size="14" font-family="Arial" fill="#17352b">1,015</text>
+<text x="273" y="605" text-anchor="end" font-size="15" font-family="Arial" fill="#17352b">Thái Bình</text>
+<rect x="285" y="589" width="124.2" height="25" rx="4" fill="#137a52"/>
+<text x="418.2" y="607" font-size="14" font-family="Arial" fill="#17352b">867</text>
+<text x="273" y="649" text-anchor="end" font-size="15" font-family="Arial" fill="#17352b">Hà Nội</text>
+<rect x="285" y="633" width="123.5" height="25" rx="4" fill="#137a52"/>
+<text x="417.5" y="651" font-size="14" font-family="Arial" fill="#17352b">863</text>
+<text x="273" y="693" text-anchor="end" font-size="15" font-family="Arial" fill="#17352b">Đắk Lắk</text>
+<rect x="285" y="677" width="120.9" height="25" rx="4" fill="#137a52"/>
+<text x="414.9" y="695" font-size="14" font-family="Arial" fill="#17352b">845</text>
+<text x="273" y="737" text-anchor="end" font-size="15" font-family="Arial" fill="#17352b">Nam Định</text>
+<rect x="285" y="721" width="120.7" height="25" rx="4" fill="#137a52"/>
+<text x="414.7" y="739" font-size="14" font-family="Arial" fill="#17352b">843</text>
+</svg>

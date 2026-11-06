@@ -1,0 +1,4 @@
+# Preserve document bytes and prevent Git from attempting text merges.
+*.pdf binary
+*.docx binary
+*.xlsx binary

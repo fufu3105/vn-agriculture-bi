@@ -1,1 +1,4 @@
-# Add project dependencies here as implementation begins.
+openpyxl>=3.1,<4
+pandas>=2.0,<3
+plotly>=5.18,<7
+streamlit>=1.59,<2

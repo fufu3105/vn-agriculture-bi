@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "region_name": "Trung du và miền núi phía Bắc",
+        "total_provinces": 15,
+        "provinces": [
+            "Hà Giang",
+            "Cao Bằng",
+            "Bắc Kạn",
+            "Tuyên Quang",
+            "Lào Cai",
+            "Yên Bái",
+            "Thái Nguyên",
+            "Lạng Sơn",
+            "Bắc Giang",
+            "Quảng Ninh",
+            "Phú Thọ",
+            "Điện Biên",
+            "Lai Châu",
+            "Sơn La",
+            "Hòa Bình"
+        ]
+    },
+    {
+        "id": 2,
+        "region_name": "Đồng bằng sông Hồng",
+        "total_provinces": 10,
+        "provinces": [
+            "Hà Nội",
+            "Hải Phòng",
+            "Vĩnh Phúc",
+            "Bắc Ninh",
+            "Hải Dương",
+            "Hưng Yên",
+            "Thái Bình",
+            "Hà Nam",
+            "Nam Định",
+            "Ninh Bình"
+        ]
+    },
+    {
+        "id": 3,
+        "region_name": "Bắc Trung Bộ",
+        "total_provinces": 6,
+        "provinces": [
+            "Thanh Hóa",
+            "Nghệ An",
+            "Hà Tĩnh",
+            "Quảng Bình",
+            "Quảng Trị",
+            "Thừa Thiên Huế"
+        ]
+    },
+    {
+        "id": 4,
+        "region_name": "Duyên hải Nam Trung Bộ",
+        "total_provinces": 8,
+        "provinces": [
+            "Đà Nẵng",
+            "Quảng Nam",
+            "Quảng Ngãi",
+            "Bình Định",
+            "Phú Yên",
+            "Khánh Hòa",
+            "Ninh Thuận",
+            "Bình Thuận"
+        ]
+    },
+    {
+        "id": 5,
+        "region_name": "Tây Nguyên",
+        "total_provinces": 5,
+        "provinces": [
+            "Kon Tum",
+            "Gia Lai",
+            "Đắk Lắk",
+            "Đắk Nông",
+            "Lâm Đồng"
+        ]
+    },
+    {
+        "id": 6,
+        "region_name": "Đông Nam Bộ",
+        "total_provinces": 6,
+        "provinces": [
+            "Bình Phước",
+            "Tây Ninh",
+            "Bình Dương",
+            "Đồng Nai",
+            "Bà Rịa – Vũng Tàu",
+            "TP. Hồ Chí Minh"
+        ]
+    },
+    {
+        "id": 7,
+        "region_name": "Đồng bằng sông Cửu Long",
+        "total_provinces": 13,
+        "provinces": [
+            "Long An",
+            "Tiền Giang",
+            "Bến Tre",
+            "Trà Vinh",
+            "Vĩnh Long",
+            "Đồng Tháp",
+            "An Giang",
+            "Kiên Giang",
+            "Cần Thơ",
+            "Hậu Giang",
+            "Sóc Trăng",
+            "Bạc Liêu",
+            "Cà Mau"
+        ]
+    }
+]

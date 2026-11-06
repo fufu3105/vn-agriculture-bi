@@ -1,0 +1,946 @@
+﻿province,region,year,area_thousand_ha,yield_quintal_per_ha,production_thousand_tons
+An Giang,Đồng bằng sông Cửu Long,2010,586.6,62.3,3653.1
+An Giang,Đồng bằng sông Cửu Long,2011,607.6,63.48,3856.8
+An Giang,Đồng bằng sông Cửu Long,2012,625.1,63.1,3941.6
+An Giang,Đồng bằng sông Cửu Long,2013,641.4,62.7,4021.4
+An Giang,Đồng bằng sông Cửu Long,2014,625.8,64.28,4022.9
+An Giang,Đồng bằng sông Cửu Long,2015,644.2,63.24,4073.7
+An Giang,Đồng bằng sông Cửu Long,2016,669.0,59.4,3974.7
+An Giang,Đồng bằng sông Cửu Long,2017,641.1,60.5,3879.6
+An Giang,Đồng bằng sông Cửu Long,2018,623.1,63.0,3926.9
+An Giang,Đồng bằng sông Cửu Long,2019,626.3,62.6,3919.3
+An Giang,Đồng bằng sông Cửu Long,2020,637.2,63.0,4014.1
+An Giang,Đồng bằng sông Cửu Long,2021,624.93,66.3,4143.05
+An Giang,Đồng bằng sông Cửu Long,2022,604.4,65.3,3943.65
+An Giang,Đồng bằng sông Cửu Long,2023,616.21,66.0,4067.66
+An Giang,Đồng bằng sông Cửu Long,2024,618.59,65.77,4068.68
+Bà Rịa – Vũng Tàu,Đông Nam Bộ,2010,22.4,37.7,84.5
+Bà Rịa – Vũng Tàu,Đông Nam Bộ,2011,23.7,40.25,95.4
+Bà Rịa – Vũng Tàu,Đông Nam Bộ,2012,24.1,41.4,99.7
+Bà Rịa – Vũng Tàu,Đông Nam Bộ,2013,23.5,42.2,99.1
+Bà Rịa – Vũng Tàu,Đông Nam Bộ,2014,23.5,44.94,105.6
+Bà Rịa – Vũng Tàu,Đông Nam Bộ,2015,24.5,47.35,116.0
+Bà Rịa – Vũng Tàu,Đông Nam Bộ,2016,25.1,48.1,120.7
+Bà Rịa – Vũng Tàu,Đông Nam Bộ,2017,24.8,49.2,122.1
+Bà Rịa – Vũng Tàu,Đông Nam Bộ,2018,25.0,51.9,129.8
+Bà Rịa – Vũng Tàu,Đông Nam Bộ,2019,24.5,55.6,136.2
+Bà Rịa – Vũng Tàu,Đông Nam Bộ,2020,24.4,53.7,131.0
+Bà Rịa – Vũng Tàu,Đông Nam Bộ,2021,24.0,58.1,139.48
+Bà Rịa – Vũng Tàu,Đông Nam Bộ,2022,23.0,60.5,138.95
+Bà Rịa – Vũng Tàu,Đông Nam Bộ,2023,23.66,63.1,149.35
+Bà Rịa – Vũng Tàu,Đông Nam Bộ,2024,23.72,63.39,150.36
+Bình Dương,Đông Nam Bộ,2010,10.1,38.4,38.8
+Bình Dương,Đông Nam Bộ,2011,9.8,39.29,38.5
+Bình Dương,Đông Nam Bộ,2012,9.6,39.5,37.9
+Bình Dương,Đông Nam Bộ,2013,9.3,39.8,37.0
+Bình Dương,Đông Nam Bộ,2014,8.3,41.08,34.1
+Bình Dương,Đông Nam Bộ,2015,7.6,41.32,31.4
+Bình Dương,Đông Nam Bộ,2016,7.3,41.9,30.6
+Bình Dương,Đông Nam Bộ,2017,7.2,42.5,30.6
+Bình Dương,Đông Nam Bộ,2018,6.9,42.2,29.1
+Bình Dương,Đông Nam Bộ,2019,6.7,42.1,28.2
+Bình Dương,Đông Nam Bộ,2020,6.3,42.9,27.0
+Bình Dương,Đông Nam Bộ,2021,5.98,43.8,26.19
+Bình Dương,Đông Nam Bộ,2022,5.6,44.3,24.98
+Bình Dương,Đông Nam Bộ,2023,5.39,44.7,24.07
+Bình Dương,Đông Nam Bộ,2024,5.29,45.41,24.02
+Bình Phước,Đông Nam Bộ,2010,14.6,31.5,46.0
+Bình Phước,Đông Nam Bộ,2011,13.4,32.01,42.9
+Bình Phước,Đông Nam Bộ,2012,14.6,32.3,47.2
+Bình Phước,Đông Nam Bộ,2013,13.6,33.0,44.9
+Bình Phước,Đông Nam Bộ,2014,13.0,32.77,42.6
+Bình Phước,Đông Nam Bộ,2015,12.8,33.13,42.4
+Bình Phước,Đông Nam Bộ,2016,12.2,32.3,39.4
+Bình Phước,Đông Nam Bộ,2017,12.2,32.5,39.6
+Bình Phước,Đông Nam Bộ,2018,12.1,35.2,42.6
+Bình Phước,Đông Nam Bộ,2019,11.5,35.0,40.3
+Bình Phước,Đông Nam Bộ,2020,11.2,37.1,41.6
+Bình Phước,Đông Nam Bộ,2021,10.6,36.2,38.34
+Bình Phước,Đông Nam Bộ,2022,10.5,37.8,39.64
+Bình Phước,Đông Nam Bộ,2023,10.62,39.0,41.38
+Bình Phước,Đông Nam Bộ,2024,10.78,41.27,44.49
+Bình Thuận,Duyên hải Nam Trung Bộ,2010,107.2,50.0,535.5
+Bình Thuận,Duyên hải Nam Trung Bộ,2011,111.3,54.12,602.3
+Bình Thuận,Duyên hải Nam Trung Bộ,2012,113.2,54.8,620.1
+Bình Thuận,Duyên hải Nam Trung Bộ,2013,115.3,55.4,638.6
+Bình Thuận,Duyên hải Nam Trung Bộ,2014,119.7,56.26,673.4
+Bình Thuận,Duyên hải Nam Trung Bộ,2015,115.0,57.82,664.9
+Bình Thuận,Duyên hải Nam Trung Bộ,2016,103.5,57.8,598.3
+Bình Thuận,Duyên hải Nam Trung Bộ,2017,124.2,57.8,717.8
+Bình Thuận,Duyên hải Nam Trung Bộ,2018,125.2,56.7,709.3
+Bình Thuận,Duyên hải Nam Trung Bộ,2019,118.7,58.1,689.5
+Bình Thuận,Duyên hải Nam Trung Bộ,2020,109.7,58.5,641.3
+Bình Thuận,Duyên hải Nam Trung Bộ,2021,123.54,59.7,737.87
+Bình Thuận,Duyên hải Nam Trung Bộ,2022,120.5,61.1,736.17
+Bình Thuận,Duyên hải Nam Trung Bộ,2023,123.3,60.9,750.67
+Bình Thuận,Duyên hải Nam Trung Bộ,2024,127.01,62.36,792.07
+Bình Định,Duyên hải Nam Trung Bộ,2010,113.1,56.0,633.2
+Bình Định,Duyên hải Nam Trung Bộ,2011,112.4,57.77,649.3
+Bình Định,Duyên hải Nam Trung Bộ,2012,111.2,58.6,651.8
+Bình Định,Duyên hải Nam Trung Bộ,2013,102.5,59.2,606.8
+Bình Định,Duyên hải Nam Trung Bộ,2014,106.3,61.12,649.7
+Bình Định,Duyên hải Nam Trung Bộ,2015,105.7,62.23,657.8
+Bình Định,Duyên hải Nam Trung Bộ,2016,102.5,62.3,638.9
+Bình Định,Duyên hải Nam Trung Bộ,2017,105.1,63.4,666.4
+Bình Định,Duyên hải Nam Trung Bộ,2018,103.6,64.3,666.5
+Bình Định,Duyên hải Nam Trung Bộ,2019,100.0,64.3,643.3
+Bình Định,Duyên hải Nam Trung Bộ,2020,94.2,65.5,617.3
+Bình Định,Duyên hải Nam Trung Bộ,2021,96.04,66.4,638.05
+Bình Định,Duyên hải Nam Trung Bộ,2022,94.5,66.9,631.97
+Bình Định,Duyên hải Nam Trung Bộ,2023,92.76,68.9,638.95
+Bình Định,Duyên hải Nam Trung Bộ,2024,92.37,70.17,648.2
+Bạc Liêu,Đồng bằng sông Cửu Long,2010,158.3,51.1,809.5
+Bạc Liêu,Đồng bằng sông Cửu Long,2011,164.3,55.32,908.9
+Bạc Liêu,Đồng bằng sông Cửu Long,2012,178.7,55.2,986.7
+Bạc Liêu,Đồng bằng sông Cửu Long,2013,181.8,56.0,1017.9
+Bạc Liêu,Đồng bằng sông Cửu Long,2014,180.2,57.55,1037.0
+Bạc Liêu,Đồng bằng sông Cửu Long,2015,180.6,58.94,1064.5
+Bạc Liêu,Đồng bằng sông Cửu Long,2016,172.4,57.6,993.1
+Bạc Liêu,Đồng bằng sông Cửu Long,2017,180.6,59.0,1064.9
+Bạc Liêu,Đồng bằng sông Cửu Long,2018,185.0,60.3,1115.3
+Bạc Liêu,Đồng bằng sông Cửu Long,2019,188.2,61.0,1147.6
+Bạc Liêu,Đồng bằng sông Cửu Long,2020,187.6,62.4,1171.2
+Bạc Liêu,Đồng bằng sông Cửu Long,2021,191.02,64.2,1226.45
+Bạc Liêu,Đồng bằng sông Cửu Long,2022,188.9,63.4,1197.91
+Bạc Liêu,Đồng bằng sông Cửu Long,2023,191.59,64.7,1238.97
+Bạc Liêu,Đồng bằng sông Cửu Long,2024,191.57,66.12,1266.68
+Bắc Giang,Trung du và miền núi phía Bắc,2010,112.2,53.3,597.8
+Bắc Giang,Trung du và miền núi phía Bắc,2011,112.5,55.8,627.8
+Bắc Giang,Trung du và miền núi phía Bắc,2012,112.1,56.1,629.1
+Bắc Giang,Trung du và miền núi phía Bắc,2013,111.6,52.7,588.6
+Bắc Giang,Trung du và miền núi phía Bắc,2014,112.8,55.55,626.6
+Bắc Giang,Trung du và miền núi phía Bắc,2015,111.5,55.52,619.1
+Bắc Giang,Trung du và miền núi phía Bắc,2016,109.5,57.4,628.5
+Bắc Giang,Trung du và miền núi phía Bắc,2017,106.8,57.0,609.2
+Bắc Giang,Trung du và miền núi phía Bắc,2018,104.0,57.6,599.5
+Bắc Giang,Trung du và miền núi phía Bắc,2019,102.8,57.7,593.6
+Bắc Giang,Trung du và miền núi phía Bắc,2020,100.9,57.8,582.9
+Bắc Giang,Trung du và miền núi phía Bắc,2021,99.69,58.2,580.67
+Bắc Giang,Trung du và miền núi phía Bắc,2022,97.7,58.0,566.89
+Bắc Giang,Trung du và miền núi phía Bắc,2023,95.85,57.9,554.52
+Bắc Giang,Trung du và miền núi phía Bắc,2024,94.81,52.28,495.7
+Bắc Kạn,Trung du và miền núi phía Bắc,2010,21.8,43.0,93.7
+Bắc Kạn,Trung du và miền núi phía Bắc,2011,22.2,44.1,97.9
+Bắc Kạn,Trung du và miền núi phía Bắc,2012,22.3,46.8,104.4
+Bắc Kạn,Trung du và miền núi phía Bắc,2013,23.0,46.7,107.3
+Bắc Kạn,Trung du và miền núi phía Bắc,2014,24.0,46.71,112.1
+Bắc Kạn,Trung du và miền núi phía Bắc,2015,24.6,47.72,117.4
+Bắc Kạn,Trung du và miền núi phía Bắc,2016,24.3,48.6,118.1
+Bắc Kạn,Trung du và miền núi phía Bắc,2017,24.0,46.8,112.3
+Bắc Kạn,Trung du và miền núi phía Bắc,2018,23.5,48.8,114.7
+Bắc Kạn,Trung du và miền núi phía Bắc,2019,23.3,50.2,117.0
+Bắc Kạn,Trung du và miền núi phía Bắc,2020,22.9,51.6,118.1
+Bắc Kạn,Trung du và miền núi phía Bắc,2021,22.92,51.3,117.47
+Bắc Kạn,Trung du và miền núi phía Bắc,2022,22.6,51.7,117.2
+Bắc Kạn,Trung du và miền núi phía Bắc,2023,22.4,50.5,113.08
+Bắc Kạn,Trung du và miền núi phía Bắc,2024,22.31,50.41,112.46
+Bắc Ninh,Đồng bằng sông Hồng,2010,74.3,59.2,440.1
+Bắc Ninh,Đồng bằng sông Hồng,2011,73.7,63.5,468.0
+Bắc Ninh,Đồng bằng sông Hồng,2012,72.6,62.5,453.4
+Bắc Ninh,Đồng bằng sông Hồng,2013,72.5,58.5,424.2
+Bắc Ninh,Đồng bằng sông Hồng,2014,72.7,60.44,439.4
+Bắc Ninh,Đồng bằng sông Hồng,2015,71.9,61.86,444.8
+Bắc Ninh,Đồng bằng sông Hồng,2016,70.8,62.0,439.1
+Bắc Ninh,Đồng bằng sông Hồng,2017,69.1,60.0,414.9
+Bắc Ninh,Đồng bằng sông Hồng,2018,66.4,61.8,410.4
+Bắc Ninh,Đồng bằng sông Hồng,2019,65.6,61.4,402.7
+Bắc Ninh,Đồng bằng sông Hồng,2020,63.4,63.7,404.1
+Bắc Ninh,Đồng bằng sông Hồng,2021,61.82,64.9,401.17
+Bắc Ninh,Đồng bằng sông Hồng,2022,60.1,65.2,391.89
+Bắc Ninh,Đồng bằng sông Hồng,2023,58.63,64.0,375.23
+Bắc Ninh,Đồng bằng sông Hồng,2024,57.52,59.08,339.82
+Bến Tre,Đồng bằng sông Cửu Long,2010,80.2,45.7,366.8
+Bến Tre,Đồng bằng sông Cửu Long,2011,76.9,47.1,362.2
+Bến Tre,Đồng bằng sông Cửu Long,2012,75.8,49.5,375.0
+Bến Tre,Đồng bằng sông Cửu Long,2013,72.2,45.9,331.6
+Bến Tre,Đồng bằng sông Cửu Long,2014,66.6,47.88,318.9
+Bến Tre,Đồng bằng sông Cửu Long,2015,63.0,44.25,278.8
+Bến Tre,Đồng bằng sông Cửu Long,2016,41.5,21.1,87.6
+Bến Tre,Đồng bằng sông Cửu Long,2017,54.9,41.4,227.2
+Bến Tre,Đồng bằng sông Cửu Long,2018,51.8,45.7,236.7
+Bến Tre,Đồng bằng sông Cửu Long,2019,47.6,45.0,214.1
+Bến Tre,Đồng bằng sông Cửu Long,2020,22.0,26.9,59.1
+Bến Tre,Đồng bằng sông Cửu Long,2021,36.55,45.6,166.58
+Bến Tre,Đồng bằng sông Cửu Long,2022,23.6,46.9,110.79
+Bến Tre,Đồng bằng sông Cửu Long,2023,22.2,49.4,109.74
+Bến Tre,Đồng bằng sông Cửu Long,2024,14.5,44.5,64.53
+Cao Bằng,Trung du và miền núi phía Bắc,2010,30.5,41.2,125.8
+Cao Bằng,Trung du và miền núi phía Bắc,2011,30.1,38.94,117.2
+Cao Bằng,Trung du và miền núi phía Bắc,2012,30.7,40.1,123.1
+Cao Bằng,Trung du và miền núi phía Bắc,2013,30.4,41.3,125.6
+Cao Bằng,Trung du và miền núi phía Bắc,2014,30.4,41.74,126.9
+Cao Bằng,Trung du và miền núi phía Bắc,2015,30.5,42.46,129.5
+Cao Bằng,Trung du và miền núi phía Bắc,2016,28.9,43.2,124.8
+Cao Bằng,Trung du và miền núi phía Bắc,2017,30.4,43.7,132.7
+Cao Bằng,Trung du và miền núi phía Bắc,2018,30.3,43.7,132.5
+Cao Bằng,Trung du và miền núi phía Bắc,2019,30.2,45.0,135.9
+Cao Bằng,Trung du và miền núi phía Bắc,2020,29.0,45.3,131.3
+Cao Bằng,Trung du và miền núi phía Bắc,2021,29.23,45.7,133.66
+Cao Bằng,Trung du và miền núi phía Bắc,2022,30.3,47.0,142.36
+Cao Bằng,Trung du và miền núi phía Bắc,2023,29.71,46.5,138.17
+Cao Bằng,Trung du và miền núi phía Bắc,2024,30.29,44.88,135.95
+Cà Mau,Đồng bằng sông Cửu Long,2010,125.5,39.7,498.3
+Cà Mau,Đồng bằng sông Cửu Long,2011,130.2,41.51,540.4
+Cà Mau,Đồng bằng sông Cửu Long,2012,129.2,43.0,556.0
+Cà Mau,Đồng bằng sông Cửu Long,2013,129.8,43.6,566.5
+Cà Mau,Đồng bằng sông Cửu Long,2014,127.4,43.33,552.0
+Cà Mau,Đồng bằng sông Cửu Long,2015,126.6,36.75,465.2
+Cà Mau,Đồng bằng sông Cửu Long,2016,112.2,40.3,452.0
+Cà Mau,Đồng bằng sông Cửu Long,2017,113.1,39.4,446.0
+Cà Mau,Đồng bằng sông Cửu Long,2018,117.4,45.2,530.7
+Cà Mau,Đồng bằng sông Cửu Long,2019,115.6,45.5,525.5
+Cà Mau,Đồng bằng sông Cửu Long,2020,112.4,39.8,446.9
+Cà Mau,Đồng bằng sông Cửu Long,2021,100.13,45.8,459.0
+Cà Mau,Đồng bằng sông Cửu Long,2022,111.0,49.0,543.99
+Cà Mau,Đồng bằng sông Cửu Long,2023,111.32,51.1,568.38
+Cà Mau,Đồng bằng sông Cửu Long,2024,113.35,50.61,573.72
+Cần Thơ,Đồng bằng sông Cửu Long,2010,209.4,57.1,1196.7
+Cần Thơ,Đồng bằng sông Cửu Long,2011,224.7,57.4,1289.7
+Cần Thơ,Đồng bằng sông Cửu Long,2012,228.2,57.8,1319.8
+Cần Thơ,Đồng bằng sông Cửu Long,2013,236.6,57.9,1370.3
+Cần Thơ,Đồng bằng sông Cửu Long,2014,232.3,58.88,1367.7
+Cần Thơ,Đồng bằng sông Cửu Long,2015,237.9,59.19,1408.1
+Cần Thơ,Đồng bằng sông Cửu Long,2016,240.0,58.2,1397.8
+Cần Thơ,Đồng bằng sông Cửu Long,2017,240.1,57.8,1387.2
+Cần Thơ,Đồng bằng sông Cửu Long,2018,237.3,60.1,1426.3
+Cần Thơ,Đồng bằng sông Cửu Long,2019,225.1,60.7,1365.9
+Cần Thơ,Đồng bằng sông Cửu Long,2020,223.0,62.5,1393.2
+Cần Thơ,Đồng bằng sông Cửu Long,2021,222.38,63.6,1414.16
+Cần Thơ,Đồng bằng sông Cửu Long,2022,216.4,63.2,1366.66
+Cần Thơ,Đồng bằng sông Cửu Long,2023,216.22,63.0,1362.19
+Cần Thơ,Đồng bằng sông Cửu Long,2024,212.61,62.98,1339.04
+Gia Lai,Tây Nguyên,2010,70.4,44.0,310.1
+Gia Lai,Tây Nguyên,2011,70.5,41.6,293.3
+Gia Lai,Tây Nguyên,2012,73.4,45.3,332.6
+Gia Lai,Tây Nguyên,2013,74.0,44.7,330.5
+Gia Lai,Tây Nguyên,2014,75.2,46.56,350.1
+Gia Lai,Tây Nguyên,2015,75.2,44.3,333.1
+Gia Lai,Tây Nguyên,2016,72.8,43.8,318.9
+Gia Lai,Tây Nguyên,2017,74.6,47.6,354.9
+Gia Lai,Tây Nguyên,2018,74.7,48.5,362.1
+Gia Lai,Tây Nguyên,2019,74.0,50.4,373.2
+Gia Lai,Tây Nguyên,2020,75.7,50.9,385.0
+Gia Lai,Tây Nguyên,2021,75.05,51.3,384.74
+Gia Lai,Tây Nguyên,2022,76.0,52.9,402.21
+Gia Lai,Tây Nguyên,2023,76.56,52.5,402.13
+Gia Lai,Tây Nguyên,2024,74.93,53.13,398.07
+Hòa Bình,Trung du và miền núi phía Bắc,2010,39.8,48.4,192.7
+Hòa Bình,Trung du và miền núi phía Bắc,2011,40.3,51.66,208.2
+Hòa Bình,Trung du và miền núi phía Bắc,2012,41.3,52.5,217.0
+Hòa Bình,Trung du và miền núi phía Bắc,2013,41.1,50.0,205.4
+Hòa Bình,Trung du và miền núi phía Bắc,2014,40.4,53.22,215.0
+Hòa Bình,Trung du và miền núi phía Bắc,2015,39.3,49.82,195.8
+Hòa Bình,Trung du và miền núi phía Bắc,2016,39.9,54.1,215.9
+Hòa Bình,Trung du và miền núi phía Bắc,2017,39.4,45.8,180.6
+Hòa Bình,Trung du và miền núi phía Bắc,2018,38.8,53.4,207.2
+Hòa Bình,Trung du và miền núi phía Bắc,2019,38.8,53.2,206.4
+Hòa Bình,Trung du và miền núi phía Bắc,2020,37.6,54.9,206.6
+Hòa Bình,Trung du và miền núi phía Bắc,2021,38.45,56.0,215.39
+Hòa Bình,Trung du và miền núi phía Bắc,2022,38.5,56.4,217.1
+Hòa Bình,Trung du và miền núi phía Bắc,2023,38.37,57.2,219.37
+Hòa Bình,Trung du và miền núi phía Bắc,2024,38.26,55.95,214.07
+Hà Giang,Trung du và miền núi phía Bắc,2010,36.5,53.2,194.2
+Hà Giang,Trung du và miền núi phía Bắc,2011,37.3,54.1,201.8
+Hà Giang,Trung du và miền núi phía Bắc,2012,37.4,54.3,202.9
+Hà Giang,Trung du và miền núi phía Bắc,2013,37.4,55.3,206.9
+Hà Giang,Trung du và miền núi phía Bắc,2014,37.4,55.59,207.9
+Hà Giang,Trung du và miền núi phía Bắc,2015,36.8,55.3,203.5
+Hà Giang,Trung du và miền núi phía Bắc,2016,37.5,56.1,210.5
+Hà Giang,Trung du và miền núi phía Bắc,2017,37.5,56.4,211.4
+Hà Giang,Trung du và miền núi phía Bắc,2018,37.5,56.7,212.8
+Hà Giang,Trung du và miền núi phía Bắc,2019,37.5,56.9,213.5
+Hà Giang,Trung du và miền núi phía Bắc,2020,37.5,57.5,215.5
+Hà Giang,Trung du và miền núi phía Bắc,2021,37.64,57.8,217.54
+Hà Giang,Trung du và miền núi phía Bắc,2022,37.7,57.5,216.53
+Hà Giang,Trung du và miền núi phía Bắc,2023,37.64,57.8,217.71
+Hà Giang,Trung du và miền núi phía Bắc,2024,37.6,56.94,214.1
+Hà Nam,Đồng bằng sông Hồng,2010,70.3,59.4,417.4
+Hà Nam,Đồng bằng sông Hồng,2011,69.8,60.83,424.6
+Hà Nam,Đồng bằng sông Hồng,2012,69.0,61.5,424.5
+Hà Nam,Đồng bằng sông Hồng,2013,68.2,57.9,395.1
+Hà Nam,Đồng bằng sông Hồng,2014,67.4,59.58,401.6
+Hà Nam,Đồng bằng sông Hồng,2015,66.8,60.72,405.6
+Hà Nam,Đồng bằng sông Hồng,2016,65.6,60.3,395.5
+Hà Nam,Đồng bằng sông Hồng,2017,64.5,56.8,366.4
+Hà Nam,Đồng bằng sông Hồng,2018,63.2,61.1,386.3
+Hà Nam,Đồng bằng sông Hồng,2019,62.1,61.9,384.6
+Hà Nam,Đồng bằng sông Hồng,2020,60.5,62.2,376.2
+Hà Nam,Đồng bằng sông Hồng,2021,59.51,62.3,371.02
+Hà Nam,Đồng bằng sông Hồng,2022,58.6,62.1,363.62
+Hà Nam,Đồng bằng sông Hồng,2023,57.48,62.5,359.45
+Hà Nam,Đồng bằng sông Hồng,2024,56.03,60.27,337.72
+Hà Nội,Đồng bằng sông Hồng,2010,204.7,55.0,1125.1
+Hà Nội,Đồng bằng sông Hồng,2011,204.9,59.56,1220.3
+Hà Nội,Đồng bằng sông Hồng,2012,205.4,58.5,1202.4
+Hà Nội,Đồng bằng sông Hồng,2013,204.3,56.6,1156.5
+Hà Nội,Đồng bằng sông Hồng,2014,202.8,57.96,1175.5
+Hà Nội,Đồng bằng sông Hồng,2015,200.6,58.3,1169.5
+Hà Nội,Đồng bằng sông Hồng,2016,197.1,56.3,1109.6
+Hà Nội,Đồng bằng sông Hồng,2017,189.9,55.4,1051.1
+Hà Nội,Đồng bằng sông Hồng,2018,179.5,57.1,1024.6
+Hà Nội,Đồng bằng sông Hồng,2019,171.7,56.5,969.4
+Hà Nội,Đồng bằng sông Hồng,2020,165.6,58.8,973.5
+Hà Nội,Đồng bằng sông Hồng,2021,162.16,60.7,983.79
+Hà Nội,Đồng bằng sông Hồng,2022,158.5,60.1,952.47
+Hà Nội,Đồng bằng sông Hồng,2023,155.01,60.6,939.29
+Hà Nội,Đồng bằng sông Hồng,2024,152.94,56.41,862.75
+Hà Tĩnh,Bắc Trung Bộ,2010,99.1,41.8,414.4
+Hà Tĩnh,Bắc Trung Bộ,2011,99.1,47.52,470.9
+Hà Tĩnh,Bắc Trung Bộ,2012,99.3,48.6,482.3
+Hà Tĩnh,Bắc Trung Bộ,2013,98.7,48.5,479.0
+Hà Tĩnh,Bắc Trung Bộ,2014,101.1,50.58,511.4
+Hà Tĩnh,Bắc Trung Bộ,2015,101.7,51.28,521.5
+Hà Tĩnh,Bắc Trung Bộ,2016,103.4,51.3,530.4
+Hà Tĩnh,Bắc Trung Bộ,2017,104.1,42.5,442.8
+Hà Tĩnh,Bắc Trung Bộ,2018,102.8,52.1,535.3
+Hà Tĩnh,Bắc Trung Bộ,2019,103.6,48.9,506.7
+Hà Tĩnh,Bắc Trung Bộ,2020,103.8,51.5,534.1
+Hà Tĩnh,Bắc Trung Bộ,2021,104.93,55.3,580.49
+Hà Tĩnh,Bắc Trung Bộ,2022,104.77,53.3,558.4
+Hà Tĩnh,Bắc Trung Bộ,2023,104.3,55.5,578.62
+Hà Tĩnh,Bắc Trung Bộ,2024,104.36,57.31,598.13
+Hưng Yên,Đồng bằng sông Hồng,2010,81.9,62.8,514.6
+Hưng Yên,Đồng bằng sông Hồng,2011,81.9,64.54,528.6
+Hưng Yên,Đồng bằng sông Hồng,2012,81.8,64.6,528.6
+Hưng Yên,Đồng bằng sông Hồng,2013,80.7,62.2,502.1
+Hưng Yên,Đồng bằng sông Hồng,2014,78.9,62.05,489.6
+Hưng Yên,Đồng bằng sông Hồng,2015,77.5,62.0,480.5
+Hưng Yên,Đồng bằng sông Hồng,2016,74.1,61.7,457.4
+Hưng Yên,Đồng bằng sông Hồng,2017,70.4,59.5,418.6
+Hưng Yên,Đồng bằng sông Hồng,2018,66.4,62.6,415.4
+Hưng Yên,Đồng bằng sông Hồng,2019,63.0,64.0,403.5
+Hưng Yên,Đồng bằng sông Hồng,2020,58.8,62.8,369.5
+Hưng Yên,Đồng bằng sông Hồng,2021,56.06,63.2,354.35
+Hưng Yên,Đồng bằng sông Hồng,2022,53.6,63.0,337.96
+Hưng Yên,Đồng bằng sông Hồng,2023,50.3,63.0,316.81
+Hưng Yên,Đồng bằng sông Hồng,2024,48.97,53.15,260.27
+Hải Dương,Đồng bằng sông Hồng,2010,127.5,59.4,757.9
+Hải Dương,Đồng bằng sông Hồng,2011,126.6,61.68,780.9
+Hải Dương,Đồng bằng sông Hồng,2012,126.4,61.9,782.3
+Hải Dương,Đồng bằng sông Hồng,2013,125.9,58.8,739.8
+Hải Dương,Đồng bằng sông Hồng,2014,125.0,59.41,742.6
+Hải Dương,Đồng bằng sông Hồng,2015,122.7,60.31,740.0
+Hải Dương,Đồng bằng sông Hồng,2016,120.3,60.4,726.4
+Hải Dương,Đồng bằng sông Hồng,2017,118.2,55.7,657.9
+Hải Dương,Đồng bằng sông Hồng,2018,116.4,60.4,702.5
+Hải Dương,Đồng bằng sông Hồng,2019,114.9,59.4,682.8
+Hải Dương,Đồng bằng sông Hồng,2020,112.5,60.6,681.9
+Hải Dương,Đồng bằng sông Hồng,2021,110.97,62.9,697.45
+Hải Dương,Đồng bằng sông Hồng,2022,109.7,63.2,693.4
+Hải Dương,Đồng bằng sông Hồng,2023,108.33,62.8,679.98
+Hải Dương,Đồng bằng sông Hồng,2024,107.32,60.07,644.64
+Hải Phòng,Đồng bằng sông Hồng,2010,80.9,60.0,485.5
+Hải Phòng,Đồng bằng sông Hồng,2011,79.6,60.85,484.4
+Hải Phòng,Đồng bằng sông Hồng,2012,79.2,61.9,490.1
+Hải Phòng,Đồng bằng sông Hồng,2013,78.2,62.7,490.2
+Hải Phòng,Đồng bằng sông Hồng,2014,77.1,62.87,484.7
+Hải Phòng,Đồng bằng sông Hồng,2015,75.8,63.1,478.3
+Hải Phòng,Đồng bằng sông Hồng,2016,74.0,62.9,465.1
+Hải Phòng,Đồng bằng sông Hồng,2017,72.3,60.4,436.7
+Hải Phòng,Đồng bằng sông Hồng,2018,69.3,63.6,440.8
+Hải Phòng,Đồng bằng sông Hồng,2019,64.9,63.7,413.2
+Hải Phòng,Đồng bằng sông Hồng,2020,58.6,64.2,376.1
+Hải Phòng,Đồng bằng sông Hồng,2021,57.74,64.2,370.74
+Hải Phòng,Đồng bằng sông Hồng,2022,56.8,64.3,365.72
+Hải Phòng,Đồng bằng sông Hồng,2023,55.74,64.5,359.6
+Hải Phòng,Đồng bằng sông Hồng,2024,55.94,49.55,277.16
+Hậu Giang,Đồng bằng sông Cửu Long,2010,210.7,51.7,1090.2
+Hậu Giang,Đồng bằng sông Cửu Long,2011,212.7,53.06,1128.5
+Hậu Giang,Đồng bằng sông Cửu Long,2012,214.1,55.1,1179.9
+Hậu Giang,Đồng bằng sông Cửu Long,2013,212.0,56.2,1191.3
+Hậu Giang,Đồng bằng sông Cửu Long,2014,205.3,58.68,1204.6
+Hậu Giang,Đồng bằng sông Cửu Long,2015,207.1,62.44,1293.1
+Hậu Giang,Đồng bằng sông Cửu Long,2016,202.2,60.9,1231.0
+Hậu Giang,Đồng bằng sông Cửu Long,2017,206.6,61.0,1261.0
+Hậu Giang,Đồng bằng sông Cửu Long,2018,194.6,64.0,1246.1
+Hậu Giang,Đồng bằng sông Cửu Long,2019,196.1,64.2,1259.0
+Hậu Giang,Đồng bằng sông Cửu Long,2020,198.2,65.3,1294.1
+Hậu Giang,Đồng bằng sông Cửu Long,2021,189.0,67.4,1274.44
+Hậu Giang,Đồng bằng sông Cửu Long,2022,188.4,66.6,1253.94
+Hậu Giang,Đồng bằng sông Cửu Long,2023,177.84,66.7,1186.66
+Hậu Giang,Đồng bằng sông Cửu Long,2024,176.31,66.53,1173.07
+Khánh Hòa,Duyên hải Nam Trung Bộ,2010,44.2,52.3,231.0
+Khánh Hòa,Duyên hải Nam Trung Bộ,2011,45.2,53.36,241.2
+Khánh Hòa,Duyên hải Nam Trung Bộ,2012,47.1,52.3,246.5
+Khánh Hòa,Duyên hải Nam Trung Bộ,2013,46.6,55.4,258.0
+Khánh Hòa,Duyên hải Nam Trung Bộ,2014,45.6,57.3,261.3
+Khánh Hòa,Duyên hải Nam Trung Bộ,2015,34.2,58.42,199.8
+Khánh Hòa,Duyên hải Nam Trung Bộ,2016,39.9,56.9,227.1
+Khánh Hòa,Duyên hải Nam Trung Bộ,2017,47.5,53.6,254.7
+Khánh Hòa,Duyên hải Nam Trung Bộ,2018,46.6,56.0,261.1
+Khánh Hòa,Duyên hải Nam Trung Bộ,2019,45.6,56.9,259.3
+Khánh Hòa,Duyên hải Nam Trung Bộ,2020,33.4,57.5,191.9
+Khánh Hòa,Duyên hải Nam Trung Bộ,2021,45.25,60.2,272.44
+Khánh Hòa,Duyên hải Nam Trung Bộ,2022,43.2,59.5,257.03
+Khánh Hòa,Duyên hải Nam Trung Bộ,2023,45.07,59.0,266.12
+Khánh Hòa,Duyên hải Nam Trung Bộ,2024,44.1,61.64,271.85
+Kiên Giang,Đồng bằng sông Cửu Long,2010,642.7,54.4,3497.1
+Kiên Giang,Đồng bằng sông Cửu Long,2011,686.9,57.08,3921.1
+Kiên Giang,Đồng bằng sông Cửu Long,2012,725.1,59.1,4287.1
+Kiên Giang,Đồng bằng sông Cửu Long,2013,770.4,58.0,4471.8
+Kiên Giang,Đồng bằng sông Cửu Long,2014,753.6,60.14,4532.2
+Kiên Giang,Đồng bằng sông Cửu Long,2015,769.5,60.34,4643.0
+Kiên Giang,Đồng bằng sông Cửu Long,2016,765.9,54.3,4161.6
+Kiên Giang,Đồng bằng sông Cửu Long,2017,735.3,55.2,4058.8
+Kiên Giang,Đồng bằng sông Cửu Long,2018,728.4,58.6,4267.4
+Kiên Giang,Đồng bằng sông Cửu Long,2019,722.1,59.4,4291.5
+Kiên Giang,Đồng bằng sông Cửu Long,2020,725.8,62.4,4528.5
+Kiên Giang,Đồng bằng sông Cửu Long,2021,715.71,63.1,4516.6
+Kiên Giang,Đồng bằng sông Cửu Long,2022,699.6,63.0,4405.4
+Kiên Giang,Đồng bằng sông Cửu Long,2023,712.86,64.0,4561.86
+Kiên Giang,Đồng bằng sông Cửu Long,2024,725.68,64.97,4714.58
+Kon Tum,Tây Nguyên,2010,22.4,34.7,77.7
+Kon Tum,Tây Nguyên,2011,22.6,34.07,77.0
+Kon Tum,Tây Nguyên,2012,23.3,36.0,83.8
+Kon Tum,Tây Nguyên,2013,23.4,35.8,83.7
+Kon Tum,Tây Nguyên,2014,23.6,36.27,85.6
+Kon Tum,Tây Nguyên,2015,24.4,37.54,91.6
+Kon Tum,Tây Nguyên,2016,24.2,36.0,87.1
+Kon Tum,Tây Nguyên,2017,24.0,38.0,91.1
+Kon Tum,Tây Nguyên,2018,23.7,38.6,91.6
+Kon Tum,Tây Nguyên,2019,23.7,39.4,93.4
+Kon Tum,Tây Nguyên,2020,23.3,38.8,90.3
+Kon Tum,Tây Nguyên,2021,23.32,41.5,96.81
+Kon Tum,Tây Nguyên,2022,22.9,42.5,97.15
+Kon Tum,Tây Nguyên,2023,22.73,44.1,100.28
+Kon Tum,Tây Nguyên,2024,22.35,45.75,102.25
+Lai Châu,Trung du và miền núi phía Bắc,2010,30.3,38.5,116.7
+Lai Châu,Trung du và miền núi phía Bắc,2011,29.3,40.48,118.6
+Lai Châu,Trung du và miền núi phía Bắc,2012,28.8,41.5,119.4
+Lai Châu,Trung du và miền núi phía Bắc,2013,30.3,41.7,126.2
+Lai Châu,Trung du và miền núi phía Bắc,2014,30.4,42.01,127.7
+Lai Châu,Trung du và miền núi phía Bắc,2015,30.9,42.98,132.8
+Lai Châu,Trung du và miền núi phía Bắc,2016,31.4,43.4,136.4
+Lai Châu,Trung du và miền núi phía Bắc,2017,32.9,44.3,145.7
+Lai Châu,Trung du và miền núi phía Bắc,2018,32.1,44.8,143.8
+Lai Châu,Trung du và miền núi phía Bắc,2019,32.9,45.5,149.8
+Lai Châu,Trung du và miền núi phía Bắc,2020,32.7,45.5,148.8
+Lai Châu,Trung du và miền núi phía Bắc,2021,32.28,47.1,151.99
+Lai Châu,Trung du và miền núi phía Bắc,2022,32.0,48.0,153.34
+Lai Châu,Trung du và miền núi phía Bắc,2023,31.39,48.6,152.44
+Lai Châu,Trung du và miền núi phía Bắc,2024,31.37,49.4,154.96
+Long An,Đồng bằng sông Cửu Long,2010,471.1,48.9,2304.8
+Long An,Đồng bằng sông Cửu Long,2011,484.2,52.68,2550.7
+Long An,Đồng bằng sông Cửu Long,2012,499.6,53.3,2663.5
+Long An,Đồng bằng sông Cửu Long,2013,527.7,53.4,2816.1
+Long An,Đồng bằng sông Cửu Long,2014,519.2,55.1,2860.6
+Long An,Đồng bằng sông Cửu Long,2015,522.9,55.82,2918.7
+Long An,Đồng bằng sông Cửu Long,2016,527.4,53.1,2802.2
+Long An,Đồng bằng sông Cửu Long,2017,526.7,50.2,2643.2
+Long An,Đồng bằng sông Cửu Long,2018,511.3,54.8,2802.6
+Long An,Đồng bằng sông Cửu Long,2019,506.3,54.8,2774.9
+Long An,Đồng bằng sông Cửu Long,2020,502.6,56.3,2830.2
+Long An,Đồng bằng sông Cửu Long,2021,511.31,57.2,2925.56
+Long An,Đồng bằng sông Cửu Long,2022,509.1,56.2,2861.14
+Long An,Đồng bằng sông Cửu Long,2023,516.3,59.7,3080.97
+Long An,Đồng bằng sông Cửu Long,2024,538.9,59.77,3221.2
+Lào Cai,Trung du và miền núi phía Bắc,2010,29.7,42.6,126.4
+Lào Cai,Trung du và miền núi phía Bắc,2011,30.4,46.61,141.7
+Lào Cai,Trung du và miền núi phía Bắc,2012,30.6,47.2,144.3
+Lào Cai,Trung du và miền núi phía Bắc,2013,30.5,48.2,146.9
+Lào Cai,Trung du và miền núi phía Bắc,2014,30.8,48.18,148.4
+Lào Cai,Trung du và miền núi phía Bắc,2015,30.7,48.89,150.1
+Lào Cai,Trung du và miền núi phía Bắc,2016,31.6,50.1,158.3
+Lào Cai,Trung du và miền núi phía Bắc,2017,32.3,49.2,158.8
+Lào Cai,Trung du và miền núi phía Bắc,2018,33.6,51.5,172.9
+Lào Cai,Trung du và miền núi phía Bắc,2019,33.7,52.6,177.1
+Lào Cai,Trung du và miền núi phía Bắc,2020,34.0,53.3,181.1
+Lào Cai,Trung du và miền núi phía Bắc,2021,33.98,54.0,183.43
+Lào Cai,Trung du và miền núi phía Bắc,2022,33.5,54.8,183.85
+Lào Cai,Trung du và miền núi phía Bắc,2023,33.97,54.7,185.89
+Lào Cai,Trung du và miền núi phía Bắc,2024,34.15,52.39,178.91
+Lâm Đồng,Tây Nguyên,2010,33.8,42.0,141.8
+Lâm Đồng,Tây Nguyên,2011,34.3,46.12,158.2
+Lâm Đồng,Tây Nguyên,2012,33.3,49.0,163.2
+Lâm Đồng,Tây Nguyên,2013,32.4,48.2,156.3
+Lâm Đồng,Tây Nguyên,2014,32.0,49.38,158.0
+Lâm Đồng,Tây Nguyên,2015,31.9,48.97,156.2
+Lâm Đồng,Tây Nguyên,2016,30.0,48.5,145.4
+Lâm Đồng,Tây Nguyên,2017,30.3,50.0,151.5
+Lâm Đồng,Tây Nguyên,2018,28.7,52.2,149.9
+Lâm Đồng,Tây Nguyên,2019,28.2,52.2,147.3
+Lâm Đồng,Tây Nguyên,2020,27.6,52.4,144.5
+Lâm Đồng,Tây Nguyên,2021,27.14,54.1,146.87
+Lâm Đồng,Tây Nguyên,2022,26.3,54.2,142.56
+Lâm Đồng,Tây Nguyên,2023,25.32,54.2,137.3
+Lâm Đồng,Tây Nguyên,2024,25.29,54.69,138.31
+Lạng Sơn,Trung du và miền núi phía Bắc,2010,49.6,40.0,198.3
+Lạng Sơn,Trung du và miền núi phía Bắc,2011,49.6,34.25,169.9
+Lạng Sơn,Trung du và miền núi phía Bắc,2012,50.3,40.3,202.8
+Lạng Sơn,Trung du và miền núi phía Bắc,2013,50.8,41.0,208.1
+Lạng Sơn,Trung du và miền núi phía Bắc,2014,50.7,41.99,212.9
+Lạng Sơn,Trung du và miền núi phía Bắc,2015,49.8,42.29,210.6
+Lạng Sơn,Trung du và miền núi phía Bắc,2016,50.1,43.6,218.3
+Lạng Sơn,Trung du và miền núi phía Bắc,2017,49.5,41.6,205.9
+Lạng Sơn,Trung du và miền núi phía Bắc,2018,48.8,42.0,205.2
+Lạng Sơn,Trung du và miền núi phía Bắc,2019,48.4,42.1,203.9
+Lạng Sơn,Trung du và miền núi phía Bắc,2020,48.1,43.0,206.9
+Lạng Sơn,Trung du và miền núi phía Bắc,2021,47.21,43.0,203.21
+Lạng Sơn,Trung du và miền núi phía Bắc,2022,48.1,44.4,213.46
+Lạng Sơn,Trung du và miền núi phía Bắc,2023,47.85,45.0,215.37
+Lạng Sơn,Trung du và miền núi phía Bắc,2024,47.84,45.54,217.86
+Nam Định,Đồng bằng sông Hồng,2010,159.0,59.9,952.0
+Nam Định,Đồng bằng sông Hồng,2011,158.4,58.81,931.6
+Nam Định,Đồng bằng sông Hồng,2012,157.3,59.4,933.8
+Nam Định,Đồng bằng sông Hồng,2013,155.4,58.9,914.6
+Nam Định,Đồng bằng sông Hồng,2014,154.9,60.54,937.7
+Nam Định,Đồng bằng sông Hồng,2015,154.4,60.57,935.2
+Nam Định,Đồng bằng sông Hồng,2016,153.0,60.4,923.9
+Nam Định,Đồng bằng sông Hồng,2017,151.1,55.7,841.9
+Nam Định,Đồng bằng sông Hồng,2018,149.1,59.8,891.2
+Nam Định,Đồng bằng sông Hồng,2019,147.0,60.4,888.2
+Nam Định,Đồng bằng sông Hồng,2020,145.4,60.7,883.2
+Nam Định,Đồng bằng sông Hồng,2021,144.89,60.7,879.22
+Nam Định,Đồng bằng sông Hồng,2022,143.0,61.1,874.03
+Nam Định,Đồng bằng sông Hồng,2023,141.55,61.2,865.86
+Nam Định,Đồng bằng sông Hồng,2024,141.02,59.78,843.06
+Nghệ An,Bắc Trung Bộ,2010,183.4,45.2,828.6
+Nghệ An,Bắc Trung Bộ,2011,186.0,51.61,959.9
+Nghệ An,Bắc Trung Bộ,2012,186.1,52.1,969.8
+Nghệ An,Bắc Trung Bộ,2013,184.2,50.5,930.1
+Nghệ An,Bắc Trung Bộ,2014,187.9,53.89,1012.5
+Nghệ An,Bắc Trung Bộ,2015,186.6,52.45,978.8
+Nghệ An,Bắc Trung Bộ,2016,186.0,54.2,1007.4
+Nghệ An,Bắc Trung Bộ,2017,188.6,53.8,1015.1
+Nghệ An,Bắc Trung Bộ,2018,186.4,54.1,1009.1
+Nghệ An,Bắc Trung Bộ,2019,181.7,52.1,946.1
+Nghệ An,Bắc Trung Bộ,2020,180.3,54.0,974.3
+Nghệ An,Bắc Trung Bộ,2021,179.39,58.2,1043.16
+Nghệ An,Bắc Trung Bộ,2022,173.1,57.5,995.57
+Nghệ An,Bắc Trung Bộ,2023,168.99,59.3,1002.18
+Nghệ An,Bắc Trung Bộ,2024,168.11,60.37,1014.94
+Ninh Bình,Đồng bằng sông Hồng,2010,81.1,59.9,485.5
+Ninh Bình,Đồng bằng sông Hồng,2011,80.8,60.38,487.9
+Ninh Bình,Đồng bằng sông Hồng,2012,81.2,60.4,490.4
+Ninh Bình,Đồng bằng sông Hồng,2013,80.9,57.0,460.9
+Ninh Bình,Đồng bằng sông Hồng,2014,80.4,60.24,484.3
+Ninh Bình,Đồng bằng sông Hồng,2015,79.3,59.95,475.4
+Ninh Bình,Đồng bằng sông Hồng,2016,78.7,59.5,468.1
+Ninh Bình,Đồng bằng sông Hồng,2017,77.7,56.2,437.0
+Ninh Bình,Đồng bằng sông Hồng,2018,75.6,60.5,457.2
+Ninh Bình,Đồng bằng sông Hồng,2019,73.6,61.2,450.7
+Ninh Bình,Đồng bằng sông Hồng,2020,71.9,61.6,443.1
+Ninh Bình,Đồng bằng sông Hồng,2021,71.76,61.9,444.49
+Ninh Bình,Đồng bằng sông Hồng,2022,71.2,61.8,439.94
+Ninh Bình,Đồng bằng sông Hồng,2023,70.8,62.0,438.92
+Ninh Bình,Đồng bằng sông Hồng,2024,70.76,61.42,434.59
+Ninh Thuận,Duyên hải Nam Trung Bộ,2010,37.8,49.7,188.0
+Ninh Thuận,Duyên hải Nam Trung Bộ,2011,38.8,57.53,223.2
+Ninh Thuận,Duyên hải Nam Trung Bộ,2012,41.5,57.1,236.8
+Ninh Thuận,Duyên hải Nam Trung Bộ,2013,43.6,56.7,247.1
+Ninh Thuận,Duyên hải Nam Trung Bộ,2014,42.8,62.55,267.7
+Ninh Thuận,Duyên hải Nam Trung Bộ,2015,37.3,60.19,224.5
+Ninh Thuận,Duyên hải Nam Trung Bộ,2016,41.4,51.2,211.8
+Ninh Thuận,Duyên hải Nam Trung Bộ,2017,48.4,57.1,276.6
+Ninh Thuận,Duyên hải Nam Trung Bộ,2018,42.9,56.7,243.3
+Ninh Thuận,Duyên hải Nam Trung Bộ,2019,44.4,59.2,262.8
+Ninh Thuận,Duyên hải Nam Trung Bộ,2020,32.6,61.6,200.9
+Ninh Thuận,Duyên hải Nam Trung Bộ,2021,44.14,62.2,274.34
+Ninh Thuận,Duyên hải Nam Trung Bộ,2022,45.5,61.6,280.27
+Ninh Thuận,Duyên hải Nam Trung Bộ,2023,46.97,61.6,289.42
+Ninh Thuận,Duyên hải Nam Trung Bộ,2024,46.23,62.4,288.49
+Phú Thọ,Trung du và miền núi phía Bắc,2010,68.8,51.2,352.3
+Phú Thọ,Trung du và miền núi phía Bắc,2011,69.7,54.0,376.4
+Phú Thọ,Trung du và miền núi phía Bắc,2012,69.2,54.3,375.5
+Phú Thọ,Trung du và miền núi phía Bắc,2013,69.8,54.4,379.6
+Phú Thọ,Trung du và miền núi phía Bắc,2014,69.6,54.02,376.0
+Phú Thọ,Trung du và miền núi phía Bắc,2015,69.4,53.37,370.4
+Phú Thọ,Trung du và miền núi phía Bắc,2016,67.7,55.1,373.2
+Phú Thọ,Trung du và miền núi phía Bắc,2017,67.1,54.8,367.9
+Phú Thọ,Trung du và miền núi phía Bắc,2018,64.3,56.9,365.8
+Phú Thọ,Trung du và miền núi phía Bắc,2019,61.7,55.9,345.2
+Phú Thọ,Trung du và miền núi phía Bắc,2020,61.3,56.7,347.7
+Phú Thọ,Trung du và miền núi phía Bắc,2021,60.17,58.5,352.21
+Phú Thọ,Trung du và miền núi phía Bắc,2022,59.3,58.3,345.75
+Phú Thọ,Trung du và miền núi phía Bắc,2023,58.42,59.2,346.13
+Phú Thọ,Trung du và miền núi phía Bắc,2024,57.98,57.46,333.17
+Phú Yên,Duyên hải Nam Trung Bộ,2010,56.5,61.4,346.8
+Phú Yên,Duyên hải Nam Trung Bộ,2011,57.4,59.97,344.2
+Phú Yên,Duyên hải Nam Trung Bộ,2012,57.1,60.6,346.0
+Phú Yên,Duyên hải Nam Trung Bộ,2013,57.8,62.9,363.8
+Phú Yên,Duyên hải Nam Trung Bộ,2014,57.0,64.04,365.0
+Phú Yên,Duyên hải Nam Trung Bộ,2015,57.2,66.1,378.1
+Phú Yên,Duyên hải Nam Trung Bộ,2016,57.5,65.4,376.2
+Phú Yên,Duyên hải Nam Trung Bộ,2017,56.9,65.8,374.4
+Phú Yên,Duyên hải Nam Trung Bộ,2018,56.6,69.3,392.2
+Phú Yên,Duyên hải Nam Trung Bộ,2019,55.4,67.3,372.9
+Phú Yên,Duyên hải Nam Trung Bộ,2020,54.8,71.2,390.3
+Phú Yên,Duyên hải Nam Trung Bộ,2021,55.16,70.8,390.31
+Phú Yên,Duyên hải Nam Trung Bộ,2022,55.5,65.3,362.36
+Phú Yên,Duyên hải Nam Trung Bộ,2023,55.16,70.1,386.62
+Phú Yên,Duyên hải Nam Trung Bộ,2024,54.93,71.89,394.91
+Quảng Bình,Bắc Trung Bộ,2010,52.1,45.0,234.7
+Quảng Bình,Bắc Trung Bộ,2011,52.8,49.28,260.2
+Quảng Bình,Bắc Trung Bộ,2012,53.4,49.1,262.4
+Quảng Bình,Bắc Trung Bộ,2013,53.5,47.1,251.9
+Quảng Bình,Bắc Trung Bộ,2014,54.2,51.18,277.4
+Quảng Bình,Bắc Trung Bộ,2015,54.1,50.91,275.4
+Quảng Bình,Bắc Trung Bộ,2016,55.0,51.2,281.4
+Quảng Bình,Bắc Trung Bộ,2017,55.4,51.4,284.7
+Quảng Bình,Bắc Trung Bộ,2018,54.3,52.4,284.7
+Quảng Bình,Bắc Trung Bộ,2019,52.2,50.0,260.9
+Quảng Bình,Bắc Trung Bộ,2020,53.2,51.4,273.4
+Quảng Bình,Bắc Trung Bộ,2021,53.72,54.5,293.02
+Quảng Bình,Bắc Trung Bộ,2022,53.02,51.0,270.53
+Quảng Bình,Bắc Trung Bộ,2023,52.96,53.1,281.44
+Quảng Bình,Bắc Trung Bộ,2024,53.58,55.59,297.87
+Quảng Nam,Duyên hải Nam Trung Bộ,2010,85.3,48.4,412.7
+Quảng Nam,Duyên hải Nam Trung Bộ,2011,87.7,47.65,417.9
+Quảng Nam,Duyên hải Nam Trung Bộ,2012,88.6,50.5,447.3
+Quảng Nam,Duyên hải Nam Trung Bộ,2013,87.9,50.1,440.3
+Quảng Nam,Duyên hải Nam Trung Bộ,2014,87.4,53.42,466.9
+Quảng Nam,Duyên hải Nam Trung Bộ,2015,88.5,52.11,461.2
+Quảng Nam,Duyên hải Nam Trung Bộ,2016,86.7,50.9,441.7
+Quảng Nam,Duyên hải Nam Trung Bộ,2017,86.8,53.1,461.1
+Quảng Nam,Duyên hải Nam Trung Bộ,2018,86.2,53.7,462.6
+Quảng Nam,Duyên hải Nam Trung Bộ,2019,84.9,53.3,452.3
+Quảng Nam,Duyên hải Nam Trung Bộ,2020,83.5,54.1,452.0
+Quảng Nam,Duyên hải Nam Trung Bộ,2021,82.64,55.9,462.33
+Quảng Nam,Duyên hải Nam Trung Bộ,2022,83.2,52.6,437.43
+Quảng Nam,Duyên hải Nam Trung Bộ,2023,82.89,56.4,467.3
+Quảng Nam,Duyên hải Nam Trung Bộ,2024,83.04,58.57,486.38
+Quảng Ngãi,Duyên hải Nam Trung Bộ,2010,72.7,53.8,391.2
+Quảng Ngãi,Duyên hải Nam Trung Bộ,2011,72.5,52.47,380.4
+Quảng Ngãi,Duyên hải Nam Trung Bộ,2012,73.5,55.3,406.8
+Quảng Ngãi,Duyên hải Nam Trung Bộ,2013,74.8,55.1,412.3
+Quảng Ngãi,Duyên hải Nam Trung Bộ,2014,73.8,57.25,422.5
+Quảng Ngãi,Duyên hải Nam Trung Bộ,2015,75.7,56.47,427.5
+Quảng Ngãi,Duyên hải Nam Trung Bộ,2016,75.8,54.9,416.3
+Quảng Ngãi,Duyên hải Nam Trung Bộ,2017,75.5,58.1,438.8
+Quảng Ngãi,Duyên hải Nam Trung Bộ,2018,74.8,58.9,440.2
+Quảng Ngãi,Duyên hải Nam Trung Bộ,2019,73.4,58.8,431.3
+Quảng Ngãi,Duyên hải Nam Trung Bộ,2020,71.2,58.8,418.8
+Quảng Ngãi,Duyên hải Nam Trung Bộ,2021,73.09,60.4,441.62
+Quảng Ngãi,Duyên hải Nam Trung Bộ,2022,74.8,58.2,435.84
+Quảng Ngãi,Duyên hải Nam Trung Bộ,2023,74.31,59.7,443.76
+Quảng Ngãi,Duyên hải Nam Trung Bộ,2024,74.32,60.99,453.28
+Quảng Ninh,Trung du và miền núi phía Bắc,2010,44.7,46.7,208.6
+Quảng Ninh,Trung du và miền núi phía Bắc,2011,43.9,48.43,212.6
+Quảng Ninh,Trung du và miền núi phía Bắc,2012,43.6,49.7,216.5
+Quảng Ninh,Trung du và miền núi phía Bắc,2013,43.0,48.9,210.4
+Quảng Ninh,Trung du và miền núi phía Bắc,2014,43.1,49.03,211.3
+Quảng Ninh,Trung du và miền núi phía Bắc,2015,42.5,49.86,211.9
+Quảng Ninh,Trung du và miền núi phía Bắc,2016,42.3,50.1,211.8
+Quảng Ninh,Trung du và miền núi phía Bắc,2017,41.6,47.1,195.9
+Quảng Ninh,Trung du và miền núi phía Bắc,2018,41.1,50.8,208.6
+Quảng Ninh,Trung du và miền núi phía Bắc,2019,40.2,50.6,203.4
+Quảng Ninh,Trung du và miền núi phía Bắc,2020,39.1,51.6,201.8
+Quảng Ninh,Trung du và miền núi phía Bắc,2021,38.49,51.9,199.75
+Quảng Ninh,Trung du và miền núi phía Bắc,2022,37.4,52.0,194.24
+Quảng Ninh,Trung du và miền núi phía Bắc,2023,36.75,51.8,190.24
+Quảng Ninh,Trung du và miền núi phía Bắc,2024,36.8,50.14,184.51
+Quảng Trị,Bắc Trung Bộ,2010,48.1,44.3,213.0
+Quảng Trị,Bắc Trung Bộ,2011,48.5,46.33,224.7
+Quảng Trị,Bắc Trung Bộ,2012,49.0,49.1,240.6
+Quảng Trị,Bắc Trung Bộ,2013,50.1,44.7,224.1
+Quảng Trị,Bắc Trung Bộ,2014,50.2,51.53,258.7
+Quảng Trị,Bắc Trung Bộ,2015,47.7,50.19,239.4
+Quảng Trị,Bắc Trung Bộ,2016,49.8,52.8,263.1
+Quảng Trị,Bắc Trung Bộ,2017,50.3,48.4,243.4
+Quảng Trị,Bắc Trung Bộ,2018,50.7,54.3,275.5
+Quảng Trị,Bắc Trung Bộ,2019,50.5,54.1,273.3
+Quảng Trị,Bắc Trung Bộ,2020,50.7,54.5,276.4
+Quảng Trị,Bắc Trung Bộ,2021,50.22,55.6,279.29
+Quảng Trị,Bắc Trung Bộ,2022,50.46,46.7,235.6
+Quảng Trị,Bắc Trung Bộ,2023,50.22,58.0,291.31
+Quảng Trị,Bắc Trung Bộ,2024,50.36,58.86,296.42
+Sóc Trăng,Đồng bằng sông Cửu Long,2010,349.6,56.3,1966.6
+Sóc Trăng,Đồng bằng sông Cửu Long,2011,349.0,59.9,2090.6
+Sóc Trăng,Đồng bằng sông Cửu Long,2012,365.9,61.5,2251.8
+Sóc Trăng,Đồng bằng sông Cửu Long,2013,373.5,59.4,2220.0
+Sóc Trăng,Đồng bằng sông Cửu Long,2014,363.9,62.25,2265.3
+Sóc Trăng,Đồng bằng sông Cửu Long,2015,362.7,62.74,2275.5
+Sóc Trăng,Đồng bằng sông Cửu Long,2016,356.6,59.3,2115.03
+Sóc Trăng,Đồng bằng sông Cửu Long,2017,348.2,60.5,2105.1
+Sóc Trăng,Đồng bằng sông Cửu Long,2018,351.8,60.6,2132.7
+Sóc Trăng,Đồng bằng sông Cửu Long,2019,356.3,61.0,2172.1
+Sóc Trăng,Đồng bằng sông Cửu Long,2020,353.7,58.8,2079.8
+Sóc Trăng,Đồng bằng sông Cửu Long,2021,327.86,62.8,2058.74
+Sóc Trăng,Đồng bằng sông Cửu Long,2022,332.8,61.4,2042.56
+Sóc Trăng,Đồng bằng sông Cửu Long,2023,330.39,62.9,2077.17
+Sóc Trăng,Đồng bằng sông Cửu Long,2024,338.06,64.65,2185.46
+Sơn La,Trung du và miền núi phía Bắc,2010,44.6,33.0,147.1
+Sơn La,Trung du và miền núi phía Bắc,2011,44.1,35.33,155.8
+Sơn La,Trung du và miền núi phía Bắc,2012,48.2,33.8,162.9
+Sơn La,Trung du và miền núi phía Bắc,2013,56.7,32.0,181.3
+Sơn La,Trung du và miền núi phía Bắc,2014,54.3,33.76,183.3
+Sơn La,Trung du và miền núi phía Bắc,2015,52.1,34.05,177.4
+Sơn La,Trung du và miền núi phía Bắc,2016,51.7,35.4,182.9
+Sơn La,Trung du và miền núi phía Bắc,2017,51.0,35.3,180.0
+Sơn La,Trung du và miền núi phía Bắc,2018,50.6,36.4,184.3
+Sơn La,Trung du và miền núi phía Bắc,2019,50.8,37.2,189.0
+Sơn La,Trung du và miền núi phía Bắc,2020,51.6,38.6,199.0
+Sơn La,Trung du và miền núi phía Bắc,2021,51.24,40.3,206.28
+Sơn La,Trung du và miền núi phía Bắc,2022,50.2,41.7,209.53
+Sơn La,Trung du và miền núi phía Bắc,2023,48.72,42.3,206.04
+Sơn La,Trung du và miền núi phía Bắc,2024,46.45,42.01,195.15
+TP. Hồ Chí Minh,Đông Nam Bộ,2010,24.4,37.6,91.7
+TP. Hồ Chí Minh,Đông Nam Bộ,2011,22.0,39.0,85.8
+TP. Hồ Chí Minh,Đông Nam Bộ,2012,22.4,41.5,93.0
+TP. Hồ Chí Minh,Đông Nam Bộ,2013,21.4,42.2,90.3
+TP. Hồ Chí Minh,Đông Nam Bộ,2014,20.9,42.39,88.6
+TP. Hồ Chí Minh,Đông Nam Bộ,2015,20.3,43.5,88.3
+TP. Hồ Chí Minh,Đông Nam Bộ,2016,19.5,43.7,85.2
+TP. Hồ Chí Minh,Đông Nam Bộ,2017,19.1,45.2,86.4
+TP. Hồ Chí Minh,Đông Nam Bộ,2018,16.9,46.8,79.1
+TP. Hồ Chí Minh,Đông Nam Bộ,2019,16.8,48.3,81.2
+TP. Hồ Chí Minh,Đông Nam Bộ,2020,16.7,50.1,83.6
+TP. Hồ Chí Minh,Đông Nam Bộ,2021,16.6,50.4,83.67
+TP. Hồ Chí Minh,Đông Nam Bộ,2022,16.2,52.1,84.48
+TP. Hồ Chí Minh,Đông Nam Bộ,2023,16.02,53.9,86.36
+TP. Hồ Chí Minh,Đông Nam Bộ,2024,17.83,54.48,97.14
+Thanh Hóa,Bắc Trung Bộ,2010,253.6,55.1,1396.6
+Thanh Hóa,Bắc Trung Bộ,2011,257.1,55.52,1427.4
+Thanh Hóa,Bắc Trung Bộ,2012,256.7,57.8,1482.5
+Thanh Hóa,Bắc Trung Bộ,2013,256.3,55.9,1431.5
+Thanh Hóa,Bắc Trung Bộ,2014,258.6,58.64,1516.5
+Thanh Hóa,Bắc Trung Bộ,2015,257.0,57.4,1475.3
+Thanh Hóa,Bắc Trung Bộ,2016,253.9,58.8,1493.1
+Thanh Hóa,Bắc Trung Bộ,2017,250.5,58.4,1463.3
+Thanh Hóa,Bắc Trung Bộ,2018,244.4,57.8,1413.5
+Thanh Hóa,Bắc Trung Bộ,2019,237.9,58.8,1399.2
+Thanh Hóa,Bắc Trung Bộ,2020,231.2,59.4,1373.6
+Thanh Hóa,Bắc Trung Bộ,2021,231.88,60.9,1412.99
+Thanh Hóa,Bắc Trung Bộ,2022,229.28,60.7,1390.62
+Thanh Hóa,Bắc Trung Bộ,2023,225.72,61.5,1387.83
+Thanh Hóa,Bắc Trung Bộ,2024,225.79,61.34,1384.99
+Thái Bình,Đồng bằng sông Hồng,2010,166.4,66.4,1104.4
+Thái Bình,Đồng bằng sông Hồng,2011,165.7,65.86,1091.3
+Thái Bình,Đồng bằng sông Hồng,2012,162.8,65.1,1059.5
+Thái Bình,Đồng bằng sông Hồng,2013,161.8,65.1,1053.2
+Thái Bình,Đồng bằng sông Hồng,2014,161.8,65.63,1061.9
+Thái Bình,Đồng bằng sông Hồng,2015,161.0,65.96,1061.9
+Thái Bình,Đồng bằng sông Hồng,2016,160.1,65.8,1053.6
+Thái Bình,Đồng bằng sông Hồng,2017,158.7,59.4,942.6
+Thái Bình,Đồng bằng sông Hồng,2018,157.2,65.5,1030.4
+Thái Bình,Đồng bằng sông Hồng,2019,155.2,65.9,1022.3
+Thái Bình,Đồng bằng sông Hồng,2020,153.7,65.9,1013.1
+Thái Bình,Đồng bằng sông Hồng,2021,153.23,65.1,997.55
+Thái Bình,Đồng bằng sông Hồng,2022,151.6,65.5,992.69
+Thái Bình,Đồng bằng sông Hồng,2023,149.86,65.3,978.83
+Thái Bình,Đồng bằng sông Hồng,2024,148.43,58.42,867.2
+Thái Nguyên,Trung du và miền núi phía Bắc,2010,69.8,48.7,339.8
+Thái Nguyên,Trung du và miền núi phía Bắc,2011,71.2,51.73,368.3
+Thái Nguyên,Trung du và miền núi phía Bắc,2012,72.6,50.6,367.4
+Thái Nguyên,Trung du và miền núi phía Bắc,2013,72.2,50.3,363.0
+Thái Nguyên,Trung du và miền núi phía Bắc,2014,72.5,50.47,365.9
+Thái Nguyên,Trung du và miền núi phía Bắc,2015,72.4,52.68,381.4
+Thái Nguyên,Trung du và miền núi phía Bắc,2016,72.0,53.4,384.7
+Thái Nguyên,Trung du và miền núi phía Bắc,2017,71.1,53.4,379.4
+Thái Nguyên,Trung du và miền núi phía Bắc,2018,70.7,54.7,386.4
+Thái Nguyên,Trung du và miền núi phía Bắc,2019,70.1,54.9,384.7
+Thái Nguyên,Trung du và miền núi phía Bắc,2020,69.8,54.9,383.4
+Thái Nguyên,Trung du và miền núi phía Bắc,2021,68.8,55.9,384.59
+Thái Nguyên,Trung du và miền núi phía Bắc,2022,68.3,56.1,383.24
+Thái Nguyên,Trung du và miền núi phía Bắc,2023,67.54,55.7,376.3
+Thái Nguyên,Trung du và miền núi phía Bắc,2024,67.15,51.29,344.4
+Thừa Thiên Huế,Bắc Trung Bộ,2010,53.7,53.1,285.2
+Thừa Thiên Huế,Bắc Trung Bộ,2011,53.5,55.91,299.1
+Thừa Thiên Huế,Bắc Trung Bộ,2012,53.8,55.6,299.0
+Thừa Thiên Huế,Bắc Trung Bộ,2013,53.7,53.1,284.9
+Thừa Thiên Huế,Bắc Trung Bộ,2014,53.7,59.05,317.1
+Thừa Thiên Huế,Bắc Trung Bộ,2015,54.4,58.69,319.3
+Thừa Thiên Huế,Bắc Trung Bộ,2016,54.5,59.5,324.3
+Thừa Thiên Huế,Bắc Trung Bộ,2017,54.9,59.6,327.4
+Thừa Thiên Huế,Bắc Trung Bộ,2018,54.7,61.1,334.4
+Thừa Thiên Huế,Bắc Trung Bộ,2019,54.8,59.6,326.7
+Thừa Thiên Huế,Bắc Trung Bộ,2020,54.3,59.0,320.2
+Thừa Thiên Huế,Bắc Trung Bộ,2021,53.94,63.5,342.47
+Thừa Thiên Huế,Bắc Trung Bộ,2022,52.79,50.5,266.64
+Thừa Thiên Huế,Bắc Trung Bộ,2023,53.46,62.6,334.75
+Thừa Thiên Huế,Bắc Trung Bộ,2024,53.45,64.71,345.89
+Tiền Giang,Đồng bằng sông Cửu Long,2010,244.0,54.1,1320.6
+Tiền Giang,Đồng bằng sông Cửu Long,2011,241.8,55.12,1332.8
+Tiền Giang,Đồng bằng sông Cửu Long,2012,241.4,56.8,1370.0
+Tiền Giang,Đồng bằng sông Cửu Long,2013,235.6,57.2,1348.7
+Tiền Giang,Đồng bằng sông Cửu Long,2014,230.6,59.42,1370.3
+Tiền Giang,Đồng bằng sông Cửu Long,2015,224.7,59.83,1344.4
+Tiền Giang,Đồng bằng sông Cửu Long,2016,215.5,58.8,1268.1
+Tiền Giang,Đồng bằng sông Cửu Long,2017,210.8,59.3,1249.3
+Tiền Giang,Đồng bằng sông Cửu Long,2018,201.3,62.3,1254.5
+Tiền Giang,Đồng bằng sông Cửu Long,2019,184.3,60.9,1123.1
+Tiền Giang,Đồng bằng sông Cửu Long,2020,136.0,58.9,801.2
+Tiền Giang,Đồng bằng sông Cửu Long,2021,131.85,63.4,836.18
+Tiền Giang,Đồng bằng sông Cửu Long,2022,134.9,62.2,838.5
+Tiền Giang,Đồng bằng sông Cửu Long,2023,129.39,61.1,791.01
+Tiền Giang,Đồng bằng sông Cửu Long,2024,120.33,62.07,746.88
+Trà Vinh,Đồng bằng sông Cửu Long,2010,232.7,49.7,1156.0
+Trà Vinh,Đồng bằng sông Cửu Long,2011,233.0,49.58,1155.3
+Trà Vinh,Đồng bằng sông Cửu Long,2012,227.4,55.3,1258.0
+Trà Vinh,Đồng bằng sông Cửu Long,2013,235.6,54.1,1274.8
+Trà Vinh,Đồng bằng sông Cửu Long,2014,235.8,56.27,1326.9
+Trà Vinh,Đồng bằng sông Cửu Long,2015,235.8,56.81,1339.5
+Trà Vinh,Đồng bằng sông Cửu Long,2016,210.6,45.4,956.3
+Trà Vinh,Đồng bằng sông Cửu Long,2017,220.2,51.7,1137.4
+Trà Vinh,Đồng bằng sông Cửu Long,2018,223.2,56.8,1268.0
+Trà Vinh,Đồng bằng sông Cửu Long,2019,224.3,56.1,1258.9
+Trà Vinh,Đồng bằng sông Cửu Long,2020,205.2,45.8,939.7
+Trà Vinh,Đồng bằng sông Cửu Long,2021,208.97,55.0,1148.87
+Trà Vinh,Đồng bằng sông Cửu Long,2022,199.0,53.1,1057.0
+Trà Vinh,Đồng bằng sông Cửu Long,2023,203.36,54.6,1110.33
+Trà Vinh,Đồng bằng sông Cửu Long,2024,202.76,56.94,1154.43
+Tuyên Quang,Trung du và miền núi phía Bắc,2010,45.4,57.7,261.8
+Tuyên Quang,Trung du và miền núi phía Bắc,2011,45.5,58.44,265.9
+Tuyên Quang,Trung du và miền núi phía Bắc,2012,45.8,58.2,266.7
+Tuyên Quang,Trung du và miền núi phía Bắc,2013,45.9,58.1,266.6
+Tuyên Quang,Trung du và miền núi phía Bắc,2014,45.6,58.2,265.4
+Tuyên Quang,Trung du và miền núi phía Bắc,2015,45.6,58.4,266.3
+Tuyên Quang,Trung du và miền núi phía Bắc,2016,45.1,58.6,264.3
+Tuyên Quang,Trung du và miền núi phía Bắc,2017,45.1,58.3,262.9
+Tuyên Quang,Trung du và miền núi phía Bắc,2018,44.8,58.6,262.4
+Tuyên Quang,Trung du và miền núi phía Bắc,2019,44.3,58.7,259.9
+Tuyên Quang,Trung du và miền núi phía Bắc,2020,44.5,58.7,261.4
+Tuyên Quang,Trung du và miền núi phía Bắc,2021,44.2,59.2,261.63
+Tuyên Quang,Trung du và miền núi phía Bắc,2022,43.9,59.3,260.3
+Tuyên Quang,Trung du và miền núi phía Bắc,2023,43.04,59.7,256.98
+Tuyên Quang,Trung du và miền núi phía Bắc,2024,41.25,59.55,245.65
+Tây Ninh,Đông Nam Bộ,2010,154.2,47.9,738.8
+Tây Ninh,Đông Nam Bộ,2011,155.5,49.03,762.4
+Tây Ninh,Đông Nam Bộ,2012,155.3,50.1,778.1
+Tây Ninh,Đông Nam Bộ,2013,146.3,50.7,742.3
+Tây Ninh,Đông Nam Bộ,2014,142.2,52.1,740.9
+Tây Ninh,Đông Nam Bộ,2015,144.5,52.65,760.8
+Tây Ninh,Đông Nam Bộ,2016,144.6,52.6,760.0
+Tây Ninh,Đông Nam Bộ,2017,147.9,53.3,788.9
+Tây Ninh,Đông Nam Bộ,2018,149.5,54.4,813.0
+Tây Ninh,Đông Nam Bộ,2019,149.1,54.1,806.7
+Tây Ninh,Đông Nam Bộ,2020,147.7,54.1,798.8
+Tây Ninh,Đông Nam Bộ,2021,147.84,54.7,809.42
+Tây Ninh,Đông Nam Bộ,2022,147.7,54.8,808.77
+Tây Ninh,Đông Nam Bộ,2023,148.7,55.2,820.96
+Tây Ninh,Đông Nam Bộ,2024,150.03,55.33,830.09
+Vĩnh Long,Đồng bằng sông Cửu Long,2010,170.0,54.6,928.9
+Vĩnh Long,Đồng bằng sông Cửu Long,2011,181.5,56.88,1032.3
+Vĩnh Long,Đồng bằng sông Cửu Long,2012,185.9,58.1,1079.6
+Vĩnh Long,Đồng bằng sông Cửu Long,2013,181.9,58.5,1063.7
+Vĩnh Long,Đồng bằng sông Cửu Long,2014,180.2,60.33,1087.2
+Vĩnh Long,Đồng bằng sông Cửu Long,2015,180.5,60.65,1094.7
+Vĩnh Long,Đồng bằng sông Cửu Long,2016,176.4,53.2,938.7
+Vĩnh Long,Đồng bằng sông Cửu Long,2017,169.4,55.6,942.5
+Vĩnh Long,Đồng bằng sông Cửu Long,2018,161.9,59.9,969.5
+Vĩnh Long,Đồng bằng sông Cửu Long,2019,155.5,58.4,908.3
+Vĩnh Long,Đồng bằng sông Cửu Long,2020,145.8,61.4,895.1
+Vĩnh Long,Đồng bằng sông Cửu Long,2021,134.5,60.8,817.86
+Vĩnh Long,Đồng bằng sông Cửu Long,2022,112.4,60.5,679.7
+Vĩnh Long,Đồng bằng sông Cửu Long,2023,112.7,60.0,676.2
+Vĩnh Long,Đồng bằng sông Cửu Long,2024,109.92,61.68,677.94
+Vĩnh Phúc,Đồng bằng sông Hồng,2010,59.3,53.0,314.3
+Vĩnh Phúc,Đồng bằng sông Hồng,2011,59.2,56.71,335.7
+Vĩnh Phúc,Đồng bằng sông Hồng,2012,59.4,50.5,299.8
+Vĩnh Phúc,Đồng bằng sông Hồng,2013,59.0,52.3,308.4
+Vĩnh Phúc,Đồng bằng sông Hồng,2014,58.6,56.52,331.2
+Vĩnh Phúc,Đồng bằng sông Hồng,2015,58.4,55.89,326.4
+Vĩnh Phúc,Đồng bằng sông Hồng,2016,58.4,50.4,294.5
+Vĩnh Phúc,Đồng bằng sông Hồng,2017,57.9,55.3,320.3
+Vĩnh Phúc,Đồng bằng sông Hồng,2018,56.6,58.4,330.6
+Vĩnh Phúc,Đồng bằng sông Hồng,2019,54.1,57.9,313.2
+Vĩnh Phúc,Đồng bằng sông Hồng,2020,53.9,58.1,313.0
+Vĩnh Phúc,Đồng bằng sông Hồng,2021,53.65,59.8,320.86
+Vĩnh Phúc,Đồng bằng sông Hồng,2022,53.1,53.1,281.84
+Vĩnh Phúc,Đồng bằng sông Hồng,2023,52.53,59.3,311.44
+Vĩnh Phúc,Đồng bằng sông Hồng,2024,52.33,56.22,294.18
+Yên Bái,Trung du và miền núi phía Bắc,2010,41.0,45.4,186.1
+Yên Bái,Trung du và miền núi phía Bắc,2011,41.2,47.28,194.8
+Yên Bái,Trung du và miền núi phía Bắc,2012,40.4,48.9,197.7
+Yên Bái,Trung du và miền núi phía Bắc,2013,40.5,49.0,198.5
+Yên Bái,Trung du và miền núi phía Bắc,2014,40.9,49.49,202.4
+Yên Bái,Trung du và miền núi phía Bắc,2015,41.3,50.29,207.7
+Yên Bái,Trung du và miền núi phía Bắc,2016,42.8,50.0,214.2
+Yên Bái,Trung du và miền núi phía Bắc,2017,42.5,49.8,211.5
+Yên Bái,Trung du và miền núi phía Bắc,2018,42.1,49.9,210.0
+Yên Bái,Trung du và miền núi phía Bắc,2019,42.8,50.4,215.5
+Yên Bái,Trung du và miền núi phía Bắc,2020,42.9,50.7,217.7
+Yên Bái,Trung du và miền núi phía Bắc,2021,42.61,51.2,218.25
+Yên Bái,Trung du và miền núi phía Bắc,2022,42.5,51.6,219.53
+Yên Bái,Trung du và miền núi phía Bắc,2023,42.62,51.8,220.9
+Yên Bái,Trung du và miền núi phía Bắc,2024,42.45,48.97,207.86
+Điện Biên,Trung du và miền núi phía Bắc,2010,46.4,33.4,155.1
+Điện Biên,Trung du và miền núi phía Bắc,2011,47.5,32.59,154.8
+Điện Biên,Trung du và miền núi phía Bắc,2012,48.3,32.7,157.9
+Điện Biên,Trung du và miền núi phía Bắc,2013,49.0,33.0,161.6
+Điện Biên,Trung du và miền núi phía Bắc,2014,49.4,34.53,170.6
+Điện Biên,Trung du và miền núi phía Bắc,2015,49.4,35.38,174.8
+Điện Biên,Trung du và miền núi phía Bắc,2016,50.1,35.0,175.4
+Điện Biên,Trung du và miền núi phía Bắc,2017,50.2,35.5,178.1
+Điện Biên,Trung du và miền núi phía Bắc,2018,51.3,36.1,185.3
+Điện Biên,Trung du và miền núi phía Bắc,2019,51.7,36.2,187.0
+Điện Biên,Trung du và miền núi phía Bắc,2020,52.4,36.4,190.8
+Điện Biên,Trung du và miền núi phía Bắc,2021,53.82,37.2,200.2
+Điện Biên,Trung du và miền núi phía Bắc,2022,55.1,37.5,206.66
+Điện Biên,Trung du và miền núi phía Bắc,2023,55.61,38.0,211.48
+Điện Biên,Trung du và miền núi phía Bắc,2024,54.61,38.33,209.31
+Đà Nẵng,Duyên hải Nam Trung Bộ,2010,7.3,56.3,41.1
+Đà Nẵng,Duyên hải Nam Trung Bộ,2011,6.5,52.92,34.4
+Đà Nẵng,Duyên hải Nam Trung Bộ,2012,5.9,59.8,35.3
+Đà Nẵng,Duyên hải Nam Trung Bộ,2013,5.4,58.0,31.3
+Đà Nẵng,Duyên hải Nam Trung Bộ,2014,5.5,61.64,33.9
+Đà Nẵng,Duyên hải Nam Trung Bộ,2015,5.4,58.52,31.6
+Đà Nẵng,Duyên hải Nam Trung Bộ,2016,5.4,59.6,32.2
+Đà Nẵng,Duyên hải Nam Trung Bộ,2017,5.2,60.4,31.4
+Đà Nẵng,Duyên hải Nam Trung Bộ,2018,5.2,61.3,31.9
+Đà Nẵng,Duyên hải Nam Trung Bộ,2019,5.1,60.4,30.8
+Đà Nẵng,Duyên hải Nam Trung Bộ,2020,4.8,63.3,30.4
+Đà Nẵng,Duyên hải Nam Trung Bộ,2021,4.74,67.2,31.87
+Đà Nẵng,Duyên hải Nam Trung Bộ,2022,4.8,58.7,28.07
+Đà Nẵng,Duyên hải Nam Trung Bộ,2023,4.57,62.4,28.52
+Đà Nẵng,Duyên hải Nam Trung Bộ,2024,4.55,68.53,31.18
+Đắk Lắk,Tây Nguyên,2010,80.1,56.3,450.7
+Đắk Lắk,Tây Nguyên,2011,84.5,56.13,474.3
+Đắk Lắk,Tây Nguyên,2012,87.4,56.1,490.6
+Đắk Lắk,Tây Nguyên,2013,90.3,56.9,514.1
+Đắk Lắk,Tây Nguyên,2014,94.4,61.21,577.8
+Đắk Lắk,Tây Nguyên,2015,93.4,59.51,555.8
+Đắk Lắk,Tây Nguyên,2016,93.9,58.6,550.2
+Đắk Lắk,Tây Nguyên,2017,101.5,63.4,643.5
+Đắk Lắk,Tây Nguyên,2018,105.3,66.2,697.5
+Đắk Lắk,Tây Nguyên,2019,105.0,67.0,703.8
+Đắk Lắk,Tây Nguyên,2020,107.6,66.6,716.4
+Đắk Lắk,Tây Nguyên,2021,111.68,67.7,756.18
+Đắk Lắk,Tây Nguyên,2022,113.8,68.6,780.77
+Đắk Lắk,Tây Nguyên,2023,116.39,69.7,810.92
+Đắk Lắk,Tây Nguyên,2024,117.66,71.79,844.73
+Đắk Nông,Tây Nguyên,2010,11.1,55.7,61.8
+Đắk Nông,Tây Nguyên,2011,12.3,52.76,64.9
+Đắk Nông,Tây Nguyên,2012,12.3,55.8,68.6
+Đắk Nông,Tây Nguyên,2013,12.3,54.1,66.6
+Đắk Nông,Tây Nguyên,2014,12.6,58.33,73.5
+Đắk Nông,Tây Nguyên,2015,12.6,58.02,73.1
+Đắk Nông,Tây Nguyên,2016,12.4,58.4,72.4
+Đắk Nông,Tây Nguyên,2017,13.0,57.4,74.6
+Đắk Nông,Tây Nguyên,2018,13.2,59.6,78.7
+Đắk Nông,Tây Nguyên,2019,12.8,60.2,77.0
+Đắk Nông,Tây Nguyên,2020,12.7,61.0,77.5
+Đắk Nông,Tây Nguyên,2021,13.01,62.8,81.7
+Đắk Nông,Tây Nguyên,2022,13.0,63.9,82.79
+Đắk Nông,Tây Nguyên,2023,13.04,61.9,80.66
+Đắk Nông,Tây Nguyên,2024,13.04,64.2,83.72
+Đồng Nai,Đông Nam Bộ,2010,69.4,46.5,322.9
+Đồng Nai,Đông Nam Bộ,2011,68.7,48.94,336.2
+Đồng Nai,Đông Nam Bộ,2012,68.4,50.1,342.7
+Đồng Nai,Đông Nam Bộ,2013,66.2,50.2,332.5
+Đồng Nai,Đông Nam Bộ,2014,65.3,51.65,337.3
+Đồng Nai,Đông Nam Bộ,2015,63.6,53.02,337.2
+Đồng Nai,Đông Nam Bộ,2016,61.7,53.7,331.5
+Đồng Nai,Đông Nam Bộ,2017,60.7,54.2,329.1
+Đồng Nai,Đông Nam Bộ,2018,59.8,54.4,325.3
+Đồng Nai,Đông Nam Bộ,2019,58.8,56.2,330.5
+Đồng Nai,Đông Nam Bộ,2020,55.7,57.4,319.9
+Đồng Nai,Đông Nam Bộ,2021,53.85,58.4,314.72
+Đồng Nai,Đông Nam Bộ,2022,52.5,59.4,312.23
+Đồng Nai,Đông Nam Bộ,2023,51.36,60.4,310.33
+Đồng Nai,Đông Nam Bộ,2024,50.85,61.14,310.9
+Đồng Tháp,Đồng bằng sông Cửu Long,2010,465.1,60.4,2807.0
+Đồng Tháp,Đồng bằng sông Cửu Long,2011,501.1,61.87,3100.2
+Đồng Tháp,Đồng bằng sông Cửu Long,2012,487.6,62.6,3051.8
+Đồng Tháp,Đồng bằng sông Cửu Long,2013,541.8,61.4,3327.0
+Đồng Tháp,Đồng bằng sông Cửu Long,2014,528.6,62.43,3300.0
+Đồng Tháp,Đồng bằng sông Cửu Long,2015,546.0,61.99,3384.5
+Đồng Tháp,Đồng bằng sông Cửu Long,2016,551.4,61.6,3396.8
+Đồng Tháp,Đồng bằng sông Cửu Long,2017,538.3,59.6,3206.8
+Đồng Tháp,Đồng bằng sông Cửu Long,2018,520.4,64.0,3330.2
+Đồng Tháp,Đồng bằng sông Cửu Long,2019,521.6,64.2,3349.8
+Đồng Tháp,Đồng bằng sông Cửu Long,2020,514.2,65.6,3374.5
+Đồng Tháp,Đồng bằng sông Cửu Long,2021,504.38,66.2,3339.79
+Đồng Tháp,Đồng bằng sông Cửu Long,2022,482.2,67.1,3234.95
+Đồng Tháp,Đồng bằng sông Cửu Long,2023,498.32,66.7,3325.27
+Đồng Tháp,Đồng bằng sông Cửu Long,2024,495.93,67.17,3331.22
