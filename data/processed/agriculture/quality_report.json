@@ -1,0 +1,1013 @@
+{
+  "status": "completed",
+  "sources": [
+    {
+      "file": "data/raw/agriculture/nso_V06.13_2010_2024.xlsx",
+      "sha256": "0ff1d4f4f781755759bccceb104071f01912d8076edeac58d75a5dfc25ddb282",
+      "sheet": "V06.13",
+      "range": "A1:P73",
+      "title": "Diện tích gieo trồng lúa cả năm phân theo địa phương chia theo Tỉnh, thành phố và Năm",
+      "year_header_row": 3,
+      "years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "geographical_rows": 70,
+      "source_names": [
+        "CẢ NƯỚC",
+        "Đồng bằng sông Hồng",
+        "Hà Nội",
+        "Vĩnh Phúc",
+        "Bắc Ninh",
+        "Quảng Ninh",
+        "Hải Dương",
+        "Hải Phòng",
+        "Hưng Yên",
+        "Thái Bình",
+        "Hà Nam",
+        "Nam Định",
+        "Ninh Bình",
+        "Trung du và miền núi phía Bắc",
+        "Hà Giang",
+        "Cao Bằng",
+        "Bắc Kạn",
+        "Tuyên Quang",
+        "Lào Cai",
+        "Yên Bái",
+        "Thái Nguyên",
+        "Lạng Sơn",
+        "Bắc Giang",
+        "Phú Thọ",
+        "Điện Biên",
+        "Lai Châu",
+        "Sơn La",
+        "Hoà Bình",
+        "Bắc Trung Bộ và Duyên hải miền Trung",
+        "Thanh Hoá",
+        "Nghệ An",
+        "Hà Tĩnh",
+        "Quảng Bình",
+        "Quảng Trị",
+        "Thừa Thiên Huế",
+        "Đà Nẵng",
+        "Quảng Nam",
+        "Quảng Ngãi",
+        "Bình Định",
+        "Phú Yên",
+        "Khánh Hoà",
+        "Ninh Thuận",
+        "Bình Thuận",
+        "Tây Nguyên",
+        "Kon Tum",
+        "Gia Lai",
+        "Đắk Lắk",
+        "Đắk Nông",
+        "Lâm Đồng",
+        "Đông Nam Bộ",
+        "Bình Phước",
+        "Tây Ninh",
+        "Bình Dương",
+        "Đồng Nai",
+        "Bà Rịa - Vũng Tàu",
+        "TP.Hồ Chí Minh",
+        "Đồng bằng sông Cửu Long",
+        "Long An",
+        "Tiền Giang",
+        "Bến Tre",
+        "Trà Vinh",
+        "Vĩnh Long",
+        "Đồng Tháp",
+        "An Giang",
+        "Kiên Giang",
+        "Cần Thơ",
+        "Hậu Giang",
+        "Sóc Trăng",
+        "Bạc Liêu",
+        "Cà Mau"
+      ],
+      "metric": "rice_area_ha",
+      "workbook_unit_declaration": null,
+      "conversion_source_unit": "thousand hectares",
+      "conversion_factor": 1000.0
+    },
+    {
+      "file": "data/raw/agriculture/nso_V06.14_2010_2024.xlsx",
+      "sha256": "9bbd49a461461ebd83b7ad045983612ec620f8657f0c8a2d5e2c9b51690c8daf",
+      "sheet": "V06.14",
+      "range": "A1:P73",
+      "title": "Năng suất gieo trồng lúa cả năm phân theo địa phương chia theo Tỉnh, thành phố và Năm",
+      "year_header_row": 3,
+      "years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "geographical_rows": 70,
+      "source_names": [
+        "CẢ NƯỚC",
+        "Đồng bằng sông Hồng",
+        "Hà Nội",
+        "Vĩnh Phúc",
+        "Bắc Ninh",
+        "Quảng Ninh",
+        "Hải Dương",
+        "Hải Phòng",
+        "Hưng Yên",
+        "Thái Bình",
+        "Hà Nam",
+        "Nam Định",
+        "Ninh Bình",
+        "Trung du và miền núi phía Bắc",
+        "Hà Giang",
+        "Cao Bằng",
+        "Bắc Kạn",
+        "Tuyên Quang",
+        "Lào Cai",
+        "Yên Bái",
+        "Thái Nguyên",
+        "Lạng Sơn",
+        "Bắc Giang",
+        "Phú Thọ",
+        "Điện Biên",
+        "Lai Châu",
+        "Sơn La",
+        "Hoà Bình",
+        "Bắc Trung Bộ và Duyên hải miền Trung",
+        "Thanh Hoá",
+        "Nghệ An",
+        "Hà Tĩnh",
+        "Quảng Bình",
+        "Quảng Trị",
+        "Thừa Thiên Huế",
+        "Đà Nẵng",
+        "Quảng Nam",
+        "Quảng Ngãi",
+        "Bình Định",
+        "Phú Yên",
+        "Khánh Hoà",
+        "Ninh Thuận",
+        "Bình Thuận",
+        "Tây Nguyên",
+        "Kon Tum",
+        "Gia Lai",
+        "Đắk Lắk",
+        "Đắk Nông",
+        "Lâm Đồng",
+        "Đông Nam Bộ",
+        "Bình Phước",
+        "Tây Ninh",
+        "Bình Dương",
+        "Đồng Nai",
+        "Bà Rịa - Vũng Tàu",
+        "TP.Hồ Chí Minh",
+        "Đồng bằng sông Cửu Long",
+        "Long An",
+        "Tiền Giang",
+        "Bến Tre",
+        "Trà Vinh",
+        "Vĩnh Long",
+        "Đồng Tháp",
+        "An Giang",
+        "Kiên Giang",
+        "Cần Thơ",
+        "Hậu Giang",
+        "Sóc Trăng",
+        "Bạc Liêu",
+        "Cà Mau"
+      ],
+      "metric": "rice_yield_ton_ha",
+      "workbook_unit_declaration": null,
+      "conversion_source_unit": "quintals/hectare",
+      "conversion_factor": 0.1
+    },
+    {
+      "file": "data/raw/agriculture/nso_V06.15_2010_2024.xlsx",
+      "sha256": "356a2875cc377f6a4014de73260e9584acaa6e7b83fd644921d7311b37456bc0",
+      "sheet": "V06.15",
+      "range": "A1:P73",
+      "title": "Sản lượng lúa cả năm phân theo địa phương chia theo Tỉnh, thành phố và Năm",
+      "year_header_row": 3,
+      "years": [
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "geographical_rows": 70,
+      "source_names": [
+        "CẢ NƯỚC",
+        "Đồng bằng sông Hồng",
+        "Hà Nội",
+        "Vĩnh Phúc",
+        "Bắc Ninh",
+        "Quảng Ninh",
+        "Hải Dương",
+        "Hải Phòng",
+        "Hưng Yên",
+        "Thái Bình",
+        "Hà Nam",
+        "Nam Định",
+        "Ninh Bình",
+        "Trung du và miền núi phía Bắc",
+        "Hà Giang",
+        "Cao Bằng",
+        "Bắc Kạn",
+        "Tuyên Quang",
+        "Lào Cai",
+        "Yên Bái",
+        "Thái Nguyên",
+        "Lạng Sơn",
+        "Bắc Giang",
+        "Phú Thọ",
+        "Điện Biên",
+        "Lai Châu",
+        "Sơn La",
+        "Hoà Bình",
+        "Bắc Trung Bộ và Duyên hải miền Trung",
+        "Thanh Hoá",
+        "Nghệ An",
+        "Hà Tĩnh",
+        "Quảng Bình",
+        "Quảng Trị",
+        "Thừa Thiên Huế",
+        "Đà Nẵng",
+        "Quảng Nam",
+        "Quảng Ngãi",
+        "Bình Định",
+        "Phú Yên",
+        "Khánh Hoà",
+        "Ninh Thuận",
+        "Bình Thuận",
+        "Tây Nguyên",
+        "Kon Tum",
+        "Gia Lai",
+        "Đắk Lắk",
+        "Đắk Nông",
+        "Lâm Đồng",
+        "Đông Nam Bộ",
+        "Bình Phước",
+        "Tây Ninh",
+        "Bình Dương",
+        "Đồng Nai",
+        "Bà Rịa - Vũng Tàu",
+        "TP.Hồ Chí Minh",
+        "Đồng bằng sông Cửu Long",
+        "Long An",
+        "Tiền Giang",
+        "Bến Tre",
+        "Trà Vinh",
+        "Vĩnh Long",
+        "Đồng Tháp",
+        "An Giang",
+        "Kiên Giang",
+        "Cần Thơ",
+        "Hậu Giang",
+        "Sóc Trăng",
+        "Bạc Liêu",
+        "Cà Mau"
+      ],
+      "metric": "rice_production_ton",
+      "workbook_unit_declaration": null,
+      "conversion_source_unit": "thousand tons",
+      "conversion_factor": 1000.0
+    }
+  ],
+  "unit_evidence": "Data owner confirmed on 2026-11-11: V06.13 thousand hectares; V06.14 quintals/hectare; V06.15 thousand tons.",
+  "output": "data/processed/agriculture/rice_province_year/",
+  "runtime": {
+    "java_major": 21,
+    "java_executable": "C:\\Users\\Hoang Phu\\Downloads\\HCMUT\\Final Year\\Big Data\\btl\\vn-agriculture-bi\\.venv\\java\\jdk-21.0.13.0.2+1\\bin\\java.exe",
+    "pyspark_version": "4.0.5",
+    "local_filesystem_adapter": "hadoop-bare-naked-local-fs-0.1.0.jar"
+  },
+  "reference": {
+    "file": "data/vietnam_regions_provinces.json",
+    "sha256": "0c7550a3349d7b52c5d1c129f782dfe83e3eddcb468307d54abb152f945087f3",
+    "province_count": 63,
+    "region_count": 7,
+    "province_id_assignment": "1-based consecutive IDs in region array order, then province array order; project IDs, not official administrative codes"
+  },
+  "excluded_aggregate_observations": 315,
+  "excluded_aggregate_rows": [
+    {
+      "source_file": "nso_V06.13_2010_2024.xlsx",
+      "source_province_name": "Bắc Trung Bộ và Duyên hải miền Trung"
+    },
+    {
+      "source_file": "nso_V06.13_2010_2024.xlsx",
+      "source_province_name": "CẢ NƯỚC"
+    },
+    {
+      "source_file": "nso_V06.13_2010_2024.xlsx",
+      "source_province_name": "Trung du và miền núi phía Bắc"
+    },
+    {
+      "source_file": "nso_V06.13_2010_2024.xlsx",
+      "source_province_name": "Tây Nguyên"
+    },
+    {
+      "source_file": "nso_V06.13_2010_2024.xlsx",
+      "source_province_name": "Đông Nam Bộ"
+    },
+    {
+      "source_file": "nso_V06.13_2010_2024.xlsx",
+      "source_province_name": "Đồng bằng sông Cửu Long"
+    },
+    {
+      "source_file": "nso_V06.13_2010_2024.xlsx",
+      "source_province_name": "Đồng bằng sông Hồng"
+    },
+    {
+      "source_file": "nso_V06.14_2010_2024.xlsx",
+      "source_province_name": "Bắc Trung Bộ và Duyên hải miền Trung"
+    },
+    {
+      "source_file": "nso_V06.14_2010_2024.xlsx",
+      "source_province_name": "CẢ NƯỚC"
+    },
+    {
+      "source_file": "nso_V06.14_2010_2024.xlsx",
+      "source_province_name": "Trung du và miền núi phía Bắc"
+    },
+    {
+      "source_file": "nso_V06.14_2010_2024.xlsx",
+      "source_province_name": "Tây Nguyên"
+    },
+    {
+      "source_file": "nso_V06.14_2010_2024.xlsx",
+      "source_province_name": "Đông Nam Bộ"
+    },
+    {
+      "source_file": "nso_V06.14_2010_2024.xlsx",
+      "source_province_name": "Đồng bằng sông Cửu Long"
+    },
+    {
+      "source_file": "nso_V06.14_2010_2024.xlsx",
+      "source_province_name": "Đồng bằng sông Hồng"
+    },
+    {
+      "source_file": "nso_V06.15_2010_2024.xlsx",
+      "source_province_name": "Bắc Trung Bộ và Duyên hải miền Trung"
+    },
+    {
+      "source_file": "nso_V06.15_2010_2024.xlsx",
+      "source_province_name": "CẢ NƯỚC"
+    },
+    {
+      "source_file": "nso_V06.15_2010_2024.xlsx",
+      "source_province_name": "Trung du và miền núi phía Bắc"
+    },
+    {
+      "source_file": "nso_V06.15_2010_2024.xlsx",
+      "source_province_name": "Tây Nguyên"
+    },
+    {
+      "source_file": "nso_V06.15_2010_2024.xlsx",
+      "source_province_name": "Đông Nam Bộ"
+    },
+    {
+      "source_file": "nso_V06.15_2010_2024.xlsx",
+      "source_province_name": "Đồng bằng sông Cửu Long"
+    },
+    {
+      "source_file": "nso_V06.15_2010_2024.xlsx",
+      "source_province_name": "Đồng bằng sông Hồng"
+    }
+  ],
+  "quality": {
+    "record_count": 945,
+    "schema": {
+      "year": "int",
+      "province_id": "int",
+      "province_name": "string",
+      "region": "string",
+      "rice_area_ha": "double",
+      "rice_yield_ton_ha": "double",
+      "rice_production_ton": "double"
+    },
+    "duplicate_province_year_count": 0,
+    "year_coverage": [
+      {
+        "year": 2010,
+        "count": 63
+      },
+      {
+        "year": 2011,
+        "count": 63
+      },
+      {
+        "year": 2012,
+        "count": 63
+      },
+      {
+        "year": 2013,
+        "count": 63
+      },
+      {
+        "year": 2014,
+        "count": 63
+      },
+      {
+        "year": 2015,
+        "count": 63
+      },
+      {
+        "year": 2016,
+        "count": 63
+      },
+      {
+        "year": 2017,
+        "count": 63
+      },
+      {
+        "year": 2018,
+        "count": 63
+      },
+      {
+        "year": 2019,
+        "count": 63
+      },
+      {
+        "year": 2020,
+        "count": 63
+      },
+      {
+        "year": 2021,
+        "count": 63
+      },
+      {
+        "year": 2022,
+        "count": 63
+      },
+      {
+        "year": 2023,
+        "count": 63
+      },
+      {
+        "year": 2024,
+        "count": 63
+      }
+    ],
+    "year_min": 2010,
+    "year_max": 2024,
+    "province_count": 63,
+    "province_id_count": 63,
+    "province_id_min": 1,
+    "province_id_max": 63,
+    "duplicate_province_id_year_count": 0,
+    "region_count": 7,
+    "missing_values": {
+      "year": 0,
+      "province_id": 0,
+      "province_name": 0,
+      "region": 0,
+      "rice_area_ha": 0,
+      "rice_yield_ton_ha": 0,
+      "rice_production_ton": 0
+    },
+    "negative_measurements": {
+      "rice_area_ha": 0,
+      "rice_yield_ton_ha": 0,
+      "rice_production_ton": 0
+    },
+    "invalid_numeric_count": 0,
+    "invalid_numeric_examples": [],
+    "unmatched_observation_count": 0,
+    "unmatched_provinces": [],
+    "reference_provinces_without_observations": [],
+    "consistency": {
+      "rule": "abs(production - area * yield) > max(100 tons, 0.02 * abs(area * yield))",
+      "evaluated_records": 945,
+      "warning_count": 0,
+      "examples": []
+    },
+    "source_name_mapping": [
+      {
+        "province_key": "an giang",
+        "source_province_name": "An Giang",
+        "province_name": "An Giang",
+        "region": "Đồng bằng sông Cửu Long",
+        "province_id": 57
+      },
+      {
+        "province_key": "ba ria vung tau",
+        "source_province_name": "Bà Rịa - Vũng Tàu",
+        "province_name": "Bà Rịa – Vũng Tàu",
+        "region": "Đông Nam Bộ",
+        "province_id": 49
+      },
+      {
+        "province_key": "bac giang",
+        "source_province_name": "Bắc Giang",
+        "province_name": "Bắc Giang",
+        "region": "Trung du và miền núi phía Bắc",
+        "province_id": 9
+      },
+      {
+        "province_key": "bac kan",
+        "source_province_name": "Bắc Kạn",
+        "province_name": "Bắc Kạn",
+        "region": "Trung du và miền núi phía Bắc",
+        "province_id": 3
+      },
+      {
+        "province_key": "bac lieu",
+        "source_province_name": "Bạc Liêu",
+        "province_name": "Bạc Liêu",
+        "region": "Đồng bằng sông Cửu Long",
+        "province_id": 62
+      },
+      {
+        "province_key": "bac ninh",
+        "source_province_name": "Bắc Ninh",
+        "province_name": "Bắc Ninh",
+        "region": "Đồng bằng sông Hồng",
+        "province_id": 19
+      },
+      {
+        "province_key": "ben tre",
+        "source_province_name": "Bến Tre",
+        "province_name": "Bến Tre",
+        "region": "Đồng bằng sông Cửu Long",
+        "province_id": 53
+      },
+      {
+        "province_key": "binh dinh",
+        "source_province_name": "Bình Định",
+        "province_name": "Bình Định",
+        "region": "Duyên hải Nam Trung Bộ",
+        "province_id": 35
+      },
+      {
+        "province_key": "binh duong",
+        "source_province_name": "Bình Dương",
+        "province_name": "Bình Dương",
+        "region": "Đông Nam Bộ",
+        "province_id": 47
+      },
+      {
+        "province_key": "binh phuoc",
+        "source_province_name": "Bình Phước",
+        "province_name": "Bình Phước",
+        "region": "Đông Nam Bộ",
+        "province_id": 45
+      },
+      {
+        "province_key": "binh thuan",
+        "source_province_name": "Bình Thuận",
+        "province_name": "Bình Thuận",
+        "region": "Duyên hải Nam Trung Bộ",
+        "province_id": 39
+      },
+      {
+        "province_key": "ca mau",
+        "source_province_name": "Cà Mau",
+        "province_name": "Cà Mau",
+        "region": "Đồng bằng sông Cửu Long",
+        "province_id": 63
+      },
+      {
+        "province_key": "can tho",
+        "source_province_name": "Cần Thơ",
+        "province_name": "Cần Thơ",
+        "region": "Đồng bằng sông Cửu Long",
+        "province_id": 59
+      },
+      {
+        "province_key": "cao bang",
+        "source_province_name": "Cao Bằng",
+        "province_name": "Cao Bằng",
+        "region": "Trung du và miền núi phía Bắc",
+        "province_id": 2
+      },
+      {
+        "province_key": "da nang",
+        "source_province_name": "Đà Nẵng",
+        "province_name": "Đà Nẵng",
+        "region": "Duyên hải Nam Trung Bộ",
+        "province_id": 32
+      },
+      {
+        "province_key": "dak lak",
+        "source_province_name": "Đắk Lắk",
+        "province_name": "Đắk Lắk",
+        "region": "Tây Nguyên",
+        "province_id": 42
+      },
+      {
+        "province_key": "dak nong",
+        "source_province_name": "Đắk Nông",
+        "province_name": "Đắk Nông",
+        "region": "Tây Nguyên",
+        "province_id": 43
+      },
+      {
+        "province_key": "dien bien",
+        "source_province_name": "Điện Biên",
+        "province_name": "Điện Biên",
+        "region": "Trung du và miền núi phía Bắc",
+        "province_id": 12
+      },
+      {
+        "province_key": "dong nai",
+        "source_province_name": "Đồng Nai",
+        "province_name": "Đồng Nai",
+        "region": "Đông Nam Bộ",
+        "province_id": 48
+      },
+      {
+        "province_key": "dong thap",
+        "source_province_name": "Đồng Tháp",
+        "province_name": "Đồng Tháp",
+        "region": "Đồng bằng sông Cửu Long",
+        "province_id": 56
+      },
+      {
+        "province_key": "gia lai",
+        "source_province_name": "Gia Lai",
+        "province_name": "Gia Lai",
+        "region": "Tây Nguyên",
+        "province_id": 41
+      },
+      {
+        "province_key": "ha giang",
+        "source_province_name": "Hà Giang",
+        "province_name": "Hà Giang",
+        "region": "Trung du và miền núi phía Bắc",
+        "province_id": 1
+      },
+      {
+        "province_key": "ha nam",
+        "source_province_name": "Hà Nam",
+        "province_name": "Hà Nam",
+        "region": "Đồng bằng sông Hồng",
+        "province_id": 23
+      },
+      {
+        "province_key": "ha noi",
+        "source_province_name": "Hà Nội",
+        "province_name": "Hà Nội",
+        "region": "Đồng bằng sông Hồng",
+        "province_id": 16
+      },
+      {
+        "province_key": "ha tinh",
+        "source_province_name": "Hà Tĩnh",
+        "province_name": "Hà Tĩnh",
+        "region": "Bắc Trung Bộ",
+        "province_id": 28
+      },
+      {
+        "province_key": "hai duong",
+        "source_province_name": "Hải Dương",
+        "province_name": "Hải Dương",
+        "region": "Đồng bằng sông Hồng",
+        "province_id": 20
+      },
+      {
+        "province_key": "hai phong",
+        "source_province_name": "Hải Phòng",
+        "province_name": "Hải Phòng",
+        "region": "Đồng bằng sông Hồng",
+        "province_id": 17
+      },
+      {
+        "province_key": "hau giang",
+        "source_province_name": "Hậu Giang",
+        "province_name": "Hậu Giang",
+        "region": "Đồng bằng sông Cửu Long",
+        "province_id": 60
+      },
+      {
+        "province_key": "ho chi minh",
+        "source_province_name": "TP.Hồ Chí Minh",
+        "province_name": "TP. Hồ Chí Minh",
+        "region": "Đông Nam Bộ",
+        "province_id": 50
+      },
+      {
+        "province_key": "hoa binh",
+        "source_province_name": "Hoà Bình",
+        "province_name": "Hòa Bình",
+        "region": "Trung du và miền núi phía Bắc",
+        "province_id": 15
+      },
+      {
+        "province_key": "hung yen",
+        "source_province_name": "Hưng Yên",
+        "province_name": "Hưng Yên",
+        "region": "Đồng bằng sông Hồng",
+        "province_id": 21
+      },
+      {
+        "province_key": "khanh hoa",
+        "source_province_name": "Khánh Hoà",
+        "province_name": "Khánh Hòa",
+        "region": "Duyên hải Nam Trung Bộ",
+        "province_id": 37
+      },
+      {
+        "province_key": "kien giang",
+        "source_province_name": "Kiên Giang",
+        "province_name": "Kiên Giang",
+        "region": "Đồng bằng sông Cửu Long",
+        "province_id": 58
+      },
+      {
+        "province_key": "kon tum",
+        "source_province_name": "Kon Tum",
+        "province_name": "Kon Tum",
+        "region": "Tây Nguyên",
+        "province_id": 40
+      },
+      {
+        "province_key": "lai chau",
+        "source_province_name": "Lai Châu",
+        "province_name": "Lai Châu",
+        "region": "Trung du và miền núi phía Bắc",
+        "province_id": 13
+      },
+      {
+        "province_key": "lam dong",
+        "source_province_name": "Lâm Đồng",
+        "province_name": "Lâm Đồng",
+        "region": "Tây Nguyên",
+        "province_id": 44
+      },
+      {
+        "province_key": "lang son",
+        "source_province_name": "Lạng Sơn",
+        "province_name": "Lạng Sơn",
+        "region": "Trung du và miền núi phía Bắc",
+        "province_id": 8
+      },
+      {
+        "province_key": "lao cai",
+        "source_province_name": "Lào Cai",
+        "province_name": "Lào Cai",
+        "region": "Trung du và miền núi phía Bắc",
+        "province_id": 5
+      },
+      {
+        "province_key": "long an",
+        "source_province_name": "Long An",
+        "province_name": "Long An",
+        "region": "Đồng bằng sông Cửu Long",
+        "province_id": 51
+      },
+      {
+        "province_key": "nam dinh",
+        "source_province_name": "Nam Định",
+        "province_name": "Nam Định",
+        "region": "Đồng bằng sông Hồng",
+        "province_id": 24
+      },
+      {
+        "province_key": "nghe an",
+        "source_province_name": "Nghệ An",
+        "province_name": "Nghệ An",
+        "region": "Bắc Trung Bộ",
+        "province_id": 27
+      },
+      {
+        "province_key": "ninh binh",
+        "source_province_name": "Ninh Bình",
+        "province_name": "Ninh Bình",
+        "region": "Đồng bằng sông Hồng",
+        "province_id": 25
+      },
+      {
+        "province_key": "ninh thuan",
+        "source_province_name": "Ninh Thuận",
+        "province_name": "Ninh Thuận",
+        "region": "Duyên hải Nam Trung Bộ",
+        "province_id": 38
+      },
+      {
+        "province_key": "phu tho",
+        "source_province_name": "Phú Thọ",
+        "province_name": "Phú Thọ",
+        "region": "Trung du và miền núi phía Bắc",
+        "province_id": 11
+      },
+      {
+        "province_key": "phu yen",
+        "source_province_name": "Phú Yên",
+        "province_name": "Phú Yên",
+        "region": "Duyên hải Nam Trung Bộ",
+        "province_id": 36
+      },
+      {
+        "province_key": "quang binh",
+        "source_province_name": "Quảng Bình",
+        "province_name": "Quảng Bình",
+        "region": "Bắc Trung Bộ",
+        "province_id": 29
+      },
+      {
+        "province_key": "quang nam",
+        "source_province_name": "Quảng Nam",
+        "province_name": "Quảng Nam",
+        "region": "Duyên hải Nam Trung Bộ",
+        "province_id": 33
+      },
+      {
+        "province_key": "quang ngai",
+        "source_province_name": "Quảng Ngãi",
+        "province_name": "Quảng Ngãi",
+        "region": "Duyên hải Nam Trung Bộ",
+        "province_id": 34
+      },
+      {
+        "province_key": "quang ninh",
+        "source_province_name": "Quảng Ninh",
+        "province_name": "Quảng Ninh",
+        "region": "Trung du và miền núi phía Bắc",
+        "province_id": 10
+      },
+      {
+        "province_key": "quang tri",
+        "source_province_name": "Quảng Trị",
+        "province_name": "Quảng Trị",
+        "region": "Bắc Trung Bộ",
+        "province_id": 30
+      },
+      {
+        "province_key": "soc trang",
+        "source_province_name": "Sóc Trăng",
+        "province_name": "Sóc Trăng",
+        "region": "Đồng bằng sông Cửu Long",
+        "province_id": 61
+      },
+      {
+        "province_key": "son la",
+        "source_province_name": "Sơn La",
+        "province_name": "Sơn La",
+        "region": "Trung du và miền núi phía Bắc",
+        "province_id": 14
+      },
+      {
+        "province_key": "tay ninh",
+        "source_province_name": "Tây Ninh",
+        "province_name": "Tây Ninh",
+        "region": "Đông Nam Bộ",
+        "province_id": 46
+      },
+      {
+        "province_key": "thai binh",
+        "source_province_name": "Thái Bình",
+        "province_name": "Thái Bình",
+        "region": "Đồng bằng sông Hồng",
+        "province_id": 22
+      },
+      {
+        "province_key": "thai nguyen",
+        "source_province_name": "Thái Nguyên",
+        "province_name": "Thái Nguyên",
+        "region": "Trung du và miền núi phía Bắc",
+        "province_id": 7
+      },
+      {
+        "province_key": "thanh hoa",
+        "source_province_name": "Thanh Hoá",
+        "province_name": "Thanh Hóa",
+        "region": "Bắc Trung Bộ",
+        "province_id": 26
+      },
+      {
+        "province_key": "thua thien hue",
+        "source_province_name": "Thừa Thiên Huế",
+        "province_name": "Thừa Thiên Huế",
+        "region": "Bắc Trung Bộ",
+        "province_id": 31
+      },
+      {
+        "province_key": "tien giang",
+        "source_province_name": "Tiền Giang",
+        "province_name": "Tiền Giang",
+        "region": "Đồng bằng sông Cửu Long",
+        "province_id": 52
+      },
+      {
+        "province_key": "tra vinh",
+        "source_province_name": "Trà Vinh",
+        "province_name": "Trà Vinh",
+        "region": "Đồng bằng sông Cửu Long",
+        "province_id": 54
+      },
+      {
+        "province_key": "tuyen quang",
+        "source_province_name": "Tuyên Quang",
+        "province_name": "Tuyên Quang",
+        "region": "Trung du và miền núi phía Bắc",
+        "province_id": 4
+      },
+      {
+        "province_key": "vinh long",
+        "source_province_name": "Vĩnh Long",
+        "province_name": "Vĩnh Long",
+        "region": "Đồng bằng sông Cửu Long",
+        "province_id": 55
+      },
+      {
+        "province_key": "vinh phuc",
+        "source_province_name": "Vĩnh Phúc",
+        "province_name": "Vĩnh Phúc",
+        "region": "Đồng bằng sông Hồng",
+        "province_id": 18
+      },
+      {
+        "province_key": "yen bai",
+        "source_province_name": "Yên Bái",
+        "province_name": "Yên Bái",
+        "region": "Trung du và miền núi phía Bắc",
+        "province_id": 6
+      }
+    ],
+    "warnings": []
+  },
+  "sample_records": [
+    {
+      "year": 2010,
+      "province_id": 1,
+      "province_name": "Hà Giang",
+      "region": "Trung du và miền núi phía Bắc",
+      "rice_area_ha": 36500.0,
+      "rice_yield_ton_ha": 5.32,
+      "rice_production_ton": 194200.0
+    },
+    {
+      "year": 2010,
+      "province_id": 2,
+      "province_name": "Cao Bằng",
+      "region": "Trung du và miền núi phía Bắc",
+      "rice_area_ha": 30500.0,
+      "rice_yield_ton_ha": 4.12,
+      "rice_production_ton": 125800.0
+    },
+    {
+      "year": 2010,
+      "province_id": 3,
+      "province_name": "Bắc Kạn",
+      "region": "Trung du và miền núi phía Bắc",
+      "rice_area_ha": 21800.0,
+      "rice_yield_ton_ha": 4.3,
+      "rice_production_ton": 93700.0
+    },
+    {
+      "year": 2010,
+      "province_id": 4,
+      "province_name": "Tuyên Quang",
+      "region": "Trung du và miền núi phía Bắc",
+      "rice_area_ha": 45400.0,
+      "rice_yield_ton_ha": 5.7700000000000005,
+      "rice_production_ton": 261800.0
+    },
+    {
+      "year": 2010,
+      "province_id": 5,
+      "province_name": "Lào Cai",
+      "region": "Trung du và miền núi phía Bắc",
+      "rice_area_ha": 29700.0,
+      "rice_yield_ton_ha": 4.260000000000001,
+      "rice_production_ton": 126400.0
+    }
+  ],
+  "parquet_file": "data/processed/agriculture/rice_province_year/rice_province_year.parquet"
+}
