@@ -1,0 +1,2 @@
+# Infrastructure scaffold. Add service definitions when deployment is configured.
+services: {}

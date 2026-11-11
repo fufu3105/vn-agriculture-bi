@@ -1,4 +1,19 @@
-# Data Dictionary
+# Data Directory
+
+## Directory Layout
+
+| Directory | Purpose |
+|-----------|---------|
+| `raw/agriculture/` | Original agricultural datasets. |
+| `raw/weather/` | Original weather datasets. |
+| `processed/agriculture/` | Cleaned agricultural datasets. |
+| `processed/weather/` | Cleaned weather datasets. |
+| `processed/reference/` | Shared reference tables and geographic mappings. |
+| `analytics/bp1/` | Analytical outputs for business problem 1. |
+| `analytics/bp2/` | Analytical outputs for business problem 2. |
+| `analytics/bp3/` | Analytical outputs for business problem 3. |
+| `analytics/bp4/` | Analytical outputs for business problem 4. |
+
 
 ## BP1 rice panel
 
