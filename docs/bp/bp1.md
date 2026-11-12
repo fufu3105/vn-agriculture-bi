@@ -17,7 +17,7 @@ From the repository root, after installing `requirements.txt`:
 
 ```powershell
 python src/bp1/bp1.py
-python -m streamlit run dashboard/app.py
+python -m streamlit run dashboard/app.py --theme.base=configs/config.toml
 ```
 
 Open http://localhost:8501 and select BP1, or use http://localhost:8501/bp1.

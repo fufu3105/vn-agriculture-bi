@@ -6,7 +6,7 @@ From the repository root:
 
 ```powershell
 python -m pip install -r requirements.txt
-python -m streamlit run dashboard/app.py
+python -m streamlit run dashboard/app.py --theme.base=configs/config.toml
 ```
 
 On Windows, `run_bp1.cmd` uses `.venv` when available and starts the shared application. The filename is retained for compatibility, but it opens all four dashboards. It does not build BP1 or any other member's data as a prerequisite.
@@ -38,7 +38,7 @@ Each member can replace their dashboard placeholder and add helpers inside their
 
 Each BP reads cleaned shared data from `data/processed/`, calculates its own features, indicators or models and writes Parquet into its own analytics directory. A dashboard reads only that BP's analytics output. File names and derived schemas belong to the BP owner and should be documented in `docs/bp/bpN.md`.
 
-The coordinator owns `dashboard/app.py`, `dashboard/styles.css`, `.streamlit/config.toml` and shared dependencies in `requirements.txt`. The only shell change needed after integration is changing the BP's readiness flag in `BUSINESS_PROBLEMS` from `False` to `True`; this changes the homepage status, not routing. Members do not need to edit navigation or BP1 to develop their pages.
+The coordinator owns `dashboard/app.py`, `dashboard/styles.css`, `configs/config.toml` and shared dependencies in `requirements.txt`. The theme is loaded at startup with `--theme.base=configs/config.toml`; the Windows launchers pass its absolute path automatically. The only shell change needed after integration is changing the BP's readiness flag in `BUSINESS_PROBLEMS` from `False` to `True`; this changes the homepage status, not routing. Members do not need to edit navigation or BP1 to develop their pages.
 
 ## Minimal BP2 page example
 

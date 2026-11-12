@@ -20,6 +20,6 @@ Preserve the repository's existing directory structure. Do not duplicate shared 
 | BP3 | Forecast next-year production and evaluate errors | Integration placeholder |
 | BP4 | Examine temperature/rainfall associations with yield | Integration placeholder |
 
-The shared interface uses English with a green, gold and ivory theme. Theme configuration lives in `.streamlit/config.toml`; shared CSS lives in `dashboard/styles.css`. BP1 has its own distinct chart-series palette.
+The shared interface uses English with a green, gold and ivory theme. Theme configuration lives in `configs/config.toml` and is loaded through Streamlit's `--theme.base` startup option; shared CSS lives in `dashboard/styles.css`. BP1 has its own distinct chart-series palette.
 
 See the [integration guide](guides/dashboard.md) and [BP1 data contract](bp/bp1.md).
