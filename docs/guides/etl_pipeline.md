@@ -1,10 +1,10 @@
 # Agriculture ETL: Raw to Processed
 
-[Project overview](../README.md) | [Environment setup](environment_setup.md)
+[Project overview](../../README.md) | [Environment setup](environment_setup.md)
 
 Complete the environment setup, including Java and the Windows filesystem adapter where applicable, before running this pipeline. Run all commands from the repository root.
 
-Export the three NSO tables linked in the [README dataset section](../README.md#dataset) for 2010–2024 and place the Excel files under `data/raw/agriculture/` with the exact filenames shown. Keep the geographical reference at `data/vietnam_regions_provinces.json`.
+Export the three NSO tables linked in the [README dataset section](../../README.md#dataset) for 2010–2024 and place the Excel files under `data/raw/agriculture/` with the exact filenames shown. Keep the geographical reference at `data/vietnam_regions_provinces.json`.
 
 ```text
 data/
