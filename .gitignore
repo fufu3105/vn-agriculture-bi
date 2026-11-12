@@ -19,3 +19,12 @@ env/
 # Operating system files
 .DS_Store
 Thumbs.db
+
+# Generated NASA POWER responses, weather tables and collection metadata
+data/raw/weather/nasa_power/
+data/processed/weather/*.parquet/
+data/processed/weather/weather_daily/
+data/processed/weather/weather_monthly/
+data/processed/weather/weather_annual/
+data/processed/weather/pilot/
+data/weather_metadata/

@@ -80,7 +80,6 @@ vn-agriculture-bi/
 │   │   ├── provinces.py
 │   │   └── validation.py
 │   ├── bp1/                       # Analysis for business problem 1
-│   │   └── bp1.py
 │   ├── bp2/                       # Analysis for business problem 2
 │   ├── bp3/                       # Analysis for business problem 3
 │   ├── bp4/                       # Analysis for business problem 4
