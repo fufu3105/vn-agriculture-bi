@@ -1,0 +1,575 @@
+{
+  "source_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_1_states_provinces.geojson",
+  "source_sha256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5",
+  "reference_sha256": "0c7550a3349d7b52c5d1c129f782dfe83e3eddcb468307d54abb152f945087f3",
+  "coordinate_method": "Natural Earth admin-1 latitude/longitude label points, matched using province names and GeoNames gn_name attributes",
+  "provinces": [
+    {
+      "province_id": 1,
+      "province_name": "Hà Giang",
+      "region": "Trung du và miền núi phía Bắc",
+      "latitude": 22.7655,
+      "longitude": 104.965,
+      "source_feature_id": "VNM-512",
+      "source_name": "Tinh Ha Giang"
+    },
+    {
+      "province_id": 2,
+      "province_name": "Cao Bằng",
+      "region": "Trung du và miền núi phía Bắc",
+      "latitude": 22.7595,
+      "longitude": 106.047,
+      "source_feature_id": "VNM-511",
+      "source_name": "Tinh Cao Bang"
+    },
+    {
+      "province_id": 3,
+      "province_name": "Bắc Kạn",
+      "region": "Trung du và miền núi phía Bắc",
+      "latitude": 22.1476,
+      "longitude": 105.874,
+      "source_feature_id": "VNM-451",
+      "source_name": "Tinh Bac Kan"
+    },
+    {
+      "province_id": 4,
+      "province_name": "Tuyên Quang",
+      "region": "Trung du và miền núi phía Bắc",
+      "latitude": 22.131,
+      "longitude": 105.229,
+      "source_feature_id": "VNM-457",
+      "source_name": "Tinh Tuyen Quang"
+    },
+    {
+      "province_id": 5,
+      "province_name": "Lào Cai",
+      "region": "Trung du và miền núi phía Bắc",
+      "latitude": 22.3559,
+      "longitude": 104.096,
+      "source_feature_id": "VNM-5483",
+      "source_name": "Tinh Lao Cai"
+    },
+    {
+      "province_id": 6,
+      "province_name": "Yên Bái",
+      "region": "Trung du và miền núi phía Bắc",
+      "latitude": 21.7484,
+      "longitude": 104.512,
+      "source_feature_id": "VNM-458",
+      "source_name": "Tinh Yen Bai"
+    },
+    {
+      "province_id": 7,
+      "province_name": "Thái Nguyên",
+      "region": "Trung du và miền núi phía Bắc",
+      "latitude": 21.5812,
+      "longitude": 105.887,
+      "source_feature_id": "VNM-452",
+      "source_name": "Tinh Thai Nguyen"
+    },
+    {
+      "province_id": 8,
+      "province_name": "Lạng Sơn",
+      "region": "Trung du và miền núi phía Bắc",
+      "latitude": 21.7826,
+      "longitude": 106.724,
+      "source_feature_id": "VNM-454",
+      "source_name": "Tinh Lang Son"
+    },
+    {
+      "province_id": 9,
+      "province_name": "Bắc Giang",
+      "region": "Trung du và miền núi phía Bắc",
+      "latitude": 21.3512,
+      "longitude": 106.493,
+      "source_feature_id": "VNM-470",
+      "source_name": "Tinh Bac Giang"
+    },
+    {
+      "province_id": 10,
+      "province_name": "Quảng Ninh",
+      "region": "Trung du và miền núi phía Bắc",
+      "latitude": 21.223,
+      "longitude": 107.181,
+      "source_feature_id": "VNM-429",
+      "source_name": "Tinh Quang Ninh"
+    },
+    {
+      "province_id": 11,
+      "province_name": "Phú Thọ",
+      "region": "Trung du và miền núi phía Bắc",
+      "latitude": 21.3127,
+      "longitude": 105.143,
+      "source_feature_id": "VNM-469",
+      "source_name": "Tinh Phu Tho"
+    },
+    {
+      "province_id": 12,
+      "province_name": "Điện Biên",
+      "region": "Trung du và miền núi phía Bắc",
+      "latitude": 21.7487,
+      "longitude": 103.226,
+      "source_feature_id": "VNM-450",
+      "source_name": "Huyen Dien Bien"
+    },
+    {
+      "province_id": 13,
+      "province_name": "Lai Châu",
+      "region": "Trung du và miền núi phía Bắc",
+      "latitude": 22.3502,
+      "longitude": 103.255,
+      "source_feature_id": "VNM-453",
+      "source_name": "Tinh Lai Chau"
+    },
+    {
+      "province_id": 14,
+      "province_name": "Sơn La",
+      "region": "Trung du và miền núi phía Bắc",
+      "latitude": 21.3011,
+      "longitude": 104.159,
+      "source_feature_id": "VNM-455",
+      "source_name": "Tinh Son La"
+    },
+    {
+      "province_id": 15,
+      "province_name": "Hòa Bình",
+      "region": "Trung du và miền núi phía Bắc",
+      "latitude": 20.7292,
+      "longitude": 105.34,
+      "source_feature_id": "VNM-459",
+      "source_name": "Tinh Hoa Binh"
+    },
+    {
+      "province_id": 16,
+      "province_name": "Hà Nội",
+      "region": "Đồng bằng sông Hồng",
+      "latitude": 21.1306,
+      "longitude": 105.872,
+      "source_feature_id": "VNM-462",
+      "source_name": "Thanh Pho Ha Noi"
+    },
+    {
+      "province_id": 17,
+      "province_name": "Hải Phòng",
+      "region": "Đồng bằng sông Hồng",
+      "latitude": 20.79,
+      "longitude": 106.635,
+      "source_feature_id": "VNM-4600",
+      "source_name": "Thanh Pho Hai Phong"
+    },
+    {
+      "province_id": 18,
+      "province_name": "Vĩnh Phúc",
+      "region": "Đồng bằng sông Hồng",
+      "latitude": 21.3455,
+      "longitude": 105.549,
+      "source_feature_id": "VNM-464",
+      "source_name": "Tinh Vinh Phuc"
+    },
+    {
+      "province_id": 19,
+      "province_name": "Bắc Ninh",
+      "region": "Đồng bằng sông Hồng",
+      "latitude": 21.098,
+      "longitude": 106.117,
+      "source_feature_id": "VNM-463",
+      "source_name": "Tinh Bac Ninh"
+    },
+    {
+      "province_id": 20,
+      "province_name": "Hải Dương",
+      "region": "Đồng bằng sông Hồng",
+      "latitude": 20.9613,
+      "longitude": 106.364,
+      "source_feature_id": "VNM-460",
+      "source_name": "Tinh Hai Duong"
+    },
+    {
+      "province_id": 21,
+      "province_name": "Hưng Yên",
+      "region": "Đồng bằng sông Hồng",
+      "latitude": 20.8085,
+      "longitude": 106.076,
+      "source_feature_id": "VNM-461",
+      "source_name": "Tinh Hung Yen"
+    },
+    {
+      "province_id": 22,
+      "province_name": "Thái Bình",
+      "region": "Đồng bằng sông Hồng",
+      "latitude": 20.5303,
+      "longitude": 106.371,
+      "source_feature_id": "VNM-471",
+      "source_name": "Tinh Thai Binh"
+    },
+    {
+      "province_id": 23,
+      "province_name": "Hà Nam",
+      "region": "Đồng bằng sông Hồng",
+      "latitude": 20.5569,
+      "longitude": 105.985,
+      "source_feature_id": "VNM-467",
+      "source_name": "Tinh Ha Nam"
+    },
+    {
+      "province_id": 24,
+      "province_name": "Nam Định",
+      "region": "Đồng bằng sông Hồng",
+      "latitude": 20.2343,
+      "longitude": 106.254,
+      "source_feature_id": "VNM-468",
+      "source_name": "Tinh Nam Dinh"
+    },
+    {
+      "province_id": 25,
+      "province_name": "Ninh Bình",
+      "region": "Đồng bằng sông Hồng",
+      "latitude": 20.2722,
+      "longitude": 105.852,
+      "source_feature_id": "VNM-466",
+      "source_name": "Tinh Ninh Binh"
+    },
+    {
+      "province_id": 26,
+      "province_name": "Thanh Hóa",
+      "region": "Bắc Trung Bộ",
+      "latitude": 20.0917,
+      "longitude": 105.215,
+      "source_feature_id": "VNM-456",
+      "source_name": "Tinh Thanh Hoa"
+    },
+    {
+      "province_id": 27,
+      "province_name": "Nghệ An",
+      "region": "Bắc Trung Bộ",
+      "latitude": 19.3548,
+      "longitude": 104.827,
+      "source_feature_id": "VNM-475",
+      "source_name": "Tinh Nghe An"
+    },
+    {
+      "province_id": 28,
+      "province_name": "Hà Tĩnh",
+      "region": "Bắc Trung Bộ",
+      "latitude": 18.3563,
+      "longitude": 105.799,
+      "source_feature_id": "VNM-474",
+      "source_name": "Tinh Ha Tinh"
+    },
+    {
+      "province_id": 29,
+      "province_name": "Quảng Bình",
+      "region": "Bắc Trung Bộ",
+      "latitude": 17.4691,
+      "longitude": 106.357,
+      "source_feature_id": "VNM-476",
+      "source_name": "Tinh Quang Binh"
+    },
+    {
+      "province_id": 30,
+      "province_name": "Quảng Trị",
+      "region": "Bắc Trung Bộ",
+      "latitude": 16.7204,
+      "longitude": 106.973,
+      "source_feature_id": "VNM-489",
+      "source_name": "Tinh Quang Tri"
+    },
+    {
+      "province_id": 31,
+      "province_name": "Thừa Thiên Huế",
+      "region": "Bắc Trung Bộ",
+      "latitude": 16.312,
+      "longitude": 107.634,
+      "source_feature_id": "VNM-490",
+      "source_name": "Tinh Thua Thien-Hue"
+    },
+    {
+      "province_id": 32,
+      "province_name": "Đà Nẵng",
+      "region": "Duyên hải Nam Trung Bộ",
+      "latitude": 16.0912,
+      "longitude": 108.102,
+      "source_feature_id": "VNM-491",
+      "source_name": "Thanh Pho Da Nang"
+    },
+    {
+      "province_id": 33,
+      "province_name": "Quảng Nam",
+      "region": "Duyên hải Nam Trung Bộ",
+      "latitude": 15.6535,
+      "longitude": 107.955,
+      "source_feature_id": "VNM-487",
+      "source_name": "Tinh Quang Nam"
+    },
+    {
+      "province_id": 34,
+      "province_name": "Quảng Ngãi",
+      "region": "Duyên hải Nam Trung Bộ",
+      "latitude": 14.9971,
+      "longitude": 108.686,
+      "source_feature_id": "VNM-488",
+      "source_name": "Tinh Quang Ngai"
+    },
+    {
+      "province_id": 35,
+      "province_name": "Bình Định",
+      "region": "Duyên hải Nam Trung Bộ",
+      "latitude": 14.1075,
+      "longitude": 108.971,
+      "source_feature_id": "VNM-485",
+      "source_name": "Tinh Binh Dinh"
+    },
+    {
+      "province_id": 36,
+      "province_name": "Phú Yên",
+      "region": "Duyên hải Nam Trung Bộ",
+      "latitude": 13.1647,
+      "longitude": 109.064,
+      "source_feature_id": "VNM-482",
+      "source_name": "Tinh Phu Yen"
+    },
+    {
+      "province_id": 37,
+      "province_name": "Khánh Hòa",
+      "region": "Duyên hải Nam Trung Bộ",
+      "latitude": 12.6049,
+      "longitude": 109.359,
+      "source_feature_id": "VNM-479",
+      "source_name": "Tinh Khanh Hoa"
+    },
+    {
+      "province_id": 38,
+      "province_name": "Ninh Thuận",
+      "region": "Duyên hải Nam Trung Bộ",
+      "latitude": 11.6242,
+      "longitude": 108.925,
+      "source_feature_id": "VNM-481",
+      "source_name": "Tinh Ninh Thuan"
+    },
+    {
+      "province_id": 39,
+      "province_name": "Bình Thuận",
+      "region": "Duyên hải Nam Trung Bộ",
+      "latitude": 11.1284,
+      "longitude": 108.232,
+      "source_feature_id": "VNM-496",
+      "source_name": "Tinh Binh Thuan"
+    },
+    {
+      "province_id": 40,
+      "province_name": "Kon Tum",
+      "region": "Tây Nguyên",
+      "latitude": 14.7451,
+      "longitude": 107.969,
+      "source_feature_id": "VNM-486",
+      "source_name": "Tinh Kon Tum"
+    },
+    {
+      "province_id": 41,
+      "province_name": "Gia Lai",
+      "region": "Tây Nguyên",
+      "latitude": 13.8493,
+      "longitude": 108.156,
+      "source_feature_id": "VNM-478",
+      "source_name": "Tinh Gia Lai"
+    },
+    {
+      "province_id": 42,
+      "province_name": "Đắk Lắk",
+      "region": "Tây Nguyên",
+      "latitude": 12.7691,
+      "longitude": 108.133,
+      "source_feature_id": "VNM-477",
+      "source_name": "Tinh Dak Lak"
+    },
+    {
+      "province_id": 43,
+      "province_name": "Đắk Nông",
+      "region": "Tây Nguyên",
+      "latitude": 12.1425,
+      "longitude": 107.66,
+      "source_feature_id": "VNM-4835",
+      "source_name": "Dak Nong"
+    },
+    {
+      "province_id": 44,
+      "province_name": "Lâm Đồng",
+      "region": "Tây Nguyên",
+      "latitude": 11.5362,
+      "longitude": 108,
+      "source_feature_id": "VNM-480",
+      "source_name": "Tinh Lam Dong"
+    },
+    {
+      "province_id": 45,
+      "province_name": "Bình Phước",
+      "region": "Đông Nam Bộ",
+      "latitude": 11.6805,
+      "longitude": 106.897,
+      "source_feature_id": "VNM-484",
+      "source_name": "Tinh Binh Phuoc"
+    },
+    {
+      "province_id": 46,
+      "province_name": "Tây Ninh",
+      "region": "Đông Nam Bộ",
+      "latitude": 11.4121,
+      "longitude": 106.14,
+      "source_feature_id": "VNM-444",
+      "source_name": "Tinh Tay Ninh"
+    },
+    {
+      "province_id": 47,
+      "province_name": "Bình Dương",
+      "region": "Đông Nam Bộ",
+      "latitude": 11.1382,
+      "longitude": 106.659,
+      "source_feature_id": "VNM-483",
+      "source_name": "Tinh Binh Duong"
+    },
+    {
+      "province_id": 48,
+      "province_name": "Đồng Nai",
+      "region": "Đông Nam Bộ",
+      "latitude": 11.1258,
+      "longitude": 107.178,
+      "source_feature_id": "VNM-497",
+      "source_name": "Tinh Dong Nai"
+    },
+    {
+      "province_id": 49,
+      "province_name": "Bà Rịa – Vũng Tàu",
+      "region": "Đông Nam Bộ",
+      "latitude": 10.3969,
+      "longitude": 107.143,
+      "source_feature_id": "VNM-495",
+      "source_name": "Tinh Ba Ria-Vung Tau"
+    },
+    {
+      "province_id": 50,
+      "province_name": "TP. Hồ Chí Minh",
+      "region": "Đông Nam Bộ",
+      "latitude": 10.409,
+      "longitude": 106.926,
+      "source_feature_id": "VNM-501",
+      "source_name": "Thanh pho Ho Chi Minh"
+    },
+    {
+      "province_id": 51,
+      "province_name": "Long An",
+      "region": "Đồng bằng sông Cửu Long",
+      "latitude": 10.6869,
+      "longitude": 106.134,
+      "source_feature_id": "VNM-503",
+      "source_name": "Tinh Long An"
+    },
+    {
+      "province_id": 52,
+      "province_name": "Tiền Giang",
+      "region": "Đồng bằng sông Cửu Long",
+      "latitude": 10.4581,
+      "longitude": 106.217,
+      "source_feature_id": "VNM-4834",
+      "source_name": "Tinh Tien Giang"
+    },
+    {
+      "province_id": 53,
+      "province_name": "Bến Tre",
+      "region": "Đồng bằng sông Cửu Long",
+      "latitude": 10.171,
+      "longitude": 106.496,
+      "source_feature_id": "VNM-504",
+      "source_name": "Tinh Ben Tre"
+    },
+    {
+      "province_id": 54,
+      "province_name": "Trà Vinh",
+      "region": "Đồng bằng sông Cửu Long",
+      "latitude": 9.82817,
+      "longitude": 106.289,
+      "source_feature_id": "VNM-509",
+      "source_name": "Tinh Tra Vinh"
+    },
+    {
+      "province_id": 55,
+      "province_name": "Vĩnh Long",
+      "region": "Đồng bằng sông Cửu Long",
+      "latitude": 10.1042,
+      "longitude": 105.969,
+      "source_feature_id": "VNM-510",
+      "source_name": "Tinh Vinh Long"
+    },
+    {
+      "province_id": 56,
+      "province_name": "Đồng Tháp",
+      "region": "Đồng bằng sông Cửu Long",
+      "latitude": 10.6644,
+      "longitude": 105.586,
+      "source_feature_id": "VNM-500",
+      "source_name": "Tinh Dong Thap"
+    },
+    {
+      "province_id": 57,
+      "province_name": "An Giang",
+      "region": "Đồng bằng sông Cửu Long",
+      "latitude": 10.5736,
+      "longitude": 105.154,
+      "source_feature_id": "VNM-498",
+      "source_name": "Tinh An Giang"
+    },
+    {
+      "province_id": 58,
+      "province_name": "Kiên Giang",
+      "region": "Đồng bằng sông Cửu Long",
+      "latitude": 9.85962,
+      "longitude": 105.284,
+      "source_feature_id": "VNM-502",
+      "source_name": "Tinh Kien Giang"
+    },
+    {
+      "province_id": 59,
+      "province_name": "Cần Thơ",
+      "region": "Đồng bằng sông Cửu Long",
+      "latitude": 10.2421,
+      "longitude": 105.685,
+      "source_feature_id": "VNM-499",
+      "source_name": "Thanh Pho Can Tho"
+    },
+    {
+      "province_id": 60,
+      "province_name": "Hậu Giang",
+      "region": "Đồng bằng sông Cửu Long",
+      "latitude": 9.84353,
+      "longitude": 105.663,
+      "source_feature_id": "VNM-505",
+      "source_name": "Hau Giang"
+    },
+    {
+      "province_id": 61,
+      "province_name": "Sóc Trăng",
+      "region": "Đồng bằng sông Cửu Long",
+      "latitude": 9.5614,
+      "longitude": 105.9,
+      "source_feature_id": "VNM-508",
+      "source_name": "Tinh Soc Trang"
+    },
+    {
+      "province_id": 62,
+      "province_name": "Bạc Liêu",
+      "region": "Đồng bằng sông Cửu Long",
+      "latitude": 9.33941,
+      "longitude": 105.573,
+      "source_feature_id": "VNM-506",
+      "source_name": "Tinh Bac Lieu"
+    },
+    {
+      "province_id": 63,
+      "province_name": "Cà Mau",
+      "region": "Đồng bằng sông Cửu Long",
+      "latitude": 9.05545,
+      "longitude": 105.073,
+      "source_feature_id": "VNM-507",
+      "source_name": "Tinh Ca Mau"
+    }
+  ]
+}

@@ -55,12 +55,12 @@ def write_report(path, report):
     temporary.replace(path)
 
 
-def name_parquet_part(spark, directory):
+def name_parquet_part(spark, directory, filename="rice_province_year.parquet"):
     """Give the single local part a stable name, moving its checksum with it."""
     parts = sorted(directory.glob("part-*.parquet"))
     if len(parts) != 1:
         raise ValueError(f"Expected one generated Parquet part in {directory}; found {len(parts)}")
-    target = directory / "rice_province_year.parquet"
+    target = directory / filename
     if target.exists():
         raise ValueError(f"Unexpected existing output file after Spark overwrite: {target}")
     jpath = spark._jvm.org.apache.hadoop.fs.Path
