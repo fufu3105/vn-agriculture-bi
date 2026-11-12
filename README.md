@@ -61,54 +61,43 @@ The shared ETL also requires JDK 17 or 21. The badges above show verified versio
 
 ```text
 vn-agriculture-bi/
-├── data/                          # Source datasets and analytical outputs
-│   ├── raw/                       # Raw data
-│   │   ├── agriculture/
-│   │   └── weather/
-│   ├── processed/                 # Cleaned and standardized data
-│   │   ├── agriculture/
-│   │   └── weather/
-│   ├── analytics/                 # Aggregated tables and KPIs
-│   └── vietnam_regions_provinces.json  # Province and region reference
-│
-├── src/                           # Data processing and analysis source code
-│   ├── ingestion/                 # Data ingestion modules
-│   │   ├── agriculture.py
-│   │   └── weather.py
-│   ├── common/                    # Shared data utilities
-│   │   ├── cleaning.py
-│   │   ├── provinces.py
-│   │   └── validation.py
-│   ├── bp1/                       # Analysis for business problem 1
-│   │   └── bp1.py
-│   ├── bp2/                       # Analysis for business problem 2
-│   ├── bp3/                       # Analysis for business problem 3
-│   ├── bp4/                       # Analysis for business problem 4
-│   └── storage/                   # Data storage integration
-│
-├── dashboard/                     # Business Intelligence interface
-│   ├── app.py
-│   └── bp1/
-│       ├── bp1_template.html
-│       └── bp1.html
-│
-├── notebooks/                     # Exploratory analysis and experiments
-├── models/                        # Model artifacts
-├── scripts/                       # Utility and automation entry points
-│   ├── build_processed.py
-│   ├── build_analytics.py
-│   └── load_postgres.py
-├── configs/
-│
-├── docs/
-│   ├── business_problems.md
-│   ├── data_dictionary.md
+├── configs/                        # Pipeline and application configuration
+├── dashboard/                      # Interface
+│   ├── bp1/                        
+│   ├── bp2/                        
+│   ├── bp3/                        
+│   └── bp4/                        
+├── data/                           # Source datasets and processing outputs
+│   ├── analytics/                  # Aggregated tables and KPIs
+│   ├── processed/                  # Cleaned and standardized datasets
+│   ├── raw/                        # Original agriculture and weather data
+│   ├── weather_metadata/           # Download manifests and weather quality reports
+│   └── vietnam_regions_provinces.json
+├── deliverables/                   # Project reports and presentations
+│   ├── report/                     # Written reports
+│   └── slides/                     # Presentation slides
+├── docs/                           # Project documentation
+│   ├── bp/                         # Business problem documentation
+│   ├── guides/                     # Environment setup and execution guides
 │   ├── architecture.md
-│   └── bp1.md
-├── deliverables/                  # Reports and presentations
-│   ├── report/
-│   └── slides/
-│
+│   ├── business_problems.md
+│   └── data_dictionary.md
+├── models/                         # Model artifacts
+├── notebooks/                      # Exploratory analysis and experiments
+├── scripts/                        # ETL and automation entry points
+│   ├── build_analytics.py
+│   ├── build_processed.py
+│   ├── ingest_weather.py
+│   └── load_postgres.py
+├── src/                            # Data ingestion, processing, and analysis code
+│   ├── bp1/                        
+│   ├── bp2/                        
+│   ├── bp3/                        
+│   ├── bp4/                        
+│   ├── common/                     # Shared cleaning, mapping, and validation utilities
+│   ├── ingestion/                  # Agriculture extraction and weather downloads
+│   └── storage/                    # Data storage integration
+├── tests/                         
 ├── docker-compose.yml
 ├── .env.example
 ├── .gitattributes

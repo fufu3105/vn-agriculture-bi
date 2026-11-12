@@ -1,0 +1,172 @@
+{
+  "coordinate_source": {
+    "source_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_1_states_provinces.geojson",
+    "source_sha256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5",
+    "reference_sha256": "0c7550a3349d7b52c5d1c129f782dfe83e3eddcb468307d54abb152f945087f3",
+    "coordinate_method": "Natural Earth admin-1 latitude/longitude label points, matched using province names and GeoNames gn_name attributes"
+  },
+  "configuration": {
+    "start": "2010-01-01",
+    "end": "2024-12-31",
+    "pilot_start": "2022-01-01",
+    "pilot_end": "2023-12-31",
+    "pilot_province_ids": [
+      26,
+      41,
+      57
+    ],
+    "province_ids": [],
+    "parameters": [
+      "T2M",
+      "PRECTOTCORR"
+    ],
+    "timeout_seconds": 90,
+    "retries": 4,
+    "backoff_seconds": 2,
+    "request_concurrency": 1,
+    "request_interval_seconds": 1,
+    "raw_dir": "data/raw/weather/nasa_power",
+    "output_dir": "data/processed/weather",
+    "metadata_dir": "data/weather_metadata",
+    "coordinate_file": "configs/bp4_province_coordinates.json",
+    "temperature_min_fraction": 0.9,
+    "rainfall_min_fraction": 1.0,
+    "chunk_years": 15
+  },
+  "mode": "full",
+  "status": "completed",
+  "pilot_passed": false,
+  "coordinate_sha256": "b4b2264354fc3c06ad5ff169c1c7619e3b8fad1f5dc87fa6d68c1679fe18fee2",
+  "request_counts": {
+    "downloaded": 0,
+    "cached": 63,
+    "failed": 0
+  },
+  "quality": {
+    "counts": {
+      "weather_daily": 345177,
+      "weather_monthly": 11340,
+      "weather_yearly": 945
+    },
+    "dataset_files": {
+      "weather_daily": "data/processed/weather/weather_daily/weather_daily.parquet",
+      "weather_monthly": "data/processed/weather/weather_monthly/weather_monthly.parquet",
+      "weather_yearly": "data/processed/weather/weather_yearly/weather_yearly.parquet"
+    },
+    "daily_status": {
+      "complete": 345177
+    },
+    "missing_measurements": {
+      "temperature": 0,
+      "rainfall": 0
+    },
+    "province_count": 63,
+    "province_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "date_min": "2010-01-01",
+    "date_max": "2024-12-31",
+    "expected_daily_records": 345177,
+    "incomplete_months": 0,
+    "incomplete_years": 0,
+    "join_keys_verified": true,
+    "duplicate_province_date_count": 0,
+    "schemas": {
+      "daily": {
+        "province_id": "int",
+        "date": "date",
+        "year": "int",
+        "month": "int",
+        "temperature_c": "double",
+        "rainfall_mm": "double",
+        "data_status": "string"
+      },
+      "monthly": {
+        "province_id": "int",
+        "year": "int",
+        "month": "int",
+        "avg_temperature_c": "double",
+        "total_rainfall_mm": "double",
+        "valid_temperature_days": "bigint",
+        "valid_rainfall_days": "bigint",
+        "expected_days": "int",
+        "data_status": "string"
+      },
+      "yearly": {
+        "province_id": "int",
+        "year": "int",
+        "avg_temperature_c": "double",
+        "yearly_rainfall_mm": "double",
+        "valid_temperature_days": "bigint",
+        "valid_rainfall_days": "bigint",
+        "expected_days": "int",
+        "data_status": "string"
+      }
+    },
+    "warnings": [
+      "Point/grid-cell observations represent one Natural Earth label coordinate per province."
+    ]
+  }
+}

@@ -1,4 +1,4 @@
-"""Shared Spark transformations for the agricultural province-year panel."""
+"""Shared Spark transformations for agriculture and weather datasets."""
 
 from functools import reduce
 
@@ -56,3 +56,52 @@ def combine_observations(observations, reference):
             .select(F.col("year").cast("int"), "province_id",
                     F.coalesce("province_name", "source_name").alias("province_name"),
                     "region", *MEASUREMENTS))
+
+
+def clean_weather_daily(spark, records, province_ids, start, end):
+    raw = spark.createDataFrame(records, "province_id int, date_raw string, temperature_raw string, rainfall_raw string, fill_value double")
+    raw = raw.withColumn("date", F.to_date(F.try_to_timestamp("date_raw", F.lit("yyyyMMdd"))))
+    if raw.filter(F.col("date").isNull() | ~F.col("province_id").isin(province_ids)).limit(1).count():
+        raise ValueError("Invalid daily date or province identifier")
+    if raw.groupBy("province_id", "date").count().filter("count > 1").limit(1).count():
+        raise ValueError("Duplicate province-date observations")
+    if raw.filter(~F.col("date").between(start.isoformat(), end.isoformat())).limit(1).count():
+        raise ValueError("Daily observation outside configured window")
+    for variable in ["temperature", "rainfall"]:
+        number = F.expr(f"try_cast({variable}_raw as double)")
+        missing = F.col(f"{variable}_raw").isNull() | (number == F.col("fill_value"))
+        invalid = number.isNull() | F.isnan(number) | (F.abs(number) == float("inf"))
+        if variable == "rainfall":
+            invalid = invalid | (number < 0)
+        status = F.when(missing, "missing").when(invalid, "invalid").otherwise("valid")
+        raw = raw.withColumn(f"{variable}_status", status)
+        raw = raw.withColumn("temperature_c" if variable == "temperature" else "rainfall_mm",
+                             F.when(status == "valid", number).cast("double"))
+    calendar = spark.range(1).select(F.explode(F.sequence(F.lit(start), F.lit(end))).alias("date"))
+    provinces = spark.createDataFrame([(p,) for p in province_ids], "province_id int")
+    result = provinces.crossJoin(calendar).join(raw, ["province_id", "date"], "left")
+    status = (F.when(F.col("date_raw").isNull(), "missing_date")
+              .when((F.col("temperature_status") == "invalid") | (F.col("rainfall_status") == "invalid"), "invalid")
+              .when((F.col("temperature_status") == "missing") | (F.col("rainfall_status") == "missing"), "missing")
+              .otherwise("complete"))
+    return result.select("province_id", "date", F.year("date").alias("year"), F.month("date").alias("month"),
+                         "temperature_c", "rainfall_mm", status.alias("data_status"))
+
+
+def aggregate_weather_period(daily, config, monthly):
+    keys = ["province_id", "year"] + (["month"] if monthly else [])
+    result = daily.groupBy(*keys).agg(F.avg("temperature_c").alias("temperature_mean"),
+        F.sum("rainfall_mm").alias("rainfall_sum"), F.count("temperature_c").alias("valid_temperature_days"),
+        F.count("rainfall_mm").alias("valid_rainfall_days"), F.count("date").alias("observed_days"))
+    if monthly:
+        expected = F.dayofmonth(F.last_day(F.make_date("year", "month", F.lit(1))))
+    else:
+        expected = F.datediff(F.make_date(F.col("year") + 1, F.lit(1), F.lit(1)), F.make_date("year", F.lit(1), F.lit(1)))
+    result = result.withColumn("expected_days", expected)
+    temperature_ok = F.col("valid_temperature_days") / F.col("expected_days") >= config["temperature_min_fraction"]
+    rainfall_ok = F.col("valid_rainfall_days") / F.col("expected_days") >= config["rainfall_min_fraction"]
+    status = F.when((F.col("valid_temperature_days") == F.col("expected_days")) &
+                    (F.col("valid_rainfall_days") == F.col("expected_days")), "complete").otherwise("incomplete")
+    return result.select(*keys, F.when(temperature_ok, F.col("temperature_mean")).alias("avg_temperature_c"),
+        F.when(rainfall_ok, F.col("rainfall_sum")).alias("total_rainfall_mm" if monthly else "yearly_rainfall_mm"),
+        "valid_temperature_days", "valid_rainfall_days", "expected_days", status.alias("data_status"))

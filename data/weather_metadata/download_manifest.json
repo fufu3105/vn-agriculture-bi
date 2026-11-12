@@ -1,0 +1,3627 @@
+{
+  "coordinate_source": {
+    "source_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_1_states_provinces.geojson",
+    "source_sha256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5",
+    "reference_sha256": "0c7550a3349d7b52c5d1c129f782dfe83e3eddcb468307d54abb152f945087f3",
+    "coordinate_method": "Natural Earth admin-1 latitude/longitude label points, matched using province names and GeoNames gn_name attributes"
+  },
+  "configuration": {
+    "start": "2010-01-01",
+    "end": "2024-12-31",
+    "pilot_start": "2022-01-01",
+    "pilot_end": "2023-12-31",
+    "pilot_province_ids": [
+      26,
+      41,
+      57
+    ],
+    "province_ids": [],
+    "parameters": [
+      "T2M",
+      "PRECTOTCORR"
+    ],
+    "timeout_seconds": 90,
+    "retries": 4,
+    "backoff_seconds": 2,
+    "request_concurrency": 1,
+    "request_interval_seconds": 1,
+    "raw_dir": "data/raw/weather/nasa_power",
+    "output_dir": "data/processed/weather",
+    "metadata_dir": "data/weather_metadata",
+    "coordinate_file": "configs/bp4_province_coordinates.json",
+    "temperature_min_fraction": 0.9,
+    "rainfall_min_fraction": 1.0,
+    "chunk_years": 15
+  },
+  "mode": "full",
+  "requests": [
+    {
+      "request_key": "d5dd5e29546b331e562738671b2fd8ff3dc00d4b51340fd605bb99af8ae3a680",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 20.0917,
+        "longitude": 105.215,
+        "start": "20220101",
+        "end": "20221231"
+      },
+      "provinces": [
+        {
+          "province_id": 26,
+          "province_name": "Thanh Hóa",
+          "region": "Bắc Trung Bộ",
+          "latitude": 20.0917,
+          "longitude": 105.215,
+          "source_feature_id": "VNM-456",
+          "source_name": "Tinh Thanh Hoa"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/d5dd5e29546b331e562738671b2fd8ff3dc00d4b51340fd605bb99af8ae3a680.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 365,
+      "sha256": "f17c84c295c15e17ba52a2cbf85b64207f7bed91b1b9fb474c3a8686184deed2",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.215,
+          20.092,
+          579.22
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20220101",
+        "end": "20221231"
+      },
+      "download_timestamp": "2026-11-12T05:21:21.732208+00:00"
+    },
+    {
+      "request_key": "9d11a238d5f7ace6c576ed8d92807304b9f74106f9b46386e1da50ab9d041e5f",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 20.0917,
+        "longitude": 105.215,
+        "start": "20230101",
+        "end": "20231231"
+      },
+      "provinces": [
+        {
+          "province_id": 26,
+          "province_name": "Thanh Hóa",
+          "region": "Bắc Trung Bộ",
+          "latitude": 20.0917,
+          "longitude": 105.215,
+          "source_feature_id": "VNM-456",
+          "source_name": "Tinh Thanh Hoa"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/9d11a238d5f7ace6c576ed8d92807304b9f74106f9b46386e1da50ab9d041e5f.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 365,
+      "sha256": "535a31a8d592f18370838409cbc2f5c51f01ec4b76541eb8d5d1f4aedd263c38",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.215,
+          20.092,
+          579.22
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20230101",
+        "end": "20231231"
+      },
+      "download_timestamp": "2026-11-12T05:21:22.606912+00:00"
+    },
+    {
+      "request_key": "2b7552cbe3b55b5e95a0ed015474090ad83919ed6de5ca9d13d67f3da1e0c934",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 13.8493,
+        "longitude": 108.156,
+        "start": "20220101",
+        "end": "20221231"
+      },
+      "provinces": [
+        {
+          "province_id": 41,
+          "province_name": "Gia Lai",
+          "region": "Tây Nguyên",
+          "latitude": 13.8493,
+          "longitude": 108.156,
+          "source_feature_id": "VNM-478",
+          "source_name": "Tinh Gia Lai"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/2b7552cbe3b55b5e95a0ed015474090ad83919ed6de5ca9d13d67f3da1e0c934.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 365,
+      "sha256": "25d2dfa09ce9779b56839a29e3c8b4ee16de8b06602911bd376af1e4db2fe175",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          108.156,
+          13.849,
+          615.12
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20220101",
+        "end": "20221231"
+      },
+      "download_timestamp": "2026-11-12T05:21:23.265826+00:00"
+    },
+    {
+      "request_key": "643b2035f9c9a155903926a8d67b1f1bfbe5611b762cf3fc5973920cd9ef5219",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 13.8493,
+        "longitude": 108.156,
+        "start": "20230101",
+        "end": "20231231"
+      },
+      "provinces": [
+        {
+          "province_id": 41,
+          "province_name": "Gia Lai",
+          "region": "Tây Nguyên",
+          "latitude": 13.8493,
+          "longitude": 108.156,
+          "source_feature_id": "VNM-478",
+          "source_name": "Tinh Gia Lai"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/643b2035f9c9a155903926a8d67b1f1bfbe5611b762cf3fc5973920cd9ef5219.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 365,
+      "sha256": "5f8276804679024e54a5e3842990ccced1e5e86512d0b4da427ba5bc786df995",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          108.156,
+          13.849,
+          615.12
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20230101",
+        "end": "20231231"
+      },
+      "download_timestamp": "2026-11-12T05:21:24.608758+00:00"
+    },
+    {
+      "request_key": "9ce43445e197bf6239fcd4222753d3d60a0b281fe3df4bc5f4f59a57ab015af8",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 10.5736,
+        "longitude": 105.154,
+        "start": "20220101",
+        "end": "20221231"
+      },
+      "provinces": [
+        {
+          "province_id": 57,
+          "province_name": "An Giang",
+          "region": "Đồng bằng sông Cửu Long",
+          "latitude": 10.5736,
+          "longitude": 105.154,
+          "source_feature_id": "VNM-498",
+          "source_name": "Tinh An Giang"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/9ce43445e197bf6239fcd4222753d3d60a0b281fe3df4bc5f4f59a57ab015af8.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 365,
+      "sha256": "758ebcb46129d6c3d2ce034d0a0a3f7e53c329f34d9df06b29f68f7e4ec14b2f",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.154,
+          10.574,
+          7.75
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20220101",
+        "end": "20221231"
+      },
+      "download_timestamp": "2026-11-12T05:21:25.634858+00:00"
+    },
+    {
+      "request_key": "c580a1849ee6ba412a8080b223f2381a62ac4dbc4de033d34ea5b9c92018392e",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 10.5736,
+        "longitude": 105.154,
+        "start": "20230101",
+        "end": "20231231"
+      },
+      "provinces": [
+        {
+          "province_id": 57,
+          "province_name": "An Giang",
+          "region": "Đồng bằng sông Cửu Long",
+          "latitude": 10.5736,
+          "longitude": 105.154,
+          "source_feature_id": "VNM-498",
+          "source_name": "Tinh An Giang"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/c580a1849ee6ba412a8080b223f2381a62ac4dbc4de033d34ea5b9c92018392e.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 365,
+      "sha256": "e09d9c0f28aca9d3c4b8dbcc41a2ca95a19e2945072c27531e2282a1ba30c6ee",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.154,
+          10.574,
+          7.75
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20230101",
+        "end": "20231231"
+      },
+      "download_timestamp": "2026-11-12T05:21:26.601412+00:00"
+    },
+    {
+      "request_key": "23e2bcf69e956a4ce974ea292c53d5c14a28481cf37e37cc3c5212aa042d9ef3",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 22.7655,
+        "longitude": 104.965,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 1,
+          "province_name": "Hà Giang",
+          "region": "Trung du và miền núi phía Bắc",
+          "latitude": 22.7655,
+          "longitude": 104.965,
+          "source_feature_id": "VNM-512",
+          "source_name": "Tinh Ha Giang"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/23e2bcf69e956a4ce974ea292c53d5c14a28481cf37e37cc3c5212aa042d9ef3.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "3cf89382235f0cb0413959d470f69f9a866b176cc4b72bb9297e4c8ea71d4642",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          104.965,
+          22.765,
+          918.3
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:01:47.367473+00:00"
+    },
+    {
+      "request_key": "3f40ce6a87e2fe5d06a049803ec567c686c5bac8cd8ac0dd34c0beeb6b1f880f",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 22.7595,
+        "longitude": 106.047,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 2,
+          "province_name": "Cao Bằng",
+          "region": "Trung du và miền núi phía Bắc",
+          "latitude": 22.7595,
+          "longitude": 106.047,
+          "source_feature_id": "VNM-511",
+          "source_name": "Tinh Cao Bang"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/3f40ce6a87e2fe5d06a049803ec567c686c5bac8cd8ac0dd34c0beeb6b1f880f.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "81e2efa04cc67bcf79fa1b5caaa1020862677215c4fcf38c769c88281b31986d",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.047,
+          22.759,
+          760.94
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:01:48.808841+00:00"
+    },
+    {
+      "request_key": "fe8444baf8776a8b0a49856d827fc9aefbc2bb71a1d262130837772e64d1c5e0",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 22.1476,
+        "longitude": 105.874,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 3,
+          "province_name": "Bắc Kạn",
+          "region": "Trung du và miền núi phía Bắc",
+          "latitude": 22.1476,
+          "longitude": 105.874,
+          "source_feature_id": "VNM-451",
+          "source_name": "Tinh Bac Kan"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/fe8444baf8776a8b0a49856d827fc9aefbc2bb71a1d262130837772e64d1c5e0.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "c61ab95ef2109d10d24ec8afeb7fa0344c56475374e317125957548404cacfc8",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.874,
+          22.148,
+          299.85
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:01:50.299934+00:00"
+    },
+    {
+      "request_key": "69b53c8921552169886bae09aa896fb074a2c89f2f2bdf9d98d7dbaaa88e4f6e",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 22.131,
+        "longitude": 105.229,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 4,
+          "province_name": "Tuyên Quang",
+          "region": "Trung du và miền núi phía Bắc",
+          "latitude": 22.131,
+          "longitude": 105.229,
+          "source_feature_id": "VNM-457",
+          "source_name": "Tinh Tuyen Quang"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/69b53c8921552169886bae09aa896fb074a2c89f2f2bdf9d98d7dbaaa88e4f6e.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "b38910ad143878b8d1744201ba37a0dd1b3e2b4941306f99511990f3fbb83fa1",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.229,
+          22.131,
+          182.49
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:01:51.717798+00:00"
+    },
+    {
+      "request_key": "b0b9abad2aac5de640b4744988d1bcd75d28c54e0d2df126262667280b6b03cd",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 22.3559,
+        "longitude": 104.096,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 5,
+          "province_name": "Lào Cai",
+          "region": "Trung du và miền núi phía Bắc",
+          "latitude": 22.3559,
+          "longitude": 104.096,
+          "source_feature_id": "VNM-5483",
+          "source_name": "Tinh Lao Cai"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/b0b9abad2aac5de640b4744988d1bcd75d28c54e0d2df126262667280b6b03cd.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "d8807d26b4f24e8210edc7ffc8d1a7a2594a03cd6158de44faaaf594b3efbfca",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          104.096,
+          22.356,
+          679.12
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:01:53.114931+00:00"
+    },
+    {
+      "request_key": "5d0061de35f9fac225e3b10b083e67e11ef1403320951c51585f59b400ce32f7",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 21.7484,
+        "longitude": 104.512,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 6,
+          "province_name": "Yên Bái",
+          "region": "Trung du và miền núi phía Bắc",
+          "latitude": 21.7484,
+          "longitude": 104.512,
+          "source_feature_id": "VNM-458",
+          "source_name": "Tinh Yen Bai"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/5d0061de35f9fac225e3b10b083e67e11ef1403320951c51585f59b400ce32f7.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "1b9237dcaec931fa53ddfe4ec155a1b70196ea428e8a02e9cebd70d96e3c2a91",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          104.512,
+          21.748,
+          1060.39
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:01:54.504802+00:00"
+    },
+    {
+      "request_key": "3e15049fd56f733a3d0081c49549c9f61d8950b6cb6f59e8c9a4c163ace359d5",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 21.5812,
+        "longitude": 105.887,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 7,
+          "province_name": "Thái Nguyên",
+          "region": "Trung du và miền núi phía Bắc",
+          "latitude": 21.5812,
+          "longitude": 105.887,
+          "source_feature_id": "VNM-452",
+          "source_name": "Tinh Thai Nguyen"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/3e15049fd56f733a3d0081c49549c9f61d8950b6cb6f59e8c9a4c163ace359d5.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "ebbe2c05de389d9ce303255a551f793e8b3097eb5431831491b5fd854b06756b",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.887,
+          21.581,
+          114.92
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:01:55.906434+00:00"
+    },
+    {
+      "request_key": "6336e7e1b5e88710a48a60b49d453fe5f162fe1086027a7ec0cf8aea16a03b7a",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 21.7826,
+        "longitude": 106.724,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 8,
+          "province_name": "Lạng Sơn",
+          "region": "Trung du và miền núi phía Bắc",
+          "latitude": 21.7826,
+          "longitude": 106.724,
+          "source_feature_id": "VNM-454",
+          "source_name": "Tinh Lang Son"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/6336e7e1b5e88710a48a60b49d453fe5f162fe1086027a7ec0cf8aea16a03b7a.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "7b9a0c1cc8e8f3a869d18847130cd88e415957c1c5c5d4c5a3336704645cfe19",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.724,
+          21.783,
+          307.52
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:01:57.297297+00:00"
+    },
+    {
+      "request_key": "97c461bb1925996f1638c1e0a98cd87bfaa105aced76620b9b8766e585b5c813",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 21.3512,
+        "longitude": 106.493,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 9,
+          "province_name": "Bắc Giang",
+          "region": "Trung du và miền núi phía Bắc",
+          "latitude": 21.3512,
+          "longitude": 106.493,
+          "source_feature_id": "VNM-470",
+          "source_name": "Tinh Bac Giang"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/97c461bb1925996f1638c1e0a98cd87bfaa105aced76620b9b8766e585b5c813.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "d9e49f49754e50301f7887a28976b35814bbcbd9e5ffb1e6c5268478592b17a8",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.493,
+          21.351,
+          159.24
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:01:58.699773+00:00"
+    },
+    {
+      "request_key": "0e9f7bd845dc2b49fa19828f1ab12cc79fd7ce57e2af8e257ccee22a36d1e954",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 21.223,
+        "longitude": 107.181,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 10,
+          "province_name": "Quảng Ninh",
+          "region": "Trung du và miền núi phía Bắc",
+          "latitude": 21.223,
+          "longitude": 107.181,
+          "source_feature_id": "VNM-429",
+          "source_name": "Tinh Quang Ninh"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/0e9f7bd845dc2b49fa19828f1ab12cc79fd7ce57e2af8e257ccee22a36d1e954.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "7b272172628b20583bee8f257ea2fea0ce2c944c34ac48442cbe4e6c0104a958",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          107.181,
+          21.223,
+          100.24
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:00.317005+00:00"
+    },
+    {
+      "request_key": "6607532807add25edc961bf7ef5bf5d5cfac9d2c6a95795c24886ac14126fe55",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 21.3127,
+        "longitude": 105.143,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 11,
+          "province_name": "Phú Thọ",
+          "region": "Trung du và miền núi phía Bắc",
+          "latitude": 21.3127,
+          "longitude": 105.143,
+          "source_feature_id": "VNM-469",
+          "source_name": "Tinh Phu Tho"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/6607532807add25edc961bf7ef5bf5d5cfac9d2c6a95795c24886ac14126fe55.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "5427f745860b469446a5ee2008d97889df1a6e704d0cbffa4ab45b831269a912",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.143,
+          21.313,
+          183.34
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:00.935343+00:00"
+    },
+    {
+      "request_key": "3a83ee6ecb546329528a47e916f84375524d2ba6a9de3d5d3e1ab1f67035ad55",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 21.7487,
+        "longitude": 103.226,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 12,
+          "province_name": "Điện Biên",
+          "region": "Trung du và miền núi phía Bắc",
+          "latitude": 21.7487,
+          "longitude": 103.226,
+          "source_feature_id": "VNM-450",
+          "source_name": "Huyen Dien Bien"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/3a83ee6ecb546329528a47e916f84375524d2ba6a9de3d5d3e1ab1f67035ad55.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "bea5b94b7fde007dfbed7bfc14f896989f1c8e1a7689ccca0f73612f0820c570",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          103.226,
+          21.749,
+          871.43
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:02.722412+00:00"
+    },
+    {
+      "request_key": "89cc1fbe42c470448b5ffbcc704ebb80962d66f54dab12d6e28b9ebbc3e2c775",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 22.3502,
+        "longitude": 103.255,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 13,
+          "province_name": "Lai Châu",
+          "region": "Trung du và miền núi phía Bắc",
+          "latitude": 22.3502,
+          "longitude": 103.255,
+          "source_feature_id": "VNM-453",
+          "source_name": "Tinh Lai Chau"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/89cc1fbe42c470448b5ffbcc704ebb80962d66f54dab12d6e28b9ebbc3e2c775.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "6669d92824af96b76e61658dcd4ef54fa8c4a60d61c872bc1f2426ab834ba914",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          103.255,
+          22.35,
+          1108.21
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:04.263474+00:00"
+    },
+    {
+      "request_key": "349ddc6506dd9c0be4a778b87bf7000629bb5d5536001dcc6dbd8e5ef0a3aea5",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 21.3011,
+        "longitude": 104.159,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 14,
+          "province_name": "Sơn La",
+          "region": "Trung du và miền núi phía Bắc",
+          "latitude": 21.3011,
+          "longitude": 104.159,
+          "source_feature_id": "VNM-455",
+          "source_name": "Tinh Son La"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/349ddc6506dd9c0be4a778b87bf7000629bb5d5536001dcc6dbd8e5ef0a3aea5.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "1078401dfeb1727a46efbd686e51a9264a12aea6cda6a5bc70946c9f78176c77",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          104.159,
+          21.301,
+          1060.39
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:05.707325+00:00"
+    },
+    {
+      "request_key": "899fcdfaeb5859ad58e0e9339927263e88742c3ed73fedaf0578a33de9d0a0df",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 20.7292,
+        "longitude": 105.34,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 15,
+          "province_name": "Hòa Bình",
+          "region": "Trung du và miền núi phía Bắc",
+          "latitude": 20.7292,
+          "longitude": 105.34,
+          "source_feature_id": "VNM-459",
+          "source_name": "Tinh Hoa Binh"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/899fcdfaeb5859ad58e0e9339927263e88742c3ed73fedaf0578a33de9d0a0df.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "da0a1a985e85891418390130b8739d4626190e2bdd24a593a6529d683254fb59",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.34,
+          20.729,
+          143.18
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:07.152736+00:00"
+    },
+    {
+      "request_key": "b59ec34b08b68ed9aa0676b3417897f454c20345fc52dea89a8f49972dd9d4d6",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 21.1306,
+        "longitude": 105.872,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 16,
+          "province_name": "Hà Nội",
+          "region": "Đồng bằng sông Hồng",
+          "latitude": 21.1306,
+          "longitude": 105.872,
+          "source_feature_id": "VNM-462",
+          "source_name": "Thanh Pho Ha Noi"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/b59ec34b08b68ed9aa0676b3417897f454c20345fc52dea89a8f49972dd9d4d6.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "652a3e233c4bab397305c61a6897769bd2f0947023064136b115b573e8d1143f",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.872,
+          21.131,
+          87.73
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:08.600070+00:00"
+    },
+    {
+      "request_key": "3debe5524b5aaffee3980ef8c73a4579ab104ddc87d29855c84633a99f756a87",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 20.79,
+        "longitude": 106.635,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 17,
+          "province_name": "Hải Phòng",
+          "region": "Đồng bằng sông Hồng",
+          "latitude": 20.79,
+          "longitude": 106.635,
+          "source_feature_id": "VNM-4600",
+          "source_name": "Thanh Pho Hai Phong"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/3debe5524b5aaffee3980ef8c73a4579ab104ddc87d29855c84633a99f756a87.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "4430a91d45c2a96bce766731de770ddc0f469c6329940090a516b63996853dae",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.635,
+          20.79,
+          100.24
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:09.905729+00:00"
+    },
+    {
+      "request_key": "021273dce28aa6b579589dd5ddca5560404d7e93980f5f2f63abcc73063f5613",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 21.3455,
+        "longitude": 105.549,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 18,
+          "province_name": "Vĩnh Phúc",
+          "region": "Đồng bằng sông Hồng",
+          "latitude": 21.3455,
+          "longitude": 105.549,
+          "source_feature_id": "VNM-464",
+          "source_name": "Tinh Vinh Phuc"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/021273dce28aa6b579589dd5ddca5560404d7e93980f5f2f63abcc73063f5613.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "21c5596614bb86fc3f955d3b28fa8929ff42560a54d61a881a86856330eaa4ba",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.549,
+          21.346,
+          114.92
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:11.344540+00:00"
+    },
+    {
+      "request_key": "27469d04e70c42fc27e1b8bc4c779c768dd4ed48bcd0fd7226c11efb0ceb9ec5",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 21.098,
+        "longitude": 106.117,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 19,
+          "province_name": "Bắc Ninh",
+          "region": "Đồng bằng sông Hồng",
+          "latitude": 21.098,
+          "longitude": 106.117,
+          "source_feature_id": "VNM-463",
+          "source_name": "Tinh Bac Ninh"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/27469d04e70c42fc27e1b8bc4c779c768dd4ed48bcd0fd7226c11efb0ceb9ec5.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "1fb0b33fce9fa93e1586b89aad9e6c83ebf3ab64e45ec8432c959c3b265c5b67",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.117,
+          21.098,
+          23.52
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:12.774686+00:00"
+    },
+    {
+      "request_key": "deb0c015fc5e4b7a03fa7a1530262a58a0292e4b23edebdf2db5f7474f12fb07",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 20.9613,
+        "longitude": 106.364,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 20,
+          "province_name": "Hải Dương",
+          "region": "Đồng bằng sông Hồng",
+          "latitude": 20.9613,
+          "longitude": 106.364,
+          "source_feature_id": "VNM-460",
+          "source_name": "Tinh Hai Duong"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/deb0c015fc5e4b7a03fa7a1530262a58a0292e4b23edebdf2db5f7474f12fb07.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "68e4b3b2ca451d7aa3d2372859ef0a1e8c0d496d90e9eb64241a1ab4a18f3967",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.364,
+          20.961,
+          23.52
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:14.184497+00:00"
+    },
+    {
+      "request_key": "e3fe949c6ce816f91be9e9535dc75a04f1bb76c95039914e89db2179dcb4d19c",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 20.8085,
+        "longitude": 106.076,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 21,
+          "province_name": "Hưng Yên",
+          "region": "Đồng bằng sông Hồng",
+          "latitude": 20.8085,
+          "longitude": 106.076,
+          "source_feature_id": "VNM-461",
+          "source_name": "Tinh Hung Yen"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/e3fe949c6ce816f91be9e9535dc75a04f1bb76c95039914e89db2179dcb4d19c.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "432e540341dfb6fcc8eb4e1f4ccad642ac39c964a70c1dd0264ddab0ee441c1a",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.076,
+          20.808,
+          23.52
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:15.598253+00:00"
+    },
+    {
+      "request_key": "8f657bb027fc664b14f2e4414b4aef6f585fc5354da2e0ef91d1e7306890bf21",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 20.5303,
+        "longitude": 106.371,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 22,
+          "province_name": "Thái Bình",
+          "region": "Đồng bằng sông Hồng",
+          "latitude": 20.5303,
+          "longitude": 106.371,
+          "source_feature_id": "VNM-471",
+          "source_name": "Tinh Thai Binh"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/8f657bb027fc664b14f2e4414b4aef6f585fc5354da2e0ef91d1e7306890bf21.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "43bf0b00a9a08cff19d8db4ccb5f80a96146fd742fc8964d20a9ed7f0fa6b409",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.371,
+          20.53,
+          7.77
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:17.084975+00:00"
+    },
+    {
+      "request_key": "163ebb8657d764d1a5fdaa147a68093b52edf44ab7cc948c7080aa06af9ba618",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 20.5569,
+        "longitude": 105.985,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 23,
+          "province_name": "Hà Nam",
+          "region": "Đồng bằng sông Hồng",
+          "latitude": 20.5569,
+          "longitude": 105.985,
+          "source_feature_id": "VNM-467",
+          "source_name": "Tinh Ha Nam"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/163ebb8657d764d1a5fdaa147a68093b52edf44ab7cc948c7080aa06af9ba618.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "f32d6a451dbbc2ce47eb05fa1cf0ef11fa12a418706a20a10e00ed44f380b3f8",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.985,
+          20.557,
+          7.77
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:18.171065+00:00"
+    },
+    {
+      "request_key": "b81e73884f2d2f4e4e7dfb8c313211aa7eef09a67a53acb96faca1dbeb128d1b",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 20.2343,
+        "longitude": 106.254,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 24,
+          "province_name": "Nam Định",
+          "region": "Đồng bằng sông Hồng",
+          "latitude": 20.2343,
+          "longitude": 106.254,
+          "source_feature_id": "VNM-468",
+          "source_name": "Tinh Nam Dinh"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/b81e73884f2d2f4e4e7dfb8c313211aa7eef09a67a53acb96faca1dbeb128d1b.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "3812c65ee8d0ec541fb5481c0762e578b9e943d070d9f719a54d8349f2a6a0d1",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.254,
+          20.234,
+          6.3
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:18.831485+00:00"
+    },
+    {
+      "request_key": "adfb70d6f44e5a8557f486aff09379185f5e9e402892aad098324e81e960caf6",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 20.2722,
+        "longitude": 105.852,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 25,
+          "province_name": "Ninh Bình",
+          "region": "Đồng bằng sông Hồng",
+          "latitude": 20.2722,
+          "longitude": 105.852,
+          "source_feature_id": "VNM-466",
+          "source_name": "Tinh Ninh Binh"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/adfb70d6f44e5a8557f486aff09379185f5e9e402892aad098324e81e960caf6.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "474b5b9c82597a0671bf7594a48ff8375ad10ed65c40c59a48b3727063ae9fe8",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.852,
+          20.272,
+          143.18
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:20.600718+00:00"
+    },
+    {
+      "request_key": "6455a7f94e8d22dd05184be1dc893212b6d10613ec6f9ee628abf20becd833d6",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 20.0917,
+        "longitude": 105.215,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 26,
+          "province_name": "Thanh Hóa",
+          "region": "Bắc Trung Bộ",
+          "latitude": 20.0917,
+          "longitude": 105.215,
+          "source_feature_id": "VNM-456",
+          "source_name": "Tinh Thanh Hoa"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/6455a7f94e8d22dd05184be1dc893212b6d10613ec6f9ee628abf20becd833d6.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "2106a049e907cc069200b7ea214f366c6530c8294bfdc94e2ce1f2c99813b84a",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.215,
+          20.092,
+          579.22
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T08:22:38.395248+00:00"
+    },
+    {
+      "request_key": "2df04c76b1ab08a2e07d2562b942d238cb867b53b0122151338dd5012948da8c",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 19.3548,
+        "longitude": 104.827,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 27,
+          "province_name": "Nghệ An",
+          "region": "Bắc Trung Bộ",
+          "latitude": 19.3548,
+          "longitude": 104.827,
+          "source_feature_id": "VNM-475",
+          "source_name": "Tinh Nghe An"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/2df04c76b1ab08a2e07d2562b942d238cb867b53b0122151338dd5012948da8c.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "adddd9fa3715263e201b545603e982b140506e3134587b6b5b38a6b0fa5777a6",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          104.827,
+          19.355,
+          488.45
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:21.733727+00:00"
+    },
+    {
+      "request_key": "d548ed9ab1cf60a8164616753fd7ec0be67880531b07de6e5d677c71d7eb545d",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 18.3563,
+        "longitude": 105.799,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 28,
+          "province_name": "Hà Tĩnh",
+          "region": "Bắc Trung Bộ",
+          "latitude": 18.3563,
+          "longitude": 105.799,
+          "source_feature_id": "VNM-474",
+          "source_name": "Tinh Ha Tinh"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/d548ed9ab1cf60a8164616753fd7ec0be67880531b07de6e5d677c71d7eb545d.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "db6dec4e792d2ca2f7d38f6125bbc57c4ac7bff691909ea92d196921c9547c20",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.799,
+          18.356,
+          79.91
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:22.243714+00:00"
+    },
+    {
+      "request_key": "67d38289b6b8c34a42262bf04d1195b577a41a7a9f27ce057d218a83c650ceef",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 17.4691,
+        "longitude": 106.357,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 29,
+          "province_name": "Quảng Bình",
+          "region": "Bắc Trung Bộ",
+          "latitude": 17.4691,
+          "longitude": 106.357,
+          "source_feature_id": "VNM-476",
+          "source_name": "Tinh Quang Binh"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/67d38289b6b8c34a42262bf04d1195b577a41a7a9f27ce057d218a83c650ceef.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "d6c64f6479035d843240a85c35d0beb56d21370ae4ec2be9a312c3a946bc9fda",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.357,
+          17.469,
+          330.17
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:24.164780+00:00"
+    },
+    {
+      "request_key": "0dcfa4b77330361b114a94411e82aa238100672813fcf00d15055f756d1aa9cf",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 16.7204,
+        "longitude": 106.973,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 30,
+          "province_name": "Quảng Trị",
+          "region": "Bắc Trung Bộ",
+          "latitude": 16.7204,
+          "longitude": 106.973,
+          "source_feature_id": "VNM-489",
+          "source_name": "Tinh Quang Tri"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/0dcfa4b77330361b114a94411e82aa238100672813fcf00d15055f756d1aa9cf.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "e2f314dbd09a2f45d44c1975a0143a8b3bd57f98a03c90d4d63ed9802eeb3b48",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.973,
+          16.72,
+          504.6
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:25.598386+00:00"
+    },
+    {
+      "request_key": "eb1012e6ea6becbb3c528cea5f357d6d9236669e1079f853460fe735a684991e",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 16.312,
+        "longitude": 107.634,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 31,
+          "province_name": "Thừa Thiên Huế",
+          "region": "Bắc Trung Bộ",
+          "latitude": 16.312,
+          "longitude": 107.634,
+          "source_feature_id": "VNM-490",
+          "source_name": "Tinh Thua Thien-Hue"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/eb1012e6ea6becbb3c528cea5f357d6d9236669e1079f853460fe735a684991e.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "33e213e19f107ee98138f86eef2d31decb867d5e597b643de7e09dd2dd67ae00",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          107.634,
+          16.312,
+          164.53
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:26.238739+00:00"
+    },
+    {
+      "request_key": "3a4e8cc0063c5d43bf1363d892e82c39db57f8d071dd20eb9275ebf04e7a350a",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 16.0912,
+        "longitude": 108.102,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 32,
+          "province_name": "Đà Nẵng",
+          "region": "Duyên hải Nam Trung Bộ",
+          "latitude": 16.0912,
+          "longitude": 108.102,
+          "source_feature_id": "VNM-491",
+          "source_name": "Thanh Pho Da Nang"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/3a4e8cc0063c5d43bf1363d892e82c39db57f8d071dd20eb9275ebf04e7a350a.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "ad9dbc1c6979d180be0c0e446b1f09341f989b5b8bdc7bcc3c8dc4b6de074bb4",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          108.102,
+          16.091,
+          155.61
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:27.109158+00:00"
+    },
+    {
+      "request_key": "17edda3360310fb65a48c2eea11714faf7b7857f747c90fe774dc2a40e0081cf",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 15.6535,
+        "longitude": 107.955,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 33,
+          "province_name": "Quảng Nam",
+          "region": "Duyên hải Nam Trung Bộ",
+          "latitude": 15.6535,
+          "longitude": 107.955,
+          "source_feature_id": "VNM-487",
+          "source_name": "Tinh Quang Nam"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/17edda3360310fb65a48c2eea11714faf7b7857f747c90fe774dc2a40e0081cf.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "8d06aa2f3d8f746b46a37ece948902f574af89b88d67c38979b7d6b92aa4013d",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          107.955,
+          15.653,
+          405.4
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:28.106367+00:00"
+    },
+    {
+      "request_key": "6e26d594b8cadb9e6e49900fb6fb910d48601ce31d27ec57d4d7ec93d603336e",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 14.9971,
+        "longitude": 108.686,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 34,
+          "province_name": "Quảng Ngãi",
+          "region": "Duyên hải Nam Trung Bộ",
+          "latitude": 14.9971,
+          "longitude": 108.686,
+          "source_feature_id": "VNM-488",
+          "source_name": "Tinh Quang Ngai"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/6e26d594b8cadb9e6e49900fb6fb910d48601ce31d27ec57d4d7ec93d603336e.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "d73581a385313e68dd741f188e6c707e1564d1e099631938ba7ce2e77f55a3af",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          108.686,
+          14.997,
+          248.9
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:30.325295+00:00"
+    },
+    {
+      "request_key": "0172a431ea3171df7fe5bbc95d10aaac073edc2f9236fcaa4e75b70410226d20",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 14.1075,
+        "longitude": 108.971,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 35,
+          "province_name": "Bình Định",
+          "region": "Duyên hải Nam Trung Bộ",
+          "latitude": 14.1075,
+          "longitude": 108.971,
+          "source_feature_id": "VNM-485",
+          "source_name": "Tinh Binh Dinh"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/0172a431ea3171df7fe5bbc95d10aaac073edc2f9236fcaa4e75b70410226d20.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "e4a3d8c6ee11547da538363155db27528cc53629d91ab30548d740d16c635382",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          108.971,
+          14.107,
+          432.75
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:31.893661+00:00"
+    },
+    {
+      "request_key": "31df6ee89dba170d1cf675ce7e62558bba9bbe128b3149b895ef85c0615434d8",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 13.1647,
+        "longitude": 109.064,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 36,
+          "province_name": "Phú Yên",
+          "region": "Duyên hải Nam Trung Bộ",
+          "latitude": 13.1647,
+          "longitude": 109.064,
+          "source_feature_id": "VNM-482",
+          "source_name": "Tinh Phu Yen"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/31df6ee89dba170d1cf675ce7e62558bba9bbe128b3149b895ef85c0615434d8.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "a01612c22eeb097610bfefb8c928da13c5e0984851cd88cbc484cea9a71bdeb5",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          109.064,
+          13.165,
+          68.89
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:33.159463+00:00"
+    },
+    {
+      "request_key": "595d145c05a29c7f085078b799419bb672c5c20160f5617819817fff46eafbae",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 12.6049,
+        "longitude": 109.359,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 37,
+          "province_name": "Khánh Hòa",
+          "region": "Duyên hải Nam Trung Bộ",
+          "latitude": 12.6049,
+          "longitude": 109.359,
+          "source_feature_id": "VNM-479",
+          "source_name": "Tinh Khanh Hoa"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/595d145c05a29c7f085078b799419bb672c5c20160f5617819817fff46eafbae.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "234aa52ada15136757a8416b68eb4f9dd7788944031d1fd14b8cb11642a1c786",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          109.359,
+          12.605,
+          85.57
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:34.628345+00:00"
+    },
+    {
+      "request_key": "359e62225849f3fbebdc5f84562a78b8ce95548489ad62c3825ef014b59d089e",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 11.6242,
+        "longitude": 108.925,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 38,
+          "province_name": "Ninh Thuận",
+          "region": "Duyên hải Nam Trung Bộ",
+          "latitude": 11.6242,
+          "longitude": 108.925,
+          "source_feature_id": "VNM-481",
+          "source_name": "Tinh Ninh Thuan"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/359e62225849f3fbebdc5f84562a78b8ce95548489ad62c3825ef014b59d089e.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "811fab5db0b0af68a7a18d64dbe8417d04168c10030a96036d0f470a77b45e32",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          108.925,
+          11.624,
+          341.5
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:36.066086+00:00"
+    },
+    {
+      "request_key": "7b60c67a010ded7cafd5c0d578f83dad67dc5401c0698cb09ddd73dbf4b15380",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 11.1284,
+        "longitude": 108.232,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 39,
+          "province_name": "Bình Thuận",
+          "region": "Duyên hải Nam Trung Bộ",
+          "latitude": 11.1284,
+          "longitude": 108.232,
+          "source_feature_id": "VNM-496",
+          "source_name": "Tinh Binh Thuan"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/7b60c67a010ded7cafd5c0d578f83dad67dc5401c0698cb09ddd73dbf4b15380.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "f72fb35559f7973c4913ab9d64ae8a09225887a4c624d9ee70dcb512653c702f",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          108.232,
+          11.128,
+          160.45
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:37.559284+00:00"
+    },
+    {
+      "request_key": "ae7ab0e233dc8a9c934275f1dc66149b60a7726a213c7ca954bb9151de72a8a9",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 14.7451,
+        "longitude": 107.969,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 40,
+          "province_name": "Kon Tum",
+          "region": "Tây Nguyên",
+          "latitude": 14.7451,
+          "longitude": 107.969,
+          "source_feature_id": "VNM-486",
+          "source_name": "Tinh Kon Tum"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/ae7ab0e233dc8a9c934275f1dc66149b60a7726a213c7ca954bb9151de72a8a9.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "c35ba4c73a7078170862a5a83baff305bf74f1685ee50173bfed9740338a00ad",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          107.969,
+          14.745,
+          857.64
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:38.212581+00:00"
+    },
+    {
+      "request_key": "f7d47a3c36d5e1ab9a472b00ae46b7f52e6935747329a4c2957179f4ed7237ca",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 13.8493,
+        "longitude": 108.156,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 41,
+          "province_name": "Gia Lai",
+          "region": "Tây Nguyên",
+          "latitude": 13.8493,
+          "longitude": 108.156,
+          "source_feature_id": "VNM-478",
+          "source_name": "Tinh Gia Lai"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/f7d47a3c36d5e1ab9a472b00ae46b7f52e6935747329a4c2957179f4ed7237ca.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "5896c0616e2a101de3dbdca0d8e920a0369df4ef9ef7ad92d122fc14d2c0b313",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          108.156,
+          13.849,
+          615.12
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T08:22:39.948919+00:00"
+    },
+    {
+      "request_key": "d3545f4b9cf9e271d2f2fe560513afc1d01cb72b995b2304c7841a1968ffa643",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 12.7691,
+        "longitude": 108.133,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 42,
+          "province_name": "Đắk Lắk",
+          "region": "Tây Nguyên",
+          "latitude": 12.7691,
+          "longitude": 108.133,
+          "source_feature_id": "VNM-477",
+          "source_name": "Tinh Dak Lak"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/d3545f4b9cf9e271d2f2fe560513afc1d01cb72b995b2304c7841a1968ffa643.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "fc93cd732beba9be8ce157cca51e4449e8e1efc79347c55ec55a62ebbfbdc8a4",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          108.133,
+          12.769,
+          397.95
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:40.068013+00:00"
+    },
+    {
+      "request_key": "97b067da546f47822007def10f328075980882c23a3e28fa318ddc279ee21ffb",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 12.1425,
+        "longitude": 107.66,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 43,
+          "province_name": "Đắk Nông",
+          "region": "Tây Nguyên",
+          "latitude": 12.1425,
+          "longitude": 107.66,
+          "source_feature_id": "VNM-4835",
+          "source_name": "Dak Nong"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/97b067da546f47822007def10f328075980882c23a3e28fa318ddc279ee21ffb.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "2b6f0a598e1804fe74fb680a22971cac6f41dd4cc4b3e9158394488f776025b0",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          107.66,
+          12.143,
+          598.36
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:41.530463+00:00"
+    },
+    {
+      "request_key": "316d27fb70e763630f05311cee9a1163f50502e521aba32f0fd2efd27a2f929a",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 11.5362,
+        "longitude": 108,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 44,
+          "province_name": "Lâm Đồng",
+          "region": "Tây Nguyên",
+          "latitude": 11.5362,
+          "longitude": 108,
+          "source_feature_id": "VNM-480",
+          "source_name": "Tinh Lam Dong"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/316d27fb70e763630f05311cee9a1163f50502e521aba32f0fd2efd27a2f929a.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "8cc9789f3333289e51d8e1b859d403e71e1785392a81df10c903ae8d79db2e6d",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          108.0,
+          11.536,
+          699.21
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:42.955660+00:00"
+    },
+    {
+      "request_key": "7d883170cd710f97b4e77204752585d8d73a13c4c00d685662c4d885d86c9418",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 11.6805,
+        "longitude": 106.897,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 45,
+          "province_name": "Bình Phước",
+          "region": "Đông Nam Bộ",
+          "latitude": 11.6805,
+          "longitude": 106.897,
+          "source_feature_id": "VNM-484",
+          "source_name": "Tinh Binh Phuoc"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/7d883170cd710f97b4e77204752585d8d73a13c4c00d685662c4d885d86c9418.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "44b4cae2541801de67ed95eac895f46ad6536f2a7efee9334ed27509e2b87e91",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.897,
+          11.681,
+          115.24
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:44.384903+00:00"
+    },
+    {
+      "request_key": "4f24e5250a35d4a498ed289d1107a1a72698aba5b4319b472375714508303407",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 11.4121,
+        "longitude": 106.14,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 46,
+          "province_name": "Tây Ninh",
+          "region": "Đông Nam Bộ",
+          "latitude": 11.4121,
+          "longitude": 106.14,
+          "source_feature_id": "VNM-444",
+          "source_name": "Tinh Tay Ninh"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/4f24e5250a35d4a498ed289d1107a1a72698aba5b4319b472375714508303407.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "502a24c36199317004308c7a050c49aa9d7a901f775df8e0cfd03f010ea6df00",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.14,
+          11.412,
+          41.77
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:45.451015+00:00"
+    },
+    {
+      "request_key": "6226bbc3956da43d46c2d85b72e41e1f39e349f1aafcec04acfbac0bb0f246c6",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 11.1382,
+        "longitude": 106.659,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 47,
+          "province_name": "Bình Dương",
+          "region": "Đông Nam Bộ",
+          "latitude": 11.1382,
+          "longitude": 106.659,
+          "source_feature_id": "VNM-483",
+          "source_name": "Tinh Binh Duong"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/6226bbc3956da43d46c2d85b72e41e1f39e349f1aafcec04acfbac0bb0f246c6.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "f1a95302a15022f580933327327badaa1e4ac6bb7e27868ea404626dfc5035a3",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.659,
+          11.138,
+          46.81
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:46.969105+00:00"
+    },
+    {
+      "request_key": "37d3ebfa7b07218d4e7b94c8c4a5af024a04946f781a3ea445e5f442659b5b90",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 11.1258,
+        "longitude": 107.178,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 48,
+          "province_name": "Đồng Nai",
+          "region": "Đông Nam Bộ",
+          "latitude": 11.1258,
+          "longitude": 107.178,
+          "source_feature_id": "VNM-497",
+          "source_name": "Tinh Dong Nai"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/37d3ebfa7b07218d4e7b94c8c4a5af024a04946f781a3ea445e5f442659b5b90.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "7f0f8e39d9e37c977d30858addde3c20e8d3ebecdc9e2f3a2f557bcf9408ea46",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          107.178,
+          11.126,
+          46.81
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:48.631843+00:00"
+    },
+    {
+      "request_key": "739285e81cde7c6aaf4b5f3979d8f5725e7e1324c5a66396c94f010c5e04ad4b",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 10.3969,
+        "longitude": 107.143,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 49,
+          "province_name": "Bà Rịa – Vũng Tàu",
+          "region": "Đông Nam Bộ",
+          "latitude": 10.3969,
+          "longitude": 107.143,
+          "source_feature_id": "VNM-495",
+          "source_name": "Tinh Ba Ria-Vung Tau"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/739285e81cde7c6aaf4b5f3979d8f5725e7e1324c5a66396c94f010c5e04ad4b.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "5c0cf67ecae71fb229184e25319f03515fd6bca85446e713c2f52bf8457abdbe",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          107.143,
+          10.397,
+          13.02
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:50.271184+00:00"
+    },
+    {
+      "request_key": "3dc318ac118414d1cdf50f3ca6a8a470e979ec1415f984c16dc1c073cea7ac41",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 10.409,
+        "longitude": 106.926,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 50,
+          "province_name": "TP. Hồ Chí Minh",
+          "region": "Đông Nam Bộ",
+          "latitude": 10.409,
+          "longitude": 106.926,
+          "source_feature_id": "VNM-501",
+          "source_name": "Thanh pho Ho Chi Minh"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/3dc318ac118414d1cdf50f3ca6a8a470e979ec1415f984c16dc1c073cea7ac41.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "1dbf6460db603027bb302254950d5c581aa434df413d3e80c37185a9c41594cb",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.926,
+          10.409,
+          13.02
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:51.687603+00:00"
+    },
+    {
+      "request_key": "af35eaeee4508ff20ac655af36e9688a3e5e50ba64d76d0e5a992ec9759ac4e3",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 10.6869,
+        "longitude": 106.134,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 51,
+          "province_name": "Long An",
+          "region": "Đồng bằng sông Cửu Long",
+          "latitude": 10.6869,
+          "longitude": 106.134,
+          "source_feature_id": "VNM-503",
+          "source_name": "Tinh Long An"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/af35eaeee4508ff20ac655af36e9688a3e5e50ba64d76d0e5a992ec9759ac4e3.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "400639ee302e04da6b926d91635621397fe532feb21ffe735dc1e921fc4a757c",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.134,
+          10.687,
+          1.73
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:53.137067+00:00"
+    },
+    {
+      "request_key": "68ee380c9124d550d5833c91f6df4b65469064b06f807421b84f5e2c435378a8",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 10.4581,
+        "longitude": 106.217,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 52,
+          "province_name": "Tiền Giang",
+          "region": "Đồng bằng sông Cửu Long",
+          "latitude": 10.4581,
+          "longitude": 106.217,
+          "source_feature_id": "VNM-4834",
+          "source_name": "Tinh Tien Giang"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/68ee380c9124d550d5833c91f6df4b65469064b06f807421b84f5e2c435378a8.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "92238d8f7a4a9be1be382d3d8cb74d315d561eea5b3241d1dd92763f8a8bff03",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.217,
+          10.458,
+          1.73
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:54.766939+00:00"
+    },
+    {
+      "request_key": "d445d1115688344cfdbc5294ae2af2fc6f96890d9ea1e7a2fdc8df891b4b2d40",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 10.171,
+        "longitude": 106.496,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 53,
+          "province_name": "Bến Tre",
+          "region": "Đồng bằng sông Cửu Long",
+          "latitude": 10.171,
+          "longitude": 106.496,
+          "source_feature_id": "VNM-504",
+          "source_name": "Tinh Ben Tre"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/d445d1115688344cfdbc5294ae2af2fc6f96890d9ea1e7a2fdc8df891b4b2d40.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "57a74c9bbcb2f8146eea0bd07ed9e52d07ed7ff9863bf166cd453f7b8d3899f5",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.496,
+          10.171,
+          1.55
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:56.283736+00:00"
+    },
+    {
+      "request_key": "e6c63dc85479f5a48fc472931e7f3e83e1944c8d7c1d61111e92cb68782292df",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 9.82817,
+        "longitude": 106.289,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 54,
+          "province_name": "Trà Vinh",
+          "region": "Đồng bằng sông Cửu Long",
+          "latitude": 9.82817,
+          "longitude": 106.289,
+          "source_feature_id": "VNM-509",
+          "source_name": "Tinh Tra Vinh"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/e6c63dc85479f5a48fc472931e7f3e83e1944c8d7c1d61111e92cb68782292df.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "d3b2e878bee4ee10ecb7a2c7d5e1b5cebfd70deb9bb003da875716fe9421cb15",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          106.289,
+          9.828,
+          1.55
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:56.859663+00:00"
+    },
+    {
+      "request_key": "5e39bbad156c10f1e5882936bde0e80a3cc7beb853455c003fb9ba9bc01de55e",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 10.1042,
+        "longitude": 105.969,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 55,
+          "province_name": "Vĩnh Long",
+          "region": "Đồng bằng sông Cửu Long",
+          "latitude": 10.1042,
+          "longitude": 105.969,
+          "source_feature_id": "VNM-510",
+          "source_name": "Tinh Vinh Long"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/5e39bbad156c10f1e5882936bde0e80a3cc7beb853455c003fb9ba9bc01de55e.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "e36ceb606e98587c01dbd013045048980f5286ce56ee6cee1e63a977574007ce",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.969,
+          10.104,
+          1.55
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:57.801826+00:00"
+    },
+    {
+      "request_key": "0a9778107c0700af585fed88b5f4a497c50f1c8024646708911deb8b6f7c78c5",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 10.6644,
+        "longitude": 105.586,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 56,
+          "province_name": "Đồng Tháp",
+          "region": "Đồng bằng sông Cửu Long",
+          "latitude": 10.6644,
+          "longitude": 105.586,
+          "source_feature_id": "VNM-500",
+          "source_name": "Tinh Dong Thap"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/0a9778107c0700af585fed88b5f4a497c50f1c8024646708911deb8b6f7c78c5.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "2ae54de4e96279d94b7442b44c9356f99ca105a54e494245d94ef5fc2d99706a",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.586,
+          10.664,
+          2.46
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:02:59.335337+00:00"
+    },
+    {
+      "request_key": "74ee970e7963d7814fe1c78e8aa37dab679d61d52623ec191179fa09fe8c8269",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 10.5736,
+        "longitude": 105.154,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 57,
+          "province_name": "An Giang",
+          "region": "Đồng bằng sông Cửu Long",
+          "latitude": 10.5736,
+          "longitude": 105.154,
+          "source_feature_id": "VNM-498",
+          "source_name": "Tinh An Giang"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/74ee970e7963d7814fe1c78e8aa37dab679d61d52623ec191179fa09fe8c8269.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "b583f6bfc24d3a4c2952ee8300a822013b32d936f44a3b9f9c5f1bb5ee8484e7",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.154,
+          10.574,
+          7.75
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T08:22:41.413585+00:00"
+    },
+    {
+      "request_key": "a6516fcbd34044390001f31aaf4c38b6f1a767268ced18164093ee8debbb00b7",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 9.85962,
+        "longitude": 105.284,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 58,
+          "province_name": "Kiên Giang",
+          "region": "Đồng bằng sông Cửu Long",
+          "latitude": 9.85962,
+          "longitude": 105.284,
+          "source_feature_id": "VNM-502",
+          "source_name": "Tinh Kien Giang"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/a6516fcbd34044390001f31aaf4c38b6f1a767268ced18164093ee8debbb00b7.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "d0047fce065ff72755abe62aa5c4f8e3f49bee7c90d98e3b538b9cc6467ae50e",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.284,
+          9.86,
+          3.71
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:03:00.133426+00:00"
+    },
+    {
+      "request_key": "5b9dec1367e2a5f7425cc1af6367522d1661c3eaca8060d603049b73be993bea",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 10.2421,
+        "longitude": 105.685,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 59,
+          "province_name": "Cần Thơ",
+          "region": "Đồng bằng sông Cửu Long",
+          "latitude": 10.2421,
+          "longitude": 105.685,
+          "source_feature_id": "VNM-499",
+          "source_name": "Thanh Pho Can Tho"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/5b9dec1367e2a5f7425cc1af6367522d1661c3eaca8060d603049b73be993bea.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "c06ece29f946e2e9b3e4874d174febe59656621b1ac3a68c21f787821c247a55",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.685,
+          10.242,
+          1.91
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:03:01.792305+00:00"
+    },
+    {
+      "request_key": "a1f6c87fd62e61f785773f47958605346bdbd5bdac7439a87a43d63778f7086a",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 9.84353,
+        "longitude": 105.663,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 60,
+          "province_name": "Hậu Giang",
+          "region": "Đồng bằng sông Cửu Long",
+          "latitude": 9.84353,
+          "longitude": 105.663,
+          "source_feature_id": "VNM-505",
+          "source_name": "Hau Giang"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/a1f6c87fd62e61f785773f47958605346bdbd5bdac7439a87a43d63778f7086a.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "f8a4bac9aa7ef36ee3164844d20de7f1e49a46e35ef30da1e57a6f1a9de33193",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.663,
+          9.844,
+          1.91
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:03:02.856636+00:00"
+    },
+    {
+      "request_key": "0234c232d6a8470838ab4db6f90f2c1e0b062a39964c859e476fc321f9ae0c5b",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 9.5614,
+        "longitude": 105.9,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 61,
+          "province_name": "Sóc Trăng",
+          "region": "Đồng bằng sông Cửu Long",
+          "latitude": 9.5614,
+          "longitude": 105.9,
+          "source_feature_id": "VNM-508",
+          "source_name": "Tinh Soc Trang"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/0234c232d6a8470838ab4db6f90f2c1e0b062a39964c859e476fc321f9ae0c5b.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "a46fceda3268f9035e531d31c7719c5cc7c860f00863b87d21ea0742df49cd1e",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.9,
+          9.561,
+          1.05
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:03:04.293742+00:00"
+    },
+    {
+      "request_key": "38918279cab9e77d1a6c0061c6f05c4387c7a6a089502cd8f6d04f3b0415a6b7",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 9.33941,
+        "longitude": 105.573,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 62,
+          "province_name": "Bạc Liêu",
+          "region": "Đồng bằng sông Cửu Long",
+          "latitude": 9.33941,
+          "longitude": 105.573,
+          "source_feature_id": "VNM-506",
+          "source_name": "Tinh Bac Lieu"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/38918279cab9e77d1a6c0061c6f05c4387c7a6a089502cd8f6d04f3b0415a6b7.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "218325ccab050315cab3feb479a3e89e3997a54adad5cae34dbd1880714d644b",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.573,
+          9.339,
+          1.05
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:03:04.815387+00:00"
+    },
+    {
+      "request_key": "68262f629dec927554385641f3027cd1cea88b39e85c10c8206064d9d5b52f6f",
+      "request": {
+        "community": "AG",
+        "parameters": "T2M,PRECTOTCORR",
+        "format": "JSON",
+        "time-standard": "LST",
+        "latitude": 9.05545,
+        "longitude": 105.073,
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "provinces": [
+        {
+          "province_id": 63,
+          "province_name": "Cà Mau",
+          "region": "Đồng bằng sông Cửu Long",
+          "latitude": 9.05545,
+          "longitude": 105.073,
+          "source_feature_id": "VNM-507",
+          "source_name": "Tinh Ca Mau"
+        }
+      ],
+      "filepath": "C:/Users/Hoang Phu/Downloads/HCMUT/Final Year/Big Data/btl/vn-agriculture-bi/data/raw/weather/nasa_power/68262f629dec927554385641f3027cd1cea88b39e85c10c8206064d9d5b52f6f.json",
+      "throttled": false,
+      "status": "cached",
+      "record_count": 5479,
+      "sha256": "9c02f25e8df9a69d0d98eb4e8f37f55bccf749ac5913aad507f72454d7fceaa0",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          105.073,
+          9.055,
+          1.05
+        ]
+      },
+      "source_header": {
+        "title": "NASA/POWER Source Native Resolution Daily Data",
+        "api": {
+          "version": "v2.10.3",
+          "name": "POWER Daily API"
+        },
+        "sources": [
+          "MERRA2"
+        ],
+        "fill_value": -999.0,
+        "time_standard": "LST",
+        "start": "20100101",
+        "end": "20241231"
+      },
+      "download_timestamp": "2026-11-12T09:03:05.974013+00:00"
+    }
+  ]
+}
