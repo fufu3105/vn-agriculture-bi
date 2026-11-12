@@ -54,12 +54,13 @@ def validate_payload(payload, params):
     return len(expected)
 
 
-def plan_requests(provinces, start, end):
+def plan_requests(provinces, start, end, chunk_years=1):
     """Deduplicate exact coordinates only; no unverified grid rounding."""
     groups = {}
     for province in provinces:
-        for year in range(start.year, end.year + 1):
-            first, last = max(start, date(year, 1, 1)), min(end, date(year, 12, 31))
+        for year in range(start.year, end.year + 1, chunk_years):
+            first = max(start, date(year, 1, 1))
+            last = min(end, date(year + chunk_years - 1, 12, 31))
             params = dict(community="AG", parameters="T2M,PRECTOTCORR", format="JSON",
                           **{"time-standard": "LST"}, latitude=province["latitude"], longitude=province["longitude"],
                           start=first.strftime("%Y%m%d"), end=last.strftime("%Y%m%d"))

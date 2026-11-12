@@ -9,7 +9,7 @@ from unittest.mock import Mock, patch
 
 from src.ingestion.weather import Downloader, dates_between, parse_records, plan_requests, validate_payload
 from src.bp4.pipeline import ROOT, create_spark, province_reference, read_configuration, run
-from src.common.cleaning import add_weather_anomalies, aggregate_weather_period, clean_weather_daily
+from src.common.cleaning import aggregate_weather_period, clean_weather_daily
 
 
 def fixture(start=date(2020, 2, 1), end=date(2020, 2, 29)):
@@ -163,31 +163,27 @@ class ProcessingTests(unittest.TestCase):
         self.assertEqual(result.data_status, "incomplete")
         self.assertEqual(result.avg_temperature_c, 20)
 
-    def test_annual_mean_sum_and_leap_year(self):
+    def test_yearly_mean_sum_and_leap_year(self):
         daily = self.daily(date(2020, 1, 1), date(2020, 12, 31))
         result = aggregate_weather_period(daily, self.config, False).first()
         self.assertEqual(result.expected_days, 366)
-        self.assertEqual(result.annual_rainfall_mm, 732)
+        self.assertEqual(result.yearly_rainfall_mm, 732)
         self.assertEqual(result.avg_temperature_c, 20)
 
     def test_partial_year(self):
         daily = self.daily(date(2021, 1, 1), date(2021, 2, 1))
         result = aggregate_weather_period(daily, self.config, False).first()
         self.assertEqual(result.expected_days, 365)
-        self.assertIsNone(result.annual_rainfall_mm)
+        self.assertIsNone(result.yearly_rainfall_mm)
         self.assertIsNone(result.avg_temperature_c)
 
-    def test_baseline_and_anomalies(self):
-        rows = [(26, 1991, 20.0, 1000.0), (26, 1992, 22.0, 1200.0), (26, 2022, 23.0, 1210.0),
-                (57, 2022, 23.0, 1000.0), (41, 1991, 20.0, 0.0), (41, 1992, 22.0, 0.0), (41, 2022, 23.0, 10.0)]
-        annual = self.spark.createDataFrame(rows, "province_id int, year int, avg_temperature_c double, annual_rainfall_mm double")
-        result = add_weather_anomalies(annual, {**self.config, "baseline_min_years": 2}).filter("year=2022")
-        result = {r.province_id: r for r in result.collect()}
-        self.assertEqual(result[26].temperature_anomaly_c, 2)
-        self.assertAlmostEqual(result[26].rainfall_anomaly_pct, 10)
-        self.assertIsNone(result[57].temperature_anomaly_c)
-        self.assertIsNone(result[57].rainfall_anomaly_pct)
-        self.assertIsNone(result[41].rainfall_anomaly_pct)
+    def test_yearly_schema_ends_with_data_status(self):
+        daily = self.daily(date(2020, 1, 1), date(2020, 12, 31))
+        yearly = aggregate_weather_period(daily, self.config, False)
+        self.assertEqual(yearly.columns, [
+            "province_id", "year", "avg_temperature_c", "yearly_rainfall_mm",
+            "valid_temperature_days", "valid_rainfall_days", "expected_days", "data_status",
+        ])
 
 
 if __name__ == "__main__":

@@ -27,9 +27,9 @@ def read_configuration(path):
         if not 0 < config[field] <= 1:
             raise ValueError(f"{field} must be in (0, 1]")
     if config["rainfall_min_fraction"] != 1:
-        raise ValueError("Monthly/annual rainfall totals require all calendar days; set rainfall_min_fraction to 1")
-    if not 1 <= config["baseline_min_years"] <= config["baseline_end"] - config["baseline_start"] + 1:
-        raise ValueError("Invalid baseline coverage requirement")
+        raise ValueError("Monthly/yearly rainfall totals require all calendar days; set rainfall_min_fraction to 1")
+    if not isinstance(config.get("chunk_years", 1), int) or not 1 <= config.get("chunk_years", 1) <= 15:
+        raise ValueError("chunk_years must be an integer between 1 and 15")
     if config["retries"] < 0 or config["timeout_seconds"] <= 0 or config["backoff_seconds"] < 0 or config["request_interval_seconds"] < 0:
         raise ValueError("Invalid HTTP retry/timing configuration")
     for field in ["raw_dir", "output_dir", "metadata_dir"]:
@@ -78,7 +78,7 @@ def create_spark():
 def process(entries, config, provinces, start, end, output):
     from scripts.build_processed import name_parquet_part
     from pyspark.sql import functions as F
-    from src.common.cleaning import clean_weather_daily, aggregate_weather_period, add_weather_anomalies
+    from src.common.cleaning import clean_weather_daily, aggregate_weather_period
     from src.common.provinces import load_reference
     spark = create_spark()
     try:
@@ -93,9 +93,9 @@ def process(entries, config, provinces, start, end, output):
         rows = [row for entry in entries for row in parse_records(entry)]
         daily = clean_weather_daily(spark, rows, selected, start, end).cache()
         monthly = aggregate_weather_period(daily, config, True).cache()
-        annual = add_weather_anomalies(aggregate_weather_period(daily, config, False), config).cache()
+        yearly = aggregate_weather_period(daily, config, False).cache()
         counts, dataset_files = {}, {}
-        for name, frame in [("weather_daily", daily), ("weather_monthly", monthly), ("weather_annual", annual)]:
+        for name, frame in [("weather_daily", daily), ("weather_monthly", monthly), ("weather_yearly", yearly)]:
             path = output / name
             frame.coalesce(1).sortWithinPartitions("province_id", "date" if name == "weather_daily" else "year").write.mode("overwrite").parquet(str(path))
             data_file = name_parquet_part(spark, path, f"{name}.parquet")
@@ -107,19 +107,17 @@ def process(entries, config, provinces, start, end, output):
         statuses = {r["data_status"]: r["count"] for r in daily.groupBy("data_status").count().collect()}
         missing = daily.agg(F.sum(F.col("temperature_c").isNull().cast("long")).alias("temperature"),
                             F.sum(F.col("rainfall_mm").isNull().cast("long")).alias("rainfall")).first().asDict()
-        baseline_missing = annual.filter(F.col("temperature_anomaly_c").isNull() | F.col("rainfall_anomaly_pct").isNull()).count()
         return {"counts": counts, "dataset_files": dataset_files,
                 "daily_status": statuses, "missing_measurements": missing,
                 "province_count": daily.select("province_id").distinct().count(),
                 "province_ids": selected, "date_min": start.isoformat(), "date_max": end.isoformat(),
                 "expected_daily_records": len(selected) * len(dates_between(start, end)),
                 "incomplete_months": monthly.filter("data_status != 'complete'").count(),
-                "incomplete_years": annual.filter("data_status != 'complete'").count(),
-                "annual_rows_without_anomalies": baseline_missing, "join_keys_verified": True,
+                "incomplete_years": yearly.filter("data_status != 'complete'").count(),
+                "join_keys_verified": True,
                 "duplicate_province_date_count": 0,
-                "schemas": {"daily": dict(daily.dtypes), "monthly": dict(monthly.dtypes), "annual": dict(annual.dtypes)},
-                "warnings": ["Point/grid-cell observations represent one Natural Earth label coordinate per province."] +
-                            (["Insufficient baseline years or nonpositive rainfall baseline; affected anomalies remain null."] if baseline_missing else [])}
+                "schemas": {"daily": dict(daily.dtypes), "monthly": dict(monthly.dtypes), "yearly": dict(yearly.dtypes)},
+                "warnings": ["Point/grid-cell observations represent one Natural Earth label coordinate per province."]}
     finally:
         spark.stop()
 
@@ -163,7 +161,7 @@ def run():
         raise ValueError("End date precedes start date")
     if start < date(2010, 1, 1) or end > date(2024, 12, 31):
         raise ValueError("Weather collection must stay within 2010-01-01 through 2024-12-31")
-    plan = plan_requests(provinces, start, end)
+    plan = plan_requests(provinces, start, end, 1 if mode == "pilot" else config.get("chunk_years", 1))
     pilot_report = metadata / "pilot_quality_report.json"
     if args.mode == "dry-run":
         print(json.dumps({"province_count": len(provinces), "request_count": len(plan),
@@ -180,7 +178,7 @@ def run():
     report = {**context, "status": "failed", "pilot_passed": False,
               "coordinate_sha256": hashlib.sha256((ROOT/config["coordinate_file"]).read_bytes()).hexdigest()}
     try:
-        logging.info("Collecting %s yearly requests for %s provinces", len(plan), len(provinces))
+        logging.info("Collecting %s NASA point requests for %s provinces", len(plan), len(provinces))
         entries = collect(plan, config, ROOT/config["raw_dir"], metadata/"download_manifest.json", context)
         report["request_counts"] = {state: sum(e["status"] == state for e in entries) for state in ["downloaded", "cached", "failed"]}
         if report["request_counts"]["failed"]:

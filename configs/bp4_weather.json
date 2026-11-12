@@ -3,9 +3,16 @@
   "end": "2024-12-31",
   "pilot_start": "2022-01-01",
   "pilot_end": "2023-12-31",
-  "pilot_province_ids": [26, 41, 57],
+  "pilot_province_ids": [
+    26,
+    41,
+    57
+  ],
   "province_ids": [],
-  "parameters": ["T2M", "PRECTOTCORR"],
+  "parameters": [
+    "T2M",
+    "PRECTOTCORR"
+  ],
   "timeout_seconds": 90,
   "retries": 4,
   "backoff_seconds": 2,
@@ -17,7 +24,5 @@
   "coordinate_file": "configs/bp4_province_coordinates.json",
   "temperature_min_fraction": 0.9,
   "rainfall_min_fraction": 1.0,
-  "baseline_start": 1991,
-  "baseline_end": 2020,
-  "baseline_min_years": 24
+  "chunk_years": 15
 }

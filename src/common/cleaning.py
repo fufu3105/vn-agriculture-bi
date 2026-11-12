@@ -103,20 +103,5 @@ def aggregate_weather_period(daily, config, monthly):
     status = F.when((F.col("valid_temperature_days") == F.col("expected_days")) &
                     (F.col("valid_rainfall_days") == F.col("expected_days")), "complete").otherwise("incomplete")
     return result.select(*keys, F.when(temperature_ok, F.col("temperature_mean")).alias("avg_temperature_c"),
-        F.when(rainfall_ok, F.col("rainfall_sum")).alias("total_rainfall_mm" if monthly else "annual_rainfall_mm"),
+        F.when(rainfall_ok, F.col("rainfall_sum")).alias("total_rainfall_mm" if monthly else "yearly_rainfall_mm"),
         "valid_temperature_days", "valid_rainfall_days", "expected_days", status.alias("data_status"))
-
-
-def add_weather_anomalies(annual, config):
-    baseline = annual.filter(F.col("year").between(config["baseline_start"], config["baseline_end"]))
-    baseline = baseline.groupBy("province_id").agg(
-        F.avg("avg_temperature_c").alias("baseline_temperature_c"),
-        F.avg("annual_rainfall_mm").alias("baseline_rainfall_mm"),
-        F.count("avg_temperature_c").alias("baseline_temperature_years"),
-        F.count("annual_rainfall_mm").alias("baseline_rainfall_years"))
-    result = annual.join(baseline, "province_id", "left")
-    enough_temperature = F.col("baseline_temperature_years") >= config["baseline_min_years"]
-    enough_rain = (F.col("baseline_rainfall_years") >= config["baseline_min_years"]) & (F.col("baseline_rainfall_mm") > 0)
-    return result.withColumn("temperature_anomaly_c", F.when(enough_temperature,
-        F.col("avg_temperature_c") - F.col("baseline_temperature_c"))).withColumn("rainfall_anomaly_pct", F.when(enough_rain,
-        (F.col("annual_rainfall_mm") - F.col("baseline_rainfall_mm")) / F.col("baseline_rainfall_mm") * 100))
