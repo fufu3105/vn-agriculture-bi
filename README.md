@@ -40,82 +40,80 @@ The local exports cover 2010–2024 and 63 historical provinces. Region mappings
 
 ## Requirements
 
-Use Python 3.12:
+Use Python 3.12. Install the project dependencies in your Python environment:
 
 ```powershell
 python -m pip install -r requirements.txt
 ```
 
-The shared ETL requires JDK 17 or 21. BP analytics and Streamlit can reuse the included processed Parquet without Java.
-
-## Run the system
-
-```powershell
-python src/bp1/bp1.py
-python -m streamlit run dashboard/app.py
-```
-
-Or double-click `run_bp1.cmd` on Windows. It prefers `.venv` when present and starts the shared application at http://localhost:8501 without rebuilding analytics. Use `run_bp1.cmd --build-bp1` to rebuild BP1 first.
-
-The homepage routes four business dashboards. BP1 is implemented; BP2–BP4 have clearly marked integration pages. Each BP processes shared Silver data and owns its Gold Parquet tables and dashboard module. Streamlit reads Gold directly; PostgreSQL is a later extension.
+The shared ETL also requires JDK 17 or 21. The badges above show verified versions; Java is not required for the current CSV-based dashboard.
 
 ## Guides
 
 | Guide | Purpose |
-|---|---|
-| [Environment setup](docs/guides/environment_setup.md) | Python dependencies and Java for shared ETL |
-| [Agriculture ETL](docs/guides/etl_pipeline.md) | Raw Excel → shared processed Parquet |
-| [Dashboard and integration](docs/guides/dashboard.md) | Run the app and integrate each member's dashboard |
-| [BP1](docs/bp/bp1.md) | Mart schemas, features, filters and calculations |
-| [Data dictionary](docs/data_dictionary.md) | Shared schema, units and data quality |
-| [Architecture](docs/architecture.md) | Bronze → Silver → BP analytics → Gold → Streamlit |
+|-------|---------|
+| [Environment setup](docs/guides/environment_setup.md) | Create `.venv`, install dependencies, configure Java on a new device, or reuse existing datasets. |
+| [Agriculture ETL](docs/guides/etl_pipeline.md) | Prepare raw Excel inputs and generate the processed Parquet dataset and quality report. |
+| [Run the dashboard](docs/guides/dashboard.md) | Start `dashboard/app.py` and check its required CSV snapshots. |
+| [Data dictionary](docs/data_dictionary.md) | Dataset schema, units, geographical mapping, and data-quality rules. |
 
 ## Project Structure
 
 ```text
 vn-agriculture-bi/
-├── data/
-│   ├── raw/
+├── data/                          # Source datasets and analytical outputs
+│   ├── raw/                       # Raw data
 │   │   ├── agriculture/
 │   │   └── weather/
-│   ├── processed/
+│   ├── processed/                 # Cleaned and standardized data
 │   │   ├── agriculture/
 │   │   └── weather/
-│   ├── analytics/
-│   │   ├── bp1/                  # BP1 Parquet mart
-│   │   ├── bp2/
-│   │   ├── bp3/
-│   │   └── bp4/
-│   └── vietnam_regions_provinces.json
-├── src/
-│   ├── ingestion/
-│   ├── common/
-│   ├── bp1/bp1.py                # Shared processed → BP1 analytics
-│   ├── bp2/
-│   ├── bp3/
-│   ├── bp4/
-│   └── storage/
-├── dashboard/
-│   ├── app.py                    # Homepage, shared shell and navigation
-│   ├── styles.css                # Common visual styles
-│   ├── bp1/bp1.py                # Reads data/analytics/bp1/
-│   ├── bp2/bp2.py
-│   ├── bp3/bp3.py
-│   └── bp4/bp4.py
-├── scripts/
+│   ├── analytics/                 # Aggregated tables and KPIs
+│   └── vietnam_regions_provinces.json  # Province and region reference
+│
+├── src/                           # Data processing and analysis source code
+│   ├── ingestion/                 # Data ingestion modules
+│   │   ├── agriculture.py
+│   │   └── weather.py
+│   ├── common/                    # Shared data utilities
+│   │   ├── cleaning.py
+│   │   ├── provinces.py
+│   │   └── validation.py
+│   ├── bp1/                       # Analysis for business problem 1
+│   │   └── bp1.py
+│   ├── bp2/                       # Analysis for business problem 2
+│   ├── bp3/                       # Analysis for business problem 3
+│   ├── bp4/                       # Analysis for business problem 4
+│   └── storage/                   # Data storage integration
+│
+├── dashboard/                     # Business Intelligence interface
+│   ├── app.py
+│   └── bp1/
+│       ├── bp1_template.html
+│       └── bp1.html
+│
+├── notebooks/                     # Exploratory analysis and experiments
+├── models/                        # Model artifacts
+├── scripts/                       # Utility and automation entry points
 │   ├── build_processed.py
 │   ├── build_analytics.py
 │   └── load_postgres.py
-├── docs/
-│   ├── bp/
-│   └── guides/
-├── notebooks/
-├── models/
 ├── configs/
-├── deliverables/
-├── .streamlit/config.toml        # Agriculture color theme
+│
+├── docs/
+│   ├── business_problems.md
+│   ├── data_dictionary.md
+│   ├── architecture.md
+│   └── bp1.md
+├── deliverables/                  # Reports and presentations
+│   ├── report/
+│   └── slides/
+│
+├── docker-compose.yml
+├── .env.example
+├── .gitattributes
+├── .gitignore
 ├── requirements.txt
-└── run_bp1.cmd
+├── run_bp1.cmd
+└── README.md
 ```
-
-Raw workbooks, shared processing modules, other members' BP folders and Word reports are retained. BP1's obsolete CSV/JSON snapshots, static HTML/SVG dashboard and old PDF guide are retired; its canonical runtime data lives in `data/analytics/bp1/*.parquet`.
