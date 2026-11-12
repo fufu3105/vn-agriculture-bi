@@ -1,8 +1,8 @@
 # Environment Setup
 
-[Project overview](../README.md)
+[Project overview](../../README.md)
 
-Verified versions: Python 3.12.14, Microsoft OpenJDK 21.0.13.0.2, and PySpark 4.0.5. Use Python 3.12 and JDK 17 or 21 for rebuilding the PySpark dataset. Java is not required to run the current Streamlit dashboard from its CSV snapshots.
+Verified versions: Python 3.12.14, Microsoft OpenJDK 21.0.13.0.2, and PySpark 4.0.5. Use Python 3.12 and JDK 17 or 21 for rebuilding the PySpark dataset. Java is not required to run the Streamlit dashboard and BP1 analytics from existing Parquet data.
 
 ## Python Environment
 
@@ -17,9 +17,9 @@ Use a Python 3.12 interpreter for the first command (`python --version` to check
 
 ## Use the Existing Datasets
 
-When the generated datasets have been committed and pushed with the repository, another device can use them immediately after cloning and installing the Python dependencies. Skip ETL and follow [Run the Dashboard](dashboard.md) to use the included CSV snapshots. The shared Parquet file can also be reused without rebuilding it.
+When the generated datasets have been committed and pushed with the repository, another device can use them immediately after cloning and installing the Python dependencies. Skip ETL and follow [Run the Dashboard](dashboard.md) to use the BP1 Parquet mart. The shared Parquet file can also be reused without rebuilding it.
 
-Before sharing the repository, include the source Excel files, `data/vietnam_regions_provinces.json`, the generated Parquet dataset and `quality_report.json`, and the dashboard CSV snapshots in the commit. Files present only on the original device are not transferred by cloning. Do not commit `.venv`, JDK installations, or installed libraries; `.venv/` is ignored by Git and must be recreated per device.
+Before sharing the repository, include the source Excel files, `data/vietnam_regions_provinces.json`, the generated Parquet dataset and `quality_report.json`, and the BP1 analytics Parquet tables in data/analytics/bp1/ in the commit. Files present only on the original device are not transferred by cloning. Do not commit `.venv`, JDK installations, or installed libraries; `.venv/` is ignored by Git and must be recreated per device.
 
 ## Prepare Java for Rebuilding on Windows
 
@@ -46,4 +46,4 @@ if ((Get-FileHash $adapterPath -Algorithm SHA256).Hash -ne 'E0CC30FB0531EB0B5946
 
 The entry point automatically selects the JDK under `.venv/java/<jdk-folder>/` and the adapter under `.venv/spark-jars/`. Java 25 cannot be used with this pipeline. Alternatively, use an installed JDK 17 or 21 via `JAVA_HOME`; the filesystem adapter is still needed for the documented Windows setup. Other operating systems require a compatible JDK and their own Python virtual environment paths; the ZIP above is specific to Windows x64.
 
-Once the runtime is ready, follow [Build Processed Agriculture Data](etl_pipeline.md) to regenerate the Parquet dataset and report from the raw Excel inputs. This replaces the previous generated outputs. Full environment details are in the [data dictionary](data_dictionary.md#running-the-shared-etl).
+Once the runtime is ready, follow [Build Processed Agriculture Data](etl_pipeline.md) to regenerate the Parquet dataset and report from the raw Excel inputs. This replaces the previous generated outputs. Full environment details are in the [data dictionary](../data_dictionary.md#running-the-shared-etl).

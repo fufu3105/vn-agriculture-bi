@@ -1,53 +1,83 @@
-# BP1 Rice sourcing regions
+# BP1 — Rice production overview
 
-BP1 shortlists locations for supplier assessment using production scale, historical growth and volatility. The main application is `dashboard/app.py`; the Word reports explain the business question, methods, findings and limitations.
+BP1 provides descriptive analysis of production, sown area, yield, historical trends and variability. It supports sourcing-region assessment; production is potential supply rather than a guaranteed procurement quantity.
 
-## Where each part belongs
+## Responsibilities and data flow
 
-| Location | Purpose | Maintenance |
-|---|---|---|
-| `data/raw/nso_V06.*_2010_2024.xlsx` | Three retained NSO workbooks | Source inputs; preserve originals |
-| `data/raw/vietnam_regions_provinces.json` | Team mapping of 63 provinces into seven regions | Source input |
-| `src/bp1.py` | Read, normalize, validate and calculate BP1 outputs | Edit analysis here |
-| `data/processed/rice_province_year.csv` | 945 province–year records | Generated |
-| `data/analytics/bp1_*` | Two KPI CSVs and dashboard JSON | Generated |
-| `dashboard/app.py` | Main interactive dashboard | Edit application here |
-| `dashboard/bp1_template.html` | Optional static dashboard template | Edit template here |
-| `dashboard/bp1.html` | Optional static snapshot | Generated; not the four-chart Streamlit application |
-| `deliverables/report/` | Vietnamese and English Word reports, PDF guide and supporting findings | Update when findings or application behavior change |
-| `deliverables/report/figures/` | Three static SVGs used in supporting findings | Generated |
+`data/raw/agriculture` → shared ETL → `data/processed/agriculture` → `src/bp1/bp1.py` → `data/analytics/bp1` → `dashboard/bp1/bp1.py`.
 
-Keep the existing separation by responsibility. BP1 filenames identify its data products without adding a second copy of the data or extra nested folders. Store shared business questions and column definitions in `business_problems.md` and `data_dictionary.md`; this page holds BP1 run instructions and controls.
+- Shared cleaning and standardization belong to `scripts/build_processed.py`. BP1 does not reread Excel or write to processed storage.
+- BP1 reads `data/processed/agriculture/rice_province_year/`.
+- Its dashboard reads only the four Parquet tables in `data/analytics/bp1/`; features are calculated in the analytics stage.
+- `dashboard/app.py` owns the shared homepage, sidebar and navigation for BP1–BP4.
 
-## Run from the repository root
+## Run
+
+From the repository root, after installing `requirements.txt`:
 
 ```powershell
-python -m pip install -r requirements.txt
-python src/bp1.py
+python src/bp1/bp1.py
 python -m streamlit run dashboard/app.py
 ```
 
-On Windows, `run_bp1.cmd` also starts the dashboard from any working directory. Install the requirements first and keep the terminal open while using http://localhost:8501.
+Open http://localhost:8501 and select BP1, or use http://localhost:8501/bp1.
+On Windows, `run_bp1.cmd` prefers `.venv` when available and launches all dashboards without rebuilding analytics. Use `run_bp1.cmd --build-bp1` to rebuild BP1 first.
 
-The data build checks the 15 years, province coverage, complete numeric source cells, unique province mapping, 945 output rows, and provincial production totals against the published national row with a tolerance below 3 thousand tonnes per year. It then rebuilds the panel, KPI summaries, JSON, three SVGs and HTML snapshot. It does not regenerate Word reports or the PDF guide.
+If processed Parquet is missing, run the [shared ETL](../guides/etl_pipeline.md) first. Java is not required when reusing the existing processed data.
 
-## Read the live dashboard
+## Analytics tables
 
-| Chart | Business question | How to read it |
+| File in data/analytics/bp1/ | Granularity | Current rows |
 |---|---|---|
-| 1 Regional share | Which region has the greatest scale? | Doughnut shares for the selected year; national total in million tonnes |
-| 2 Production flow to provinces | Which provinces contribute most within a region? | Five largest provinces plus Other provinces; labels in thousand tonnes (kt); statistical components rather than shipments |
-| 3 Provincial profile | How do scale, growth and fluctuation compare? | x = annual growth SD in percentage points; y = CAGR in %; bubble size = selected-year production |
-| 4 Regional production across years | Has the regional production pattern changed? | Seven regional time series in million tonnes, always 2010–2024 |
+| province_year.parquet | Province × year | 945 |
+| region_year.parquet | Region × year | 105 |
+| national_year.parquet | National × year | 15 |
+| province_profile_2010_2024.parquet | Fixed full-period province profile | 63 |
 
-The **Year** selector above chart 1 offers 2015–2024 and changes charts 1–3. The **Region** selector above chart 2 changes only chart 2. Chart 3 uses `max(2010, selected_year - 9)` through the selected year and plots only provinces with at least 500 thousand tonnes in that year. For 2024 the window is 2015–2024; for 2015 it is 2010–2015.
+Stored measurements use standard units: `rice_area_ha` (ha), `rice_yield_ton_ha` (tonnes/ha) and `rice_production_ton` (tonnes). Millions are used only for display.
 
-**Data and methods** contains a fixed 2024 regional benchmark and a provincial table for the selected year, including all 63 provinces. Regional CAGR and volatility come from summed regional production, not averages of provincial KPIs.
+Derived columns:
+- `area_yoy_pct`, `yield_yoy_pct`, `production_yoy_pct`: annual percentage changes.
+- `area_share_pct`, `production_share_pct`: shares of the same-year national total, including when a region is selected.
+- `production_rank`: same-year production rank within the table's geographical level.
+The separate `province_profile_2010_2024.parquet` table contains province identity, 2024 production and:
+- `profile_start_year` = 2010 and `profile_end_year` = 2024.
+- `production_cagr_pct`: ((2024 production / 2010 production)^(1 / 14) − 1) × 100.
+- `production_yoy_std_pp`: sample standard deviation of the 14 annual growth rates from 2011 through 2024, in percentage points.
 
-## Reports and supporting figures
+This is a retrospective full-period summary, not an as-of-selected-year feature. It is stored separately from the annual tables.
 
-- [Vietnamese report](../deliverables/report/BP1_Danh_gia_vung_thu_mua_lua.docx) and [English report](../deliverables/report/BP1_Rice_Sourcing_Regions.docx): the same four-part reading flow, covering question and methods, findings, dashboard interpretation, and recommendations with limits.
-- [PDF dashboard guide](../deliverables/report/BP1_Rice_Sourcing_Dashboard_Guide.pdf): retained visual explanation of the four-chart dashboard.
-- [Supporting findings](../deliverables/report/bp1_findings.md): fixed 2024 analysis and three static figures. These figures have their own layout; the static scatter uses x = CAGR and y = volatility on a log scale. Follow its labels rather than transferring the live dashboard's axes.
+Regional/national production and area are summed from provinces. Aggregated yield is the area-weighted average of published provincial yields. Published production is retained rather than replaced with area × yield.
 
-The report benchmarks and generated KPI summaries stay at 2024 and 2015–2024. Only the live provincial profile recalculates with the year selector. Production describes local output and does not establish available procurement quantities, future risk or causes.
+Undefined changes and zero denominators remain null. Annual indicators use only current/past observations; the fixed profile intentionally uses the complete 2010–2024 history. No interpolation or zero filling is used. The build checks schema, numeric validity, duplicate keys, panel completeness and aggregate reconciliation. Each generated Parquet file is read back and compared before replacement.
+
+## Understanding the metrics
+
+| Metric | Meaning | Unit |
+|---|---|---|
+| Production | Total harvested paddy rice during the year | tonnes |
+| Sown area | Total area planted across cropping seasons; a plot is counted again when planted in another season | ha |
+| Yield | Output per sown hectare, describing productivity | tonnes/ha |
+
+For example, 100 ha × 6 tonnes/ha ≈ 600 tonnes. A 50 ha plot planted twice contributes 100 ha of annual sown area. The area is not necessarily the physical land footprint. The production/area/yield relationship is approximate for these published tables because of reporting and rounding differences.
+
+The interface provides metric help tooltips and an expandable explanation.
+
+## Dashboard controls
+
+The interface, chart labels, methods and exports use English. Vietnamese province names remain proper geographical names. Canonical region names in Parquet are translated at display time; source data is preserved.
+
+- **Statistical year:** 2010–2024; defaults to the latest year.
+- **Analysis scope:** All regions or one of seven regions; controls KPIs, leading provinces, historical trends, growth profiles and the data table.
+- **Chart metric:** Production, Sown area or Yield; controls regional, provincial and historical comparisons.
+- **01 · Regional comparison:** always compares all seven regions for national context. Production uses shares; area and yield use absolute values.
+- **04 · Growth & volatility · 2010–2024:** always uses the complete 2010–2024 period. Both bubble size and the 500,000-tonne display threshold use 2024 production. Changing the statistical year leaves this chart unchanged; the region filter still applies.
+- **Data & methods:** shows the filtered annual table, the separate fixed-period profile table, calculations, limitations and CSV export of annual data. CSV is an export convenience; Parquet remains the runtime storage format.
+
+BP1 uses muted forest, wheat, slate, clay and sage tones, mapped consistently to English region names across charts. The shared green/gold application theme is retained.
+
+BP1 describes history. BP2 explains area/yield contributions, BP3 forecasts production and BP4 examines weather associations. Descriptive BP1 indicators do not establish causes or predict outcomes.
+
+## Retired outputs
+
+Legacy CSV/JSON files in the analytics root, the separate processed CSV, static HTML templates/snapshots and generated SVG figures are retired. The old PDF dashboard guide and findings document are also retired. Both Word reports remain as historical references and are not regenerated by the build. The [notebook](../../notebooks/bp1.ipynb) is optional exploration rather than a runtime dependency.
