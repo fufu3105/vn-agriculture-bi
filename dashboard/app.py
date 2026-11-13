@@ -17,7 +17,7 @@ BUSINESS_PROBLEMS = [
     ("bp1", "Rice production overview", "DESCRIPTIVE", ":material/eco:",
      "Explore production scale, sown area, yield and trends across provinces and regions.", True),
     ("bp2", "Explaining production changes", "DIAGNOSTIC", ":material/analytics:",
-     "Break down production changes into contributions from sown area and yield.", False),
+     "Compare how sown area and yield contribute to reported production changes across provinces and regions.", True),
     ("bp3", "Production forecasting", "PREDICTIVE", ":material/trending_up:",
      "Estimate next year’s production and assess forecast accuracy for supply planning.", False),
     ("bp4", "Weather & yield", "DIAGNOSTIC", ":material/partly_cloudy_day:",

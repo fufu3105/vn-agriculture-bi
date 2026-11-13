@@ -1,21 +1,23 @@
-# **Business Problem Statement**
+# Business problems
 
-Rice procurement and processing enterprises need information on regional production capacity and stability to develop sourcing plans. This project proposes a BI system combining provincial agricultural statistics with historical weather data to address four business problems through descriptive, diagnostic, and predictive analytics.
+Rice procurement and processing enterprises need to understand where rice is produced, how production changes over time, and what to monitor when planning supply. The BI system uses annual provincial statistics from Vietnam's National Statistics Office (NSO), with historical weather data for BP4. Each business problem has its own dashboard.
 
-## **Business Problem 1:**  Assessing Rice Sourcing Regions — Descriptive Analytics
+The project uses consistent province identifiers and historical boundaries, standardizes units and year keys, and records publication status where the source provides it. Regional figures are built from province records using the project's seven-region mapping. National and regional totals published in the source are excluded from these sums.
 
-Enterprises need to compare potential sourcing regions beyond their production volume in a single year. This problem examines provincial production levels, growth, and historical variability to identify regions with suitable production characteristics for further supplier assessment.
+## BP1 · Assessing Rice Sourcing Regions (Descriptive Analytics)
 
-## **Business Problem 2:**  Explaining Production Changes — Diagnostic Analytics
+**Where is rice production concentrated, and how have the scale and stability of production changed?** Compare rice production, sown area, yield, and historical trends across provinces and regions. Use the results to identify places for further sourcing assessment. The final assessment of regional priorities draws on all four dashboards.
 
-Changes in rice production may result from changes in cultivated area, yield, or both. This problem examines their respective contributions to production growth or decline, helping enterprises distinguish expansion in cultivation from productivity improvement when assessing sourcing regions.
+## BP2 · Explaining Production Changes (Diagnostic Analytics)
 
-## **Business Problem 3:**  Forecasting Rice Production — Predictive Analytics
+**How much of the reported production change between two years is associated with changes in sown area and yield?** Calculate the area and yield contributions for each province and sum them by region and nationally. Show the reconciliation gap between the reported change and the change implied by area × yield. Compare which provinces and regions contributed most to the increase or decrease and use the results to guide follow-up. The contributions come from an arithmetic decomposition. Establishing causes requires separate evidence. [BP2 calculation and dashboard](bp/bp2.md)
 
-Sourcing plans require estimates of future production rather than historical comparisons alone. This problem forecasts provincial rice production for the following year using information available at the forecasting date. Forecasts and their historical accuracy will support planning and the consideration of alternative sourcing regions.
+## BP3 · Forecasting Rice Production (Predictive Analytics)
 
-## **Business Problem 4:**  Examining Weather-Related Yield Variation — Diagnostic Analytics
+**What is the outlook for provincial rice production next year, and how accurate has the forecasting approach been?** Produce one-year-ahead estimates using information available at the forecast date. Compare against a baseline on historical periods in chronological order, with each test year kept out of its training data. Use the forecast and historical errors to assess the outlook and prepare sourcing scenarios.
 
-Production statistics alone provide limited insight into yield fluctuations. This problem investigates how historical temperature and rainfall conditions are associated with changes in provincial rice yield. The findings will help enterprises identify regions requiring closer monitoring without treating statistical associations as evidence of causation.
+## BP4 · Examining Weather-Related Yield Variation (Diagnostic Analytics)
 
-The four dashboard pages will support medium-term sourcing assessment and planning. Provincial production represents potential supply; final procurement decisions also require information on suppliers, prices, quality, and logistics.
+**Where and when do temperature and rainfall vary alongside rice yield?** Join historical weather and NSO yield data at the province–year level. Compare statistical associations across places and years to identify areas for closer monitoring. Establishing causal effects requires additional evidence about growing conditions and other factors.
+
+Reported provincial production indicates potential supply. Procurement volumes depend on available suppliers, prices, quality requirements and logistics.

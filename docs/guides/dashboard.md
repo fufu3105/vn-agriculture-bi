@@ -15,15 +15,15 @@ Build analytics separately when needed:
 
 ```powershell
 python src/bp1/bp1.py
+python -m src.bp2.bp2
 # Once implemented by their owners:
-# python src/bp2/bp2.py
 # python src/bp3/bp3.py
 # python src/bp4/bp4.py
 ```
 
 The optional Windows shortcut `run_bp1.cmd --build-bp1` builds BP1 first. The parent PowerShell launcher supports `-BuildBp1`.
 
-Open http://localhost:8501. The homepage links to four dashboards. BP1 is implemented; BP2?BP4 are integration placeholders. The other dashboards remain accessible if BP1's homepage summary is missing, corrupt or has an invalid schema.
+Open http://localhost:8501. The homepage links to four dashboards. BP1 and BP2 are ready to explore. The other dashboards remain accessible if BP1's homepage summary is missing, corrupt or has an invalid schema.
 
 ## Ownership and integration contract
 
@@ -40,43 +40,9 @@ Each BP reads cleaned shared data from `data/processed/`, calculates its own fea
 
 The coordinator owns `dashboard/app.py`, `dashboard/styles.css`, `configs/config.toml` and shared dependencies in `requirements.txt`. The theme is loaded at startup with `--theme.base=configs/config.toml`; the Windows launchers pass its absolute path automatically. The only shell change needed after integration is changing the BP's readiness flag in `BUSINESS_PROBLEMS` from `False` to `True`; this changes the homepage status, not routing. Members do not need to edit navigation or BP1 to develop their pages.
 
-## Minimal BP2 page example
+## BP2 integration example
 
-This example expects a `year` column in the BP2 owner's `production_changes.parquet`. Change the file and schema for the actual analytics output. It is a handoff example, not a completed BP2 analysis.
-
-```python
-from pathlib import Path
-import pandas as pd
-import streamlit as st
-
-ROOT = Path(__file__).resolve().parents[2]
-PARQUET = ROOT / "data/analytics/bp2/production_changes.parquet"
-
-
-@st.cache_data(show_spinner=False)
-def load_bp2_data(path, modified_ns, size):
-    return pd.read_parquet(path)
-
-
-st.title("Explaining production changes")
-try:
-    signature = PARQUET.stat()
-    data = load_bp2_data(str(PARQUET), signature.st_mtime_ns, signature.st_size)
-    if data.empty or "year" not in data or data["year"].isna().any():
-        raise ValueError("The BP2 output needs nonempty data and a valid year column.")
-except (OSError, ValueError) as exc:
-    st.info("BP2 analytics are not available yet. Build the BP2 data mart first.")
-    with st.expander("Data details"):
-        st.text(str(exc))
-    st.stop()
-
-year = st.selectbox(
-    "Year", sorted(data["year"].unique(), reverse=True), key="bp2_year"
-)
-st.dataframe(data.loc[data["year"] == year], hide_index=True, width="stretch")
-```
-
-Apply the same pattern to BP3 and BP4 with their own names, output paths and widget keys.
+The [BP2 page](../../dashboard/bp2/bp2.py) reads its analytics Parquet using a cache keyed by the file path, modification time and size. It uses `year_start` and `year_end` to filter comparisons. See the [BP2 guide](../bp/bp2.md) for the output schema and build command.
 
 ## Rules that prevent integration conflicts
 
@@ -93,7 +59,7 @@ Apply the same pattern to BP3 and BP4 with their own names, output paths and wid
 
 ## Current limits and handoff check
 
-BP2 and BP3 can start from the existing agricultural panel (945 province-year rows, 2010?2024). BP3 must use time-based validation and avoid future leakage. Weather ingestion and processed weather data are still placeholders, so BP4's owner must supply that pipeline and its aligned inputs. Navigation is ready; this does not mean the unfinished analyses or data sources are implemented.
+The shared agricultural panel covers 945 province–year rows from 2010–2024. Validate BP3 forecasts in chronological order using data available at each forecast date. BP4's dashboard requires aligned province–year weather and yield analytics.
 
 `scripts/build_analytics.py` is currently a placeholder, not an all-BP build command. Run each owner's entry point explicitly until a shared dispatcher is implemented. PostgreSQL is also deferred; dashboards read Parquet directly.
 
