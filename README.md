@@ -46,7 +46,7 @@ Use Python 3.12. Install the project dependencies in your Python environment:
 python -m pip install -r requirements.txt
 ```
 
-The shared ETL also requires JDK 17 or 21. The badges above show verified versions; Java is not required for the current CSV-based dashboard.
+The shared ETL also requires JDK 17 or 21. The badges above show verified versions. The dashboard reads Parquet outputs directly.
 
 ## Guides
 
@@ -54,7 +54,8 @@ The shared ETL also requires JDK 17 or 21. The badges above show verified versio
 |-------|---------|
 | [Environment setup](docs/guides/environment_setup.md) | Create `.venv`, install dependencies, configure Java on a new device, or reuse existing datasets. |
 | [Agriculture ETL](docs/guides/etl_pipeline.md) | Prepare raw Excel inputs and generate the processed Parquet dataset and quality report. |
-| [Run the dashboard](docs/guides/dashboard.md) | Start `dashboard/app.py` and check its required CSV snapshots. |
+| [Run the dashboard](docs/guides/dashboard.md) | Start `dashboard/app.py` and build each dashboard's analytics Parquet as needed. |
+| [Business problems](docs/business_problems.md) | See the four analytical questions and how they support sourcing decisions. |
 | [Data dictionary](docs/data_dictionary.md) | Dataset schema, units, geographical mapping, and data-quality rules. |
 
 ## Project Structure

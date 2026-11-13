@@ -16,7 +16,7 @@ Preserve the repository's existing directory structure. Do not duplicate shared 
 | BP | Role | Status |
 |---|---|---|
 | BP1 | Rice production, sown area, yield and historical trends | Mart and dashboard implemented |
-| BP2 | Explain production changes through area and yield | Integration placeholder |
+| BP2 | Decompose reported production changes by area and yield | Mart and dashboard implemented |
 | BP3 | Forecast next-year production and evaluate errors | Integration placeholder |
 | BP4 | Examine temperature/rainfall associations with yield | Integration placeholder |
 
