@@ -36,7 +36,7 @@ class TestBP3Models(unittest.TestCase):
         self.assertAlmostEqual(model.predict_series(series), 150.0)
 
     def test_holt_linear(self):
-        model = HoltLinearModel(alpha=0.5, beta=0.2, phi=0.9)
+        model = HoltLinearModel()
         series = np.array([100.0, 110.0, 120.0, 130.0])
         pred = model.predict_series(series)
         self.assertGreater(pred, 0.0)

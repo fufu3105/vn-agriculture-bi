@@ -1,16 +1,19 @@
-"""BP3 Forecasting Models for Provincial Rice Production.
+"""BP3 Forecasting Models for Provincial Rice Production using Standard Libraries.
 
-Implements pure NumPy/Pandas time-series forecasting models:
-- Naive Persistence (Lag-1 baseline)
-- Simple Moving Average (SMA-3)
-- Damped Holt's Linear Exponential Smoothing
-- Component Model (Separate Area and Yield forecasts combined as Area * Yield)
-- Linear Trend (OLS on recent window)
+Implements forecasting models using established, industry-standard library dependencies:
+- Naive Persistence (Lag-1 baseline) using pandas.Series
+- Simple Moving Average (SMA-3) using pandas.Series.rolling
+- Damped Holt's Linear Exponential Smoothing using statsmodels.tsa.holtwinters.Holt
+- Linear Trend (5-Year) using sklearn.linear_model.LinearRegression
+- Component Model (Area x Yield) combining sklearn LinearRegression and statsmodels Holt
 """
 
-from typing import Dict, List, Optional
+import warnings
+from typing import Dict
 import numpy as np
 import pandas as pd
+from sklearn.linear_model import LinearRegression
+from statsmodels.tsa.holtwinters import Holt
 
 
 class NaiveModel:
@@ -22,11 +25,11 @@ class NaiveModel:
     def predict_series(self, values: np.ndarray, horizon: int = 1) -> float:
         if len(values) == 0:
             raise ValueError("Cannot predict from empty history")
-        return float(values[-1])
+        return float(pd.Series(values, dtype=float).iloc[-1])
 
 
 class MovingAverageModel:
-    """Simple Moving Average over the past `window` observations."""
+    """Simple Moving Average over the past `window` observations using pandas rolling."""
 
     name = "sma3"
     display_name = "3-Year Moving Average (SMA-3)"
@@ -37,46 +40,48 @@ class MovingAverageModel:
     def predict_series(self, values: np.ndarray, horizon: int = 1) -> float:
         if len(values) == 0:
             raise ValueError("Cannot predict from empty history")
-        k = min(len(values), self.window)
-        return float(np.mean(values[-k:]))
+        series = pd.Series(values, dtype=float)
+        pred = series.rolling(window=self.window, min_periods=1).mean().iloc[-1]
+        return float(pred)
 
 
 class HoltLinearModel:
-    """Damped Holt's Linear Exponential Smoothing with non-negativity constraint."""
+    """Damped Holt's Linear Exponential Smoothing using statsmodels.tsa.holtwinters.Holt."""
 
     name = "holt"
     display_name = "Damped Holt's Linear"
-
-    def __init__(self, alpha: float = 0.6, beta: float = 0.15, phi: float = 0.85):
-        self.alpha = alpha
-        self.beta = beta
-        self.phi = phi
 
     def predict_series(self, values: np.ndarray, horizon: int = 1) -> float:
         n = len(values)
         if n == 0:
             raise ValueError("Cannot predict from empty history")
-        if n == 1:
-            return float(values[0])
+        if n < 3:
+            return float(values[-1])
 
-        # Initialize level and trend
-        level = values[0]
-        trend = values[1] - values[0]
+        with warnings.catch_warnings():
+            warnings.filterwarnings("ignore")
+            try:
+                model = Holt(
+                    values.astype(float),
+                    damped_trend=True,
+                    initialization_method="estimated",
+                )
+                fitted = model.fit(optimized=True)
+                pred = fitted.forecast(horizon)[-1]
+            except Exception:
+                model = Holt(
+                    values.astype(float),
+                    damped_trend=True,
+                    initialization_method="heuristic",
+                )
+                fitted = model.fit(optimized=False)
+                pred = fitted.forecast(horizon)[-1]
 
-        for t in range(1, n):
-            prev_level = level
-            prev_trend = trend
-            level = self.alpha * values[t] + (1 - self.alpha) * (prev_level + self.phi * prev_trend)
-            trend = self.beta * (level - prev_level) + (1 - self.beta) * self.phi * prev_trend
-
-        # Forecast h steps ahead with damped trend
-        damped_factor = sum(self.phi ** i for i in range(1, horizon + 1))
-        forecast = level + damped_factor * trend
-        return float(max(0.0, forecast))
+        return float(max(0.0, pred))
 
 
 class LinearTrendModel:
-    """Ordinary Least Squares Linear Trend on recent history window."""
+    """Ordinary Least Squares Linear Trend on recent history window using sklearn.linear_model.LinearRegression."""
 
     name = "trend"
     display_name = "Linear Trend (5-Year)"
@@ -92,27 +97,29 @@ class LinearTrendModel:
             return float(values[-1])
 
         k = min(n, self.window)
-        y = values[-k:]
-        x = np.arange(k)
-        slope, intercept = np.polyfit(x, y, 1)
-        # Target step is at index k - 1 + horizon
-        pred = slope * (k - 1 + horizon) + intercept
+        y = values[-k:].astype(float)
+        X = np.arange(k).reshape(-1, 1)
+
+        model = LinearRegression()
+        model.fit(X, y)
+        target_X = np.array([[k - 1 + horizon]])
+        pred = model.predict(target_X)[0]
         return float(max(0.0, pred))
 
 
 class ComponentModel:
-    """Component Forecasting Model: Area forecast * Yield forecast.
+    """Component Forecasting Model: Area forecast (sklearn) * Yield forecast (statsmodels).
 
-    Forecasts sown area using SMA-3 and yield using Damped Holt's Exponential Smoothing,
-    then combines them to produce implied rice production.
+    Forecasts sown area using sklearn LinearRegression and yield using statsmodels Holt's
+    Exponential Smoothing, then combines them to produce implied rice production.
     """
 
     name = "component"
     display_name = "Component Model (Area × Yield)"
 
     def __init__(self):
-        self.area_model = MovingAverageModel(window=3)
-        self.yield_model = HoltLinearModel(alpha=0.5, beta=0.1, phi=0.85)
+        self.area_model = LinearTrendModel(window=5)
+        self.yield_model = HoltLinearModel()
 
     def predict_province(self, history: pd.DataFrame, horizon: int = 1) -> float:
         if history.empty:
@@ -131,7 +138,7 @@ def get_available_models():
     return {
         "naive": NaiveModel(),
         "sma3": MovingAverageModel(window=3),
-        "holt": HoltLinearModel(alpha=0.6, beta=0.15, phi=0.85),
+        "holt": HoltLinearModel(),
         "trend": LinearTrendModel(window=5),
         "component": ComponentModel(),
     }

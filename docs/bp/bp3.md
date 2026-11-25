@@ -41,29 +41,34 @@ Sau khi mở ứng dụng tại `http://localhost:8501`, chọn **BP3 · Product
 - Dự báo cho năm kiểm định $T$ ($T \in [2017, \dots, 2024]$) chỉ được phép sử dụng tập dữ liệu lịch sử tại các năm $t \le T-1$.
 - Dữ liệu của năm $T$ và các năm sau đó tuyệt đối không xuất hiện trong quá trình ước lượng tham số (expanding training window).
 
-### 3.2. Danh mục mô hình kiểm định
+### 3.2. Danh mục mô hình kiểm định (Sử dụng thư viện tiêu chuẩn)
+
+Toàn bộ các mô hình dự báo được xây dựng dựa trên các thư viện chuẩn công nghiệp (`statsmodels`, `scikit-learn`, `pandas`) nhằm đảm bảo tính chuẩn xác về mặt toán học và thuật toán tối ưu hóa tham số:
 
 1. **Naive Baseline (Lag-1 Persistence):**
-   $$\hat{y}_{T} = y_{T-1}$$
-   *Ý nghĩa:* Giả định sản lượng năm tới bằng đúng sản lượng năm trước. Đây là chuẩn đối sánh cơ bản trong quản trị chuỗi cung ứng.
+   - *Thực thi:* Sử dụng `pandas.Series.iloc[-1]`.
+   - *Công thức:* $\hat{y}_{T} = y_{T-1}$.
+   - *Ý nghĩa:* Giả định sản lượng năm tới bằng đúng sản lượng năm trước. Đây là chuẩn đối sánh cơ bản trong quản trị chuỗi cung ứng.
 
 2. **3-Year Simple Moving Average (SMA-3):**
-   $$\hat{y}_{T} = \frac{1}{3} \sum_{i=1}^{3} y_{T-i}$$
-   *Ý nghĩa:* San bằng các biến động đột biến hàng năm do thời tiết ngắn hạn.
+   - *Thực thi:* Sử dụng `pandas.Series.rolling(window=3).mean()`.
+   - *Công thức:* $\hat{y}_{T} = \frac{1}{3} \sum_{i=1}^{3} y_{T-i}$.
+   - *Ý nghĩa:* San bằng các biến động đột biến hàng năm do thời tiết ngắn hạn.
 
 3. **Damped Holt's Linear Exponential Smoothing:**
-   $$\text{Mức (Level): } l_t = \alpha y_t + (1 - \alpha)(l_{t-1} + \phi b_{t-1})$$
-   $$\text{Xu thế (Trend): } b_t = \beta (l_t - l_{t-1}) + (1 - \beta)\phi b_{t-1}$$
-   $$\text{Dự báo } h \text{ bước: } \hat{y}_{t+h} = \max\left(0, l_t + \sum_{i=1}^h \phi^i b_t\right)$$
-   *Ý nghĩa:* Bắt kịp xu thế tăng trưởng dài hạn nhưng có hệ số suy giảm $\phi = 0.85$ để triệt tiêu việc phóng đại xu thế quá mức trong nông nghiệp.
+   - *Thực thi:* Sử dụng `statsmodels.tsa.holtwinters.Holt(damped_trend=True)`.
+   - *Công thức:* Tối ưu hóa tham số mức ($l_t$), xu thế ($b_t$) và hệ số suy giảm xu thế ($\phi$) tự động qua Maximum Likelihood Estimation (MLE) / L-BFGS-B từ `statsmodels`.
+   - *Ý nghĩa:* Nắm bắt quán tính xu thế tăng trưởng dài hạn nhưng triệt tiêu việc phóng đại xu thế quá mức trong nông nghiệp.
 
-4. **Component Model (Mô hình thành phần Diện tích × Năng suất):**
-   $$\hat{P}_{T} = \max\left(0, \hat{A}_{T} \times \hat{Y}_{T}\right)$$
-   Trong đó diện tích $\hat{A}_{T}$ được dự báo qua SMA-3 và năng suất $\hat{Y}_{T}$ được dự báo qua Holt's Linear.
-   *Ý nghĩa:* Phản ánh bản chất nông nghiệp: diện tích phụ thuộc vào quy hoạch/chuyển đổi đất, còn năng suất phản ánh tiến bộ giống và thời tiết.
+4. **Linear Trend (Hồi quy xu thế tuyến tính 5 năm):**
+   - *Thực thi:* Sử dụng `sklearn.linear_model.LinearRegression()`.
+   - *Công thức:* Khớp mô hình hồi quy OLS trên cửa sổ 5 năm gần nhất: $\hat{y} = \beta_0 + \beta_1 \cdot t$.
+   - *Ý nghĩa:* Bắt kịp xu hướng tăng hoặc giảm đều đặn trong ngắn hạn.
 
-5. **Linear Trend (Hồi quy xu thế tuyến tính OLS trên 5 năm gần nhất):**
-   Khớp đường thẳng tối thiểu bình phương trên cửa sổ 5 năm gần nhất để bắt quán tính thay đổi ngắn hạn.
+5. **Component Model (Mô hình thành phần Diện tích × Năng suất):**
+   - *Thực thi:* Kết hợp `sklearn.linear_model.LinearRegression` (dự báo diện tích $\hat{A}_T$) và `statsmodels.tsa.holtwinters.Holt` (dự báo năng suất $\hat{Y}_T$).
+   - *Công thức:* $\hat{P}_{T} = \max\left(0, \hat{A}_{T} \times \hat{Y}_{T}\right)$.
+   - *Ý nghĩa:* Phản ánh bản chất nông nghiệp: diện tích phụ thuộc vào quy hoạch/chuyển đổi đất, còn năng suất phản ánh tiến bộ giống và thời tiết.
 
 ### 3.3. Cơ chế chọn mô hình tối ưu theo tỉnh (Best-per-Province Selector)
 Mỗi tỉnh có đặc thù sản xuất riêng: một số tỉnh ĐBSCL có xu hướng tương đối ổn định (phù hợp Naive/SMA), trong khi các tỉnh miền núi đang mở rộng năng suất (phù hợp Holt/Component). BP3 tự động lựa chọn mô hình đạt sai số tuyệt đối trung bình (MAE) thấp nhất trong giai đoạn kiểm định lịch sử cho từng tỉnh.
