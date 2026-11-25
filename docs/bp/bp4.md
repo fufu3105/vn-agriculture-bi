@@ -1,6 +1,6 @@
 # BP4: Climate, Rice Yield & Production Diagnostics
 
-BP4 is a four-section historical diagnostic report, not a causal or predictive model. Coverage is 2010-2024: 63 historical provinces and seven project regions, using existing NSO V06.13/V06.14/V06.15 agriculture and NASA POWER weather data.
+BP4 is a four-tab historical diagnostic dashboard, not a causal or predictive model. Coverage is 2010-2024: 63 historical provinces and seven project regions, using existing NSO V06.13/V06.14/V06.15 agriculture and NASA POWER weather data.
 
 ## Run
 
@@ -11,14 +11,16 @@ python -m streamlit run dashboard/app.py
 
 If prepared artifacts already exist, only Streamlit is needed. Preparation uses existing processed data and does not rerun Spark source ETL. Additional analytical exports are optional and do not add dashboard sections.
 
-## Four-section flow
+## Four dashboard tabs
 
-| Section | Retained content |
+| Tab | Content |
 |---|---|
-| 1. Historical Climate & Rice Production Overview | Regional annual climate lines and a single weather/rice overlay; Measure selects Temperature, Rainfall or both; Average/Anomaly, National/seven regions and Production/Yield choices |
-| 2. Climate-Production Diagnostic Relationships | Two main scatter plots; regional association dot comparison; region-relative climate-tercile box plot; climate-yield stability matrix. Supporting correlation tables/CSV and one simultaneous lag 0/1/2 heatmap remain |
-| 3. Abnormal Year Investigation | Detrended-deviation heatmap with actual and fitted trend values and same-year climate anomalies in the hover details |
-| 4. Diagnostic Findings | Three plain-language observations on national production, regional climate-yield relationships, and below-trend yield years; always based on the complete 2010-2024 dataset |
+| Overview | Regional annual climate lines and a single weather/rice overlay; Measure selects Temperature, Rainfall or both; Average/Anomaly, All Regions/seven regions and Production/Yield choices |
+| Climate relationships | Two main scatter plots; regional association dot comparison; region-relative climate-tercile box plot; climate-yield stability matrix. Supporting correlation tables/CSV and one simultaneous lag 0/1/2 heatmap remain |
+| Abnormal years | Detrended-deviation heatmap with actual and fitted trend values and same-year climate anomalies in the hover details |
+| Diagnostic findings | Three plain-language observations on national production, regional climate-yield relationships, and below-trend yield years; always based on the complete 2010-2024 dataset |
+
+The Analysis period slider and climate reference setting remain available across tabs. Each tab renders only its own charts, following the BP2/BP3 view selector pattern.
 
 Co-movement, monitoring and insight sections are no longer displayed. Optional CLI analyses can be run separately when needed.
 
@@ -42,8 +44,8 @@ Each scatter has variable/unit-specific climate axes. The four summary metrics (
 
 | Control | Scope |
 |---|---|
-| Analysis period | The only control in the opening Analysis scope container; sets displayed years throughout Sections 1-3 |
-| Climate reference | Section 1 control for anomaly values throughout the page; does not refit the historical detrending benchmark |
+| Analysis period | The only control in the opening Analysis scope container; sets displayed years in the first three tabs |
+| Climate reference | Shared expander below the tab selector; sets anomaly values without refitting the historical detrending benchmark |
 | Section 3 outcome | Selects the detrended heatmap measure |
 | Supporting lag climate | Selects the Section 2 lag heatmap variable |
 | Section 1 comparison/outcome/measure | Local scope; National/seven-region choice independently controls geography |
