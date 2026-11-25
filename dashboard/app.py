@@ -21,7 +21,7 @@ BUSINESS_PROBLEMS = [
     ("bp3", "Production forecasting", "PREDICTIVE", ":material/trending_up:",
      "Estimate next year’s production and assess forecast accuracy for supply planning.", True),
     ("bp4", "Weather & yield", "DIAGNOSTIC", ":material/partly_cloudy_day:",
-     "Examine the relationship between temperature, rainfall and rice yield.", False),
+     "Examine the relationship between temperature, rainfall and rice yield.", True),
 ]
 
 
@@ -56,7 +56,7 @@ def home():
     if summary is not None:
         st.caption(f"NATIONAL OVERVIEW · {int(summary.year)}")
         cols = st.columns(3)
-        cols[0].metric("RICE PRODUCTION", f"{summary.rice_production_ton / 1e6:.2f} million tonnes", border=True)
+        cols[0].metric("RICE PRODUCTION", f"{summary.rice_production_ton:,.0f} tonnes", border=True)
         cols[1].metric("RICE SOWN AREA", f"{summary.rice_area_ha / 1e6:.2f} million ha", border=True)
         cols[2].metric("WEIGHTED AVERAGE YIELD", f"{summary.rice_yield_ton_ha:.2f} tonnes/ha", border=True)
     elif not MART.is_file():

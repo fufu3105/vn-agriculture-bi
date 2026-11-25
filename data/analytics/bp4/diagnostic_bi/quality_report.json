@@ -1,0 +1,258 @@
+{
+  "built_utc": "2026-11-23T08:13:23.227637+00:00",
+  "period": [
+    2010,
+    2024
+  ],
+  "reference_period": [
+    2010,
+    2024
+  ],
+  "province_rows": 945,
+  "regional_rows": 105,
+  "monthly_rows": 11340,
+  "regions": 7,
+  "missing_province_values": {
+    "province_id": 0,
+    "year": 0,
+    "area_ha": 0,
+    "reported_yield_ton_ha": 0,
+    "production_ton": 0,
+    "province_name": 0,
+    "region": 0,
+    "temperature_c": 0,
+    "rainfall_mm": 0,
+    "valid_temperature_days": 0,
+    "valid_rainfall_days": 0,
+    "expected_days": 0,
+    "data_status": 0,
+    "yield_value": 0,
+    "source_yield_difference_ton_ha": 0,
+    "complete": 0
+  },
+  "incomplete_province_years": 0,
+  "incomplete_province_months": 0,
+  "duplicate_keys": 0,
+  "mapping": "63 historical provinces / 7 project regions; not current administrative boundaries",
+  "units": {
+    "yield_value": "t/ha",
+    "production_ton": "tonnes",
+    "temperature_c": "C",
+    "rainfall_mm": "mm"
+  },
+  "sources": {
+    "agriculture": "NSO V06.13, V06.14, V06.15",
+    "weather": "NASA POWER T2M and PRECTOTCORR; one point per province"
+  },
+  "notes": [
+    "Available period replaces requested 2009-2023 and 1991-2020 baseline; no extrapolation.",
+    "Retrospective detrending is not a forecast.",
+    "Regional yield = total tonnes / total hectares. Provincial yield is derived consistently; reported NSO yield retained for rounding audit.",
+    "Annual sown-area weather weights are a proxy, not measured crop exposure."
+  ],
+  "source_sha256": {
+    "data\\processed\\agriculture\\rice_province_year\\rice_province_year.parquet": "acbfa86cccb9b652d7ece13de308eec3339aaacfac06c6caf7fc6df208190874",
+    "data\\processed\\weather\\weather_yearly\\weather_yearly.parquet": "f7a451424cdb01c4ccd1e69b5e0b9f4f45981f745b1207cfa3f11ea62fc82a3d",
+    "data\\processed\\weather\\weather_monthly\\weather_monthly.parquet": "8deda8e22d570efdd1e44f63f7d748be996bd095cf6e98767f31076c518209f9",
+    "data\\vietnam_regions_provinces.json": "0c7550a3349d7b52c5d1c129f782dfe83e3eddcb468307d54abb152f945087f3"
+  },
+  "nonconsecutive_regional_steps": 0,
+  "regional_checks": [
+    {
+      "region": "Bắc Trung Bộ",
+      "indicator": "yield_value",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 2
+    },
+    {
+      "region": "Bắc Trung Bộ",
+      "indicator": "production_ton",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 1
+    },
+    {
+      "region": "Bắc Trung Bộ",
+      "indicator": "temperature_c",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 1
+    },
+    {
+      "region": "Bắc Trung Bộ",
+      "indicator": "rainfall_mm",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Duyên hải Nam Trung Bộ",
+      "indicator": "yield_value",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Duyên hải Nam Trung Bộ",
+      "indicator": "production_ton",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Duyên hải Nam Trung Bộ",
+      "indicator": "temperature_c",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Duyên hải Nam Trung Bộ",
+      "indicator": "rainfall_mm",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Trung du và miền núi phía Bắc",
+      "indicator": "yield_value",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Trung du và miền núi phía Bắc",
+      "indicator": "production_ton",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 1
+    },
+    {
+      "region": "Trung du và miền núi phía Bắc",
+      "indicator": "temperature_c",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Trung du và miền núi phía Bắc",
+      "indicator": "rainfall_mm",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Tây Nguyên",
+      "indicator": "yield_value",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Tây Nguyên",
+      "indicator": "production_ton",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Tây Nguyên",
+      "indicator": "temperature_c",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Tây Nguyên",
+      "indicator": "rainfall_mm",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Đông Nam Bộ",
+      "indicator": "yield_value",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Đông Nam Bộ",
+      "indicator": "production_ton",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Đông Nam Bộ",
+      "indicator": "temperature_c",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Đông Nam Bộ",
+      "indicator": "rainfall_mm",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 1
+    },
+    {
+      "region": "Đồng bằng sông Cửu Long",
+      "indicator": "yield_value",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Đồng bằng sông Cửu Long",
+      "indicator": "production_ton",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 1
+    },
+    {
+      "region": "Đồng bằng sông Cửu Long",
+      "indicator": "temperature_c",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Đồng bằng sông Cửu Long",
+      "indicator": "rainfall_mm",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Đồng bằng sông Hồng",
+      "indicator": "yield_value",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 1
+    },
+    {
+      "region": "Đồng bằng sông Hồng",
+      "indicator": "production_ton",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    },
+    {
+      "region": "Đồng bằng sông Hồng",
+      "indicator": "temperature_c",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 1
+    },
+    {
+      "region": "Đồng bằng sông Hồng",
+      "indicator": "rainfall_mm",
+      "n": 15,
+      "zero_variance": false,
+      "iqr_outliers": 0
+    }
+  ]
+}

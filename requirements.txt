@@ -8,3 +8,4 @@ plotly>=5.18,<7
 streamlit>=1.59,<2
 scikit-learn>=1.4,<2
 statsmodels>=0.14,<1
+scipy>=1.11,<2

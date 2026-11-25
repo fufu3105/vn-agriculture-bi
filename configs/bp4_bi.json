@@ -1,0 +1,25 @@
+{
+  "minimum_n": 8,
+  "alpha": 0.05,
+  "seed": 42,
+  "permutations": 199,
+  "gap_threshold_ton_ha": 0.15,
+  "peer_n": 2,
+  "z_threshold": 1.5,
+  "iqr_factor": 1.5,
+  "decline_threshold_pct": 5,
+  "priority_high": 0.67,
+  "priority_moderate": 0.34,
+  "stable_cv_pct": 10,
+  "weak_correlation": 0.3,
+  "cluster_bootstraps": 30,
+  "minimum_score_regions": 7,
+  "risk_weights": {
+    "volatility": 0.3333333333333333,
+    "frequency": 0.3333333333333333,
+    "magnitude": 0.3333333333333333,
+    "climate_evidence": 0,
+    "production_relevance": 1,
+    "data_confidence": 0
+  }
+}

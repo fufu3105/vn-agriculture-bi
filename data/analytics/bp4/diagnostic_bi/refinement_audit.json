@@ -1,0 +1,8 @@
+{
+  "annual_monthly_max_temp_difference_c": 2.4868995751603507e-14,
+  "annual_monthly_max_rain_difference_mm": 2.2737367544323206e-12,
+  "months_per_province_year": [
+    12
+  ],
+  "weight": "rice_area_ha (annual provincial sown area; varies by province/year)"
+}
