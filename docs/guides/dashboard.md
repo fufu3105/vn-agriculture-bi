@@ -32,7 +32,7 @@ Open http://localhost:8501. The homepage links to four dashboards. BP1 and BP2 a
 | BP1 | src/bp1/bp1.py | data/analytics/bp1/*.parquet | dashboard/bp1/bp1.py | /bp1 |
 | BP2 | src/bp2/ | data/analytics/bp2/*.parquet | dashboard/bp2/bp2.py | /bp2 |
 | BP3 | src/bp3/ | data/analytics/bp3/*.parquet | dashboard/bp3/bp3.py | /bp3 |
-| BP4 | src/bp4/ | data/analytics/bp4/*.parquet | dashboard/bp4/bp4.py | /bp4 |
+| BP4 | src/bp4/ | data/analytics/bp4/diagnostic_bi/{regional,province}.parquet | dashboard/bp4/bp4.py | /bp4 |
 
 Each member can replace their dashboard placeholder and add helpers inside their own `src/bpN/` and `dashboard/bpN/` directories. All four routes are already registered. Page scripts execute when selected; the shell does not import or run every member's dashboard at startup.
 
